@@ -159,24 +159,24 @@ https://votre-user.github.io/mon-repo/dist/
 
 **Depuis le dépôt GitHub :**
 
-___```___
+```bash
 git clone https://github.com/Lombard-Web-Services/github-blog.git
 cd github-blog
-___```___
+```
 
 **Ou téléchargez l'archive ZIP :**
 
-___```___
+```bash
 wget https://github.com/Lombard-Web-Services/github-blog/raw/refs/heads/main/github-blog-static.zip
 unzip github-blog-static.zip
 cd github-blog
-___```___
+```
 
 #### 2. Installation des dépendances
 
-___```___
+```bash
 pip install -r requirements.txt
-___```___
+```
 
 **Dépendances installées :**
 
@@ -192,10 +192,10 @@ ___```___
 
 #### 3. Vérification de l'installation
 
-___```___
+```bash
 python3 --version
 pip list | grep -E "markdown|PyYAML|Jinja2|Pillow"
-___```___
+```
 
 ---
 
@@ -205,7 +205,7 @@ ___```___
 
 #### Site configuration (`content/config/site.yaml`)
 
-___yaml___
+```yaml
 site:
   title: "Mon Blog Multilingue"
   description: "Blog technique et créatif multilingue"
@@ -216,16 +216,16 @@ site:
 
 pagination:
   posts_per_page: 10
-___yaml___
+```
 
 #### Configuration statique (`content/config/static_config.yaml`)
 
-___yaml___
+```yaml
 enabled: true
 base_url: /votre-repo/dist
 output_dir: dist
 auto_build_on_publish: false
-___yaml___
+```
 
 **Notes :**
 - `base_url` : URL de base pour la version statique (ex: `/mon-repo/dist`)
@@ -233,7 +233,7 @@ ___yaml___
 
 #### Menu de navigation (`content/config/menu.yaml`)
 
-___yaml___
+```yaml
 menu:
   logo:
     enabled: false
@@ -247,13 +247,13 @@ menu:
     - title: Accueil
       url: /
       type: page
-___yaml___
+```
 
 ### Personnalisation avancée
 
 #### Langues (`content/config/personalization.yaml`)
 
-___yaml___
+```yaml
 languages:
   - code: fr
     name: Français
@@ -266,11 +266,11 @@ languages:
     flag: "🇬🇧"
     direction: ltr
     enabled: true
-___yaml___
+```
 
 #### Hero Section
 
-___yaml___
+```yaml
 hero:
   enabled: true
   image: /static/uploads/hero.jpg
@@ -283,11 +283,11 @@ hero:
   gradient_angle: 135
   overlay_opacity: 40
   resize_mode: cover
-___yaml___
+```
 
 #### SEO global
 
-___yaml___
+```yaml
 seo:
   global:
     robots: "index, follow, max-snippet:-1, max-image-preview:large"
@@ -303,7 +303,7 @@ seo:
   images:
     default_og: "/static/images/og-default.jpg"
     default_twitter: "/static/images/twitter-default.jpg"
-___yaml___
+```
 
 ---
 
@@ -313,29 +313,29 @@ ___yaml___
 
 **Génération simple (chemins relatifs) :**
 
-___```___
+```bash
 python3 build.py --static
-___```___
+```
 
 **Génération avec URL de base personnalisée :**
 
-___```___
+```bash
 python3 build.py --static --base-url "/votre-repo/dist"
-___```___
+```
 
 **Génération pour GitHub Pages :**
 
-___```___
+```bash
 python3 build.py --static --base-url "/mon-repo/dist"
-___```___
+```
 
 ### Création d'articles
 
 **Via ligne de commande :**
 
-___```___
+```bash
 python3 new_post.py "Titre de mon article"
-___```___
+```
 
 **Via l'interface d'administration :**
 
@@ -346,7 +346,7 @@ ___```___
 
 ### Structure d'un article Markdown
 
-___markdown___
+```markdown
 ---
 title: "Titre de l'article"
 date: "2024-01-15"
@@ -371,7 +371,7 @@ Contenu de l'article en BBCode...
 [code python]
 print("Hello World")
 [/code]
-___markdown___
+```
 
 **Champs disponibles :**
 
@@ -409,9 +409,9 @@ ___markdown___
 
 #### 1. Générez la version statique
 
-___```___
+```bash
 python3 build.py --static --base-url "/votre-repo/dist"
-___```___
+```
 
 #### 2. Configurez GitHub Pages
 
@@ -432,19 +432,19 @@ https://votre-username.github.io/votre-repo/dist/
 
 #### 1. Créez la branche gh-pages
 
-___```___
+```bash
 git checkout --orphan gh-pages
 git rm -rf .
-___```___
+```
 
 #### 2. Copiez les fichiers générés
 
-___```___
+```bash
 cp -r dist/* .
 git add .
 git commit -m "Deploy static blog"
 git push origin gh-pages
-___```___
+```
 
 #### 3. Configurez GitHub Pages
 
@@ -568,7 +568,7 @@ github-blog/
 
 #### 1. Activez PostgreSQL dans les paramètres
 
-___yaml___
+```yaml
 # content/config/settings.yaml
 postgresql:
   enabled: true
@@ -578,15 +578,15 @@ postgresql:
   user: postgres
   password: votre_mot_de_passe
   sslmode: prefer
-___yaml___
+```
 
 #### 2. Créez la base de données
 
-___sql___
+```sql
 CREATE DATABASE blog;
 CREATE USER blog_user WITH PASSWORD 'mot_de_passe';
 GRANT ALL PRIVILEGES ON DATABASE blog TO blog_user;
-___sql___
+```
 
 #### 3. Créez les tables
 
@@ -606,21 +606,21 @@ Depuis l'interface d'administration : **Settings > PostgreSQL > "Créer les tabl
 
 **Sauvegarde manuelle :**
 
-___```___
+```bash
 python3 -c "from database import db_manager; db_manager.load_config(); db_manager.create_backup()"
-___```___
+```
 
 **Consultation des logs :**
 
-___```___
+```bash
 psql -d blog -c "SELECT * FROM admin_logs ORDER BY created_at DESC LIMIT 10;"
-___```___
+```
 
 **Statistiques :**
 
-___```___
+```bash
 psql -d blog -c "SELECT * FROM categories ORDER BY post_count DESC;"
-___```___
+```
 
 ---
 
@@ -630,35 +630,35 @@ ___```___
 
 #### 1. Ajoutez la langue dans `personalization.yaml`
 
-___yaml___
+```yaml
 languages:
   - code: es
     name: Español
     flag: "🇪🇸"
     direction: ltr
     enabled: true
-___yaml___
+```
 
 #### 2. Créez le fichier de traduction
 
-___```___
+```bash
 cp content/config/i18n/fr.yaml content/config/i18n/es.yaml
-___```___
+```
 
 #### 3. Traduisez le contenu du fichier
 
 #### 4. Activez le sélecteur de langue dans `menu.yaml`
 
-___yaml___
+```yaml
 language_switcher:
   enabled: true
   position: right
   default: fr
-___yaml___
+```
 
 ### Structure des fichiers de traduction
 
-___yaml___
+```yaml
 # content/config/i18n/fr.yaml
 lang: fr
 direction: ltr
@@ -680,7 +680,7 @@ error:
   title: "Page non trouvée"
   message: "Désolé, la page n'existe pas."
   back_home: "Retour à l'accueil"
-___yaml___
+```
 
 ---
 
@@ -692,17 +692,17 @@ ___yaml___
 
 **Solution :** Vérifiez que le fichier `templates/404.html` existe.
 
-___```___
+```bash
 ls -la templates/404.html
-___```___
+```
 
 #### Les images ne s'affichent pas en mode statique
 
 **Solution :** Vérifiez votre configuration `base_url`
 
-___```___
+```bash
 python3 build.py --static --base-url "/votre-chemin/dist"
-___```___
+```
 
 #### Les liens des articles sont cassés
 
@@ -717,18 +717,18 @@ ___```___
 
 **Solution :** Validez la syntaxe YAML
 
-___```___
+```bash
 python3 -c "import yaml; yaml.safe_load(open('content/config/i18n/fr.yaml'))"
-___```___
+```
 
 #### Le build statique échoue
 
 **Solution :** Nettoyez et relancez
 
-___```___
+```bash
 rm -rf dist/
 python3 build.py --static --base-url "/votre-chemin/dist"
-___```___
+```
 
 ### Logs et debug
 
@@ -742,9 +742,9 @@ logging.basicConfig(level=logging.DEBUG)
 
 **Consultez les logs du serveur :**
 
-___```___
+```bash
 python3 serve.py 2>&1 | tee server.log
-___```___
+```
 
 ---
 
