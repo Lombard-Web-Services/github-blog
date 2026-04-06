@@ -750,7 +750,7 @@ python3 serve.py 2>&1 | tee server.log
 
 ## Licence
 
-MIT License - Copyright (c) 2024 Lombard Web Services
+MIT License - Copyright (c) 2026 Lombard Web Services
 
 ```
 Permission is hereby granted, free of charge, to any person obtaining a copy
