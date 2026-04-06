@@ -34,8 +34,8 @@ Cette version est spécialement optimisée pour être hébergée dans un sous-do
 ### 📸 Aperçu de la Version Statique
 
 Visible dans **http://localhost:8000/admin/static**
-![Mode Statique](https://github.com/Lombard-Web-Services/github-blog/blob/main/screen/static_mode.png?raw=true
----
+
+![Mode Statique](https://github.com/Lombard-Web-Services/github-blog/blob/main/screen/static_mode.png?raw=true)
 
 ## Fonctionnalités
 
