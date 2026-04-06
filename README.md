@@ -1,29 +1,35 @@
 # GitHub Blog - Version Statique
 
+Un générateur de blog statique complet, multilingue et hautement personnalisable, optimisé pour GitHub Pages.
+
+---
+
 ## Table des matières
 
-1. [Présentation](#présentation)
-2. [Fonctionnalités](#fonctionnalités)
-3. [Architecture technique](#architecture-technique)
-4. [Installation](#installation)
-5. [Configuration](#configuration)
-6. [Utilisation](#utilisation)
-7. [Déploiement sur GitHub Pages](#déploiement-sur-github-pages)
-8. [Structure du projet](#structure-du-projet)
-9. [Intégration PostgreSQL](#intégration-postgresql)
-10. [Support multilingue](#support-multilingue)
-11. [Dépannage](#dépannage)
-12. [Licence](#licence)
+- [Présentation](#présentation)
+- [Fonctionnalités](#fonctionnalités)
+- [Architecture technique](#architecture-technique)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Utilisation](#utilisation)
+- [Déploiement sur GitHub Pages](#déploiement-sur-github-pages)
+- [Structure du projet](#structure-du-projet)
+- [Intégration PostgreSQL](#intégration-postgresql)
+- [Support multilingue](#support-multilingue)
+- [Dépannage](#dépannage)
+- [Licence](#licence)
 
 ---
 
 ## Présentation
 
-GitHub Blog est un générateur de blog statique complet, multilingue et hautement personnalisable, conçu pour être déployé facilement sur GitHub Pages ou tout autre hébergement statique. Ce projet permet de créer et gérer un blog professionnel avec une interface d'administration intuitive, sans base de données ni serveur dynamique.
+GitHub Blog est un générateur de blog statique conçu pour créer et gérer un blog professionnel avec une interface d'administration intuitive, sans base de données ni serveur dynamique.
 
 ### Version Statique
 
 Cette version est spécialement optimisée pour être hébergée dans un sous-dossier d'un dépôt GitHub (ex: `/github-blog/dist/`). Tous les liens sont générés de manière relative ou absolue selon votre configuration, permettant un fonctionnement parfait sur GitHub Pages.
+
+**Lien de téléchargement :** [github-blog-static.zip](https://github.com/Lombard-Web-Services/github-blog/raw/refs/heads/main/github-blog-static.zip)
 
 ---
 
@@ -31,65 +37,72 @@ Cette version est spécialement optimisée pour être hébergée dans un sous-do
 
 ### Gestion de contenu
 
-- ✍️ Création, modification et suppression d'articles au format Markdown avec frontmatter
-- 🎨 Éditeur BBCode riche avec aperçu en temps réel
-- 🏷️ Gestion des catégories et tags avec comptage automatique
-- 📝 Brouillons et articles planifiés
-- 👁️ Masquage d'articles de la page d'accueil
-- 🔗 URLs personnalisables (slugs)
+- Création, modification et suppression d'articles au format Markdown avec frontmatter
+- Éditeur BBCode riche avec aperçu en temps réel
+- Gestion des catégories et tags avec comptage automatique
+- Brouillons et articles planifiés
+- Masquage d'articles de la page d'accueil
+- URLs personnalisables (slugs)
+- Articles masqués (accessibles par URL mais non listés)
 
 ### Support multilingue
 
-- 🌍 **7 langues intégrées** :
-  - Français (FR) 🇫🇷
-  - English (EN) 🇬🇧
-  - العربية (AR) 🇸🇦
-  - हिन्दी (HI) 🇮🇳
-  - 中文 (ZH) 🇨🇳
-  - الدارجة (ARY) 🇲🇦
-  - ⵜⴰⵎⴰⵣⵉⵖⵜ (BER) ⵣ
-- 🎯 Détection automatique de la langue du navigateur
-- 🌐 Sélecteur de langue dans l'interface
-- 🔄 Traductions complètement personnalisables
-- 📝 Support des langues RTL (Arabe, Darija)
+**7 langues intégrées :**
+
+| Code | Langue | Drapeau | Direction |
+|------|--------|---------|-----------|
+| fr | Français | 🇫🇷 | LTR |
+| en | English | 🇬🇧 | LTR |
+| ar | العربية | 🇸🇦 | RTL |
+| hi | हिन्दी | 🇮🇳 | LTR |
+| zh | 中文 | 🇨🇳 | LTR |
+| ary | الدارجة | 🇲🇦 | RTL |
+| ber | ⵜⴰⵎⴰⵣⵉⵖⵜ | ⵣ | LTR |
+
+- Détection automatique de la langue du navigateur
+- Sélecteur de langue dans l'interface
+- Traductions complètement personnalisables
+- Support des langues RTL (Arabe, Darija)
 
 ### SEO et métadonnées
 
-- 📊 Configuration globale des métadonnées SEO
-- 📱 Balises Open Graph pour les réseaux sociaux
-- 🐦 Twitter Cards
-- 🗺️ Sitemap XML multilingue automatique
-- 📡 Flux RSS par langue
-- 🔗 URLs canoniques
-- 🤖 Meta robots personnalisables
-- 🖼️ Génération automatique des métadonnées depuis les images
+- Configuration globale des métadonnées SEO
+- Balises Open Graph pour les réseaux sociaux
+- Twitter Cards
+- Sitemap XML multilingue automatique
+- Flux RSS par langue
+- URLs canoniques
+- Meta robots personnalisables
+- Génération automatique des métadonnées depuis les images
+- Meta tags personnalisables par article
+- Image SEO par article avec redimensionnement automatique (1200x630 pour Open Graph)
 
 ### Interface d'administration
 
-- 📈 Tableau de bord avec statistiques
-- 🎨 Éditeur BBCode avec barre d'outils complète
-- 🖼️ Gestionnaire de médias avec upload et génération automatique de variantes (thumb, medium, large)
-- 📋 Configuration du menu de navigation
-- 🎨 Personnalisation des couleurs et du hero section
-- 🌍 Gestion des langues disponibles
-- 📄 Configuration du footer
-- 🌙 Mode sombre/clair
+- Tableau de bord avec statistiques
+- Éditeur BBCode avec barre d'outils complète
+- Gestionnaire de médias avec upload et génération automatique de variantes (thumb, medium, large)
+- Configuration du menu de navigation
+- Personnalisation des couleurs et du hero section
+- Gestion des langues disponibles
+- Configuration du footer
+- Mode sombre/clair
 
 ### Performance et optimisation
 
-- ⚡ Génération statique complète pour un chargement ultra-rapide
-- 🖼️ Optimisation automatique des images avec génération de variantes WebP
-- 💾 Cache des assets statiques
-- 🚫 Fichier `.nojekyll` pour compatibilité GitHub Pages
-- 📁 Structure de dossiers optimisée pour le SEO
+- Génération statique complète pour un chargement ultra-rapide
+- Optimisation automatique des images avec génération de variantes WebP
+- Cache des assets statiques
+- Fichier `.nojekyll` pour compatibilité GitHub Pages
+- Structure de dossiers optimisée pour le SEO
 
-### Intégration PostgreSQL
+### Intégration PostgreSQL (optionnel)
 
-- 🐘 Support optionnel de PostgreSQL pour la journalisation
-- 📚 Historique des versions des articles
-- 📊 Compteurs de catégories et tags
-- 💾 Sauvegardes automatiques
-- 📋 Logs d'administration
+- Support optionnel de PostgreSQL pour la journalisation
+- Historique des versions des articles
+- Compteurs de catégories et tags
+- Sauvegardes automatiques
+- Logs d'administration
 
 ---
 
@@ -104,8 +117,8 @@ Cette version est spécialement optimisée pour être hébergée dans un sous-do
 | Markdown | 3.5.1 | Contenu des articles |
 | Pillow | 10.1.0 | Traitement d'images |
 | PyYAML | 6.0.1 | Configurations |
-| BBCode | Perso | Formatage riche |
-| CSS3 | - | Styles avec variables |
+| BBCode | Personnalisé | Formatage riche |
+| CSS3 | - | Styles avec variables CSS |
 | JavaScript | Vanilla | Interactivité |
 
 ### Structure des URLs en mode statique
@@ -151,10 +164,10 @@ git clone https://github.com/Lombard-Web-Services/github-blog.git
 cd github-blog
 ___bash___
 
-**Ou depuis l'archive ZIP :**
+**Ou téléchargez l'archive ZIP :**
 
 ___bash___
-wget https://github.com/Lombard-Web-Services/github-blog/blob/main/github-blog-static.zip
+wget https://github.com/Lombard-Web-Services/github-blog/raw/refs/heads/main/github-blog-static.zip
 unzip github-blog-static.zip
 cd github-blog
 ___bash___
@@ -196,7 +209,7 @@ ___yaml___
 site:
   title: "Mon Blog Multilingue"
   description: "Blog technique et créatif multilingue"
-  url: "https://lombard-web-services.github.io/github-blog/"
+  url: "https://votre-username.github.io/votre-repo/"
   language: "fr"
   author: "Votre Nom"
   email: "contact@example.com"
@@ -209,11 +222,12 @@ ___yaml___
 
 ___yaml___
 enabled: true
-base_url: /github-blog/dist
+base_url: /votre-repo/dist
 output_dir: dist
 auto_build_on_publish: false
 ___yaml___
 
+**Notes :**
 - `base_url` : URL de base pour la version statique (ex: `/mon-repo/dist`)
 - Laissez vide pour des chemins relatifs
 
@@ -243,10 +257,15 @@ ___yaml___
 languages:
   - code: fr
     name: Français
-    flag: 🇫🇷
+    flag: "🇫🇷"
     direction: ltr
     enabled: true
     default: true
+  - code: en
+    name: English
+    flag: "🇬🇧"
+    direction: ltr
+    enabled: true
 ___yaml___
 
 #### Hero Section
@@ -281,6 +300,9 @@ seo:
     type: "website"
     locale: "fr_FR"
     site_name: "Mon Blog"
+  images:
+    default_og: "/static/images/og-default.jpg"
+    default_twitter: "/static/images/twitter-default.jpg"
 ___yaml___
 
 ---
@@ -298,7 +320,7 @@ ___bash___
 **Génération avec URL de base personnalisée :**
 
 ___bash___
-python3 build.py --static --base-url "/github-blog/dist"
+python3 build.py --static --base-url "/votre-repo/dist"
 ___bash___
 
 **Génération pour GitHub Pages :**
@@ -335,8 +357,10 @@ draft: false
 image: "/static/uploads/image-couverture.jpg"
 language: "fr"
 hide_from_home: false
+hidden: false
 seo_title: "Titre SEO personnalisé"
 seo_description: "Description SEO personnalisée"
+seo_image: "/static/uploads/seo-image.jpg"
 ---
 
 Contenu de l'article en BBCode...
@@ -348,6 +372,24 @@ Contenu de l'article en BBCode...
 print("Hello World")
 [/code]
 ___markdown___
+
+**Champs disponibles :**
+
+| Champ | Type | Description |
+|-------|------|-------------|
+| `title` | string | Titre de l'article |
+| `date` | string | Date de publication (YYYY-MM-DD) |
+| `description` | string | Description pour le SEO |
+| `tags` | array | Liste des tags |
+| `category` | string | Catégorie de l'article |
+| `draft` | boolean | Brouillon (true/false) |
+| `image` | string | Image de couverture |
+| `language` | string | Code langue (fr, en, etc.) |
+| `hide_from_home` | boolean | Masquer de la page d'accueil |
+| `hidden` | boolean | Article masqué (accessible par URL uniquement) |
+| `seo_title` | string | Titre SEO personnalisé |
+| `seo_description` | string | Description SEO personnalisée |
+| `seo_image` | string | Image SEO spécifique (1200x630 recommandé) |
 
 ### Commandes disponibles
 
@@ -426,7 +468,7 @@ votre-depot/
 │   └── config/
 ├── templates/            # Templates Jinja2
 ├── static/               # Assets sources
-└── dist/                 # ⭐ VERSION STATIQUE (déployée)
+└── dist/                 # VERSION STATIQUE (déployée)
     ├── index.html
     ├── fr/
     ├── en/
@@ -494,12 +536,14 @@ github-blog/
 │   ├── js/                  # JavaScript
 │   │   ├── main.js          # Fonctionnalités principales
 │   │   ├── search.js        # Moteur de recherche
+│   │   ├── bbcode-parser.js # Parseur BBCode frontend
 │   │   └── admin/           # Administration
 │   │       ├── api.js
-│   │       └── editor.js
+│   │       ├── editor.js
+│   │       └── media.js
 │   └── images/              # Images par défaut
 │
-└── dist/                    # ⭐ OUTPUT STATIQUE (à déployer)
+└── dist/                    # OUTPUT STATIQUE (à déployer)
     ├── index.html
     ├── 404.html
     ├── sitemap.xml
@@ -552,11 +596,11 @@ Depuis l'interface d'administration : **Settings > PostgreSQL > "Créer les tabl
 
 | Fonctionnalité | Description |
 |----------------|-------------|
-| 📝 Journalisation | Toutes les actions administrateur sont loguées |
-| 📚 Historique | Chaque modification d'article est versionnée |
-| 📊 Statistiques | Compteurs de catégories et tags |
-| 💾 Sauvegardes | Export SQL automatique |
-| 🔍 Recherche | Indexation avancée (optionnel) |
+| Journalisation | Toutes les actions administrateur sont loguées |
+| Historique | Chaque modification d'article est versionnée |
+| Statistiques | Compteurs de catégories et tags |
+| Sauvegardes | Export SQL automatique |
+| Recherche | Indexation avancée (optionnel) |
 
 ### Commandes PostgreSQL utiles
 
@@ -590,7 +634,7 @@ ___yaml___
 languages:
   - code: es
     name: Español
-    flag: 🇪🇸
+    flag: "🇪🇸"
     direction: ltr
     enabled: true
 ___yaml___
@@ -619,7 +663,7 @@ ___yaml___
 lang: fr
 direction: ltr
 name: Français
-flag: 🇫🇷
+flag: "🇫🇷"
 
 nav:
   home: "Accueil"
@@ -664,8 +708,8 @@ ___bash___
 
 **Solution :** Assurez-vous que les URLs incluent la langue
 
-```python
-# Dans vos templates, utilisez toujours make_url()
+```html
+<!-- Dans vos templates, utilisez toujours make_url() -->
 <a href="{{ make_url('/' + current_lang + '/blog/' + post.slug + '/') }}">
 ```
 
@@ -722,24 +766,24 @@ copies or substantial portions of the Software.
 
 ---
 
-## Support
+## Support et contact
 
-- 📖 **Documentation** : https://github.com/Lombard-Web-Services/github-blog
-- 🐛 **Issues** : https://github.com/Lombard-Web-Services/github-blog/issues
-- 📧 **Email** : contact@lombard-web-services.com
+- **Documentation** : https://github.com/Lombard-Web-Services/github-blog
+- **Issues** : https://github.com/Lombard-Web-Services/github-blog/issues
+- **Email** : contact@lombard-web-services.com
 
 ---
 
 ## Remerciements
 
-- 🐍 Python Software Foundation
-- 🎨 Jinja2 contributors
-- 📝 Markdown project
-- 🖼️ Pillow developers
-- 🌍 Toute la communauté open source
+- Python Software Foundation
+- Jinja2 contributors
+- Markdown project
+- Pillow developers
+- Toute la communauté open source
 
 ---
 
 <p align="center">
-  <strong>⭐ Star ce projet si vous le trouvez utile ! ⭐</strong>
+  <strong>Star ce projet si vous le trouvez utile !</strong>
 </p>
