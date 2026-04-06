@@ -780,7 +780,7 @@ copies or substantial portions of the Software.
 - Jinja2 contributors
 - Markdown project
 - Pillow developers
-- Toute la communauté open source
+- Toute la communauté open source et Kimi et DeepSeek
 
 ---
 
