@@ -31,7 +31,7 @@ Cette version est spécialement optimisée pour être hébergée dans un sous-do
 
 **Lien de téléchargement :** [github-blog-static.zip](https://github.com/Lombard-Web-Services/github-blog/raw/refs/heads/main/github-blog-static.zip)
 
-### 📸 Aperçu de la Version Statique
+### Aperçu de la Version Statique
 
 Visible dans **http://localhost:8000/admin/static**
 
