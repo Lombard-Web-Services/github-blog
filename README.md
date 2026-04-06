@@ -159,24 +159,24 @@ https://votre-user.github.io/mon-repo/dist/
 
 **Depuis le dépôt GitHub :**
 
-___bash___
+___```___
 git clone https://github.com/Lombard-Web-Services/github-blog.git
 cd github-blog
-___bash___
+___```___
 
 **Ou téléchargez l'archive ZIP :**
 
-___bash___
+___```___
 wget https://github.com/Lombard-Web-Services/github-blog/raw/refs/heads/main/github-blog-static.zip
 unzip github-blog-static.zip
 cd github-blog
-___bash___
+___```___
 
 #### 2. Installation des dépendances
 
-___bash___
+___```___
 pip install -r requirements.txt
-___bash___
+___```___
 
 **Dépendances installées :**
 
@@ -192,10 +192,10 @@ ___bash___
 
 #### 3. Vérification de l'installation
 
-___bash___
+___```___
 python3 --version
 pip list | grep -E "markdown|PyYAML|Jinja2|Pillow"
-___bash___
+___```___
 
 ---
 
@@ -313,29 +313,29 @@ ___yaml___
 
 **Génération simple (chemins relatifs) :**
 
-___bash___
+___```___
 python3 build.py --static
-___bash___
+___```___
 
 **Génération avec URL de base personnalisée :**
 
-___bash___
+___```___
 python3 build.py --static --base-url "/votre-repo/dist"
-___bash___
+___```___
 
 **Génération pour GitHub Pages :**
 
-___bash___
+___```___
 python3 build.py --static --base-url "/mon-repo/dist"
-___bash___
+___```___
 
 ### Création d'articles
 
 **Via ligne de commande :**
 
-___bash___
+___```___
 python3 new_post.py "Titre de mon article"
-___bash___
+___```___
 
 **Via l'interface d'administration :**
 
@@ -409,9 +409,9 @@ ___markdown___
 
 #### 1. Générez la version statique
 
-___bash___
+___```___
 python3 build.py --static --base-url "/votre-repo/dist"
-___bash___
+___```___
 
 #### 2. Configurez GitHub Pages
 
@@ -432,19 +432,19 @@ https://votre-username.github.io/votre-repo/dist/
 
 #### 1. Créez la branche gh-pages
 
-___bash___
+___```___
 git checkout --orphan gh-pages
 git rm -rf .
-___bash___
+___```___
 
 #### 2. Copiez les fichiers générés
 
-___bash___
+___```___
 cp -r dist/* .
 git add .
 git commit -m "Deploy static blog"
 git push origin gh-pages
-___bash___
+___```___
 
 #### 3. Configurez GitHub Pages
 
@@ -606,21 +606,21 @@ Depuis l'interface d'administration : **Settings > PostgreSQL > "Créer les tabl
 
 **Sauvegarde manuelle :**
 
-___bash___
+___```___
 python3 -c "from database import db_manager; db_manager.load_config(); db_manager.create_backup()"
-___bash___
+___```___
 
 **Consultation des logs :**
 
-___bash___
+___```___
 psql -d blog -c "SELECT * FROM admin_logs ORDER BY created_at DESC LIMIT 10;"
-___bash___
+___```___
 
 **Statistiques :**
 
-___bash___
+___```___
 psql -d blog -c "SELECT * FROM categories ORDER BY post_count DESC;"
-___bash___
+___```___
 
 ---
 
@@ -641,9 +641,9 @@ ___yaml___
 
 #### 2. Créez le fichier de traduction
 
-___bash___
+___```___
 cp content/config/i18n/fr.yaml content/config/i18n/es.yaml
-___bash___
+___```___
 
 #### 3. Traduisez le contenu du fichier
 
@@ -692,17 +692,17 @@ ___yaml___
 
 **Solution :** Vérifiez que le fichier `templates/404.html` existe.
 
-___bash___
+___```___
 ls -la templates/404.html
-___bash___
+___```___
 
 #### Les images ne s'affichent pas en mode statique
 
 **Solution :** Vérifiez votre configuration `base_url`
 
-___bash___
+___```___
 python3 build.py --static --base-url "/votre-chemin/dist"
-___bash___
+___```___
 
 #### Les liens des articles sont cassés
 
@@ -717,18 +717,18 @@ ___bash___
 
 **Solution :** Validez la syntaxe YAML
 
-___bash___
+___```___
 python3 -c "import yaml; yaml.safe_load(open('content/config/i18n/fr.yaml'))"
-___bash___
+___```___
 
 #### Le build statique échoue
 
 **Solution :** Nettoyez et relancez
 
-___bash___
+___```___
 rm -rf dist/
 python3 build.py --static --base-url "/votre-chemin/dist"
-___bash___
+___```___
 
 ### Logs et debug
 
@@ -742,9 +742,9 @@ logging.basicConfig(level=logging.DEBUG)
 
 **Consultez les logs du serveur :**
 
-___bash___
+___```___
 python3 serve.py 2>&1 | tee server.log
-___bash___
+___```___
 
 ---
 
