@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <base href="/github-blog/dist/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de description de la license de Github-Blog">
+
+    <title>License | Mon Blog Multilingue</title>
+
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <meta property="og:title" content="License" />
+    <meta property="og:description" content="Page de description de la license de Github-Blog" />
+    <meta property="og:image" content="/github-blog/dist/static/uploads/39cba30f9da14d059c009e3f1818c402.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="License" />
+    <meta property="og:url" content="/github-blog/dist/fr/blog/license/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Mon Blog Multilingue" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="License" />
+    <meta name="twitter:description" content="Page de description de la license de Github-Blog" />
+    <meta name="twitter:image" content="/github-blog/dist/static/uploads/39cba30f9da14d059c009e3f1818c402.png" />
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Mon Blog Multilingue">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#000000">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <link rel="canonical" href="License" />
+
+    <link rel="icon" type="image/x-icon" href="/github-blog/dist/static/images/favicon.ico">
+
+    <link rel="stylesheet" href="/github-blog/dist/static/css/main.css">
+    <link rel="stylesheet" href="/github-blog/dist/static/css/code.css">
+    <link rel="stylesheet" href="/github-blog/dist/static/css/dark.css">
+
+        <link rel="alternate" type="application/rss+xml" title="Mon Blog Multilingue - Flux RSS" href="/github-blog/dist/fr/feed.xml" />
+</head></head>
+<body>
+<header class="site-header">
+    <nav class="main-nav">
+        <div class="nav-brand">
+                <a href="/github-blog/dist/fr/" class="site-title">Github-Blog</a>
+        </div>
+
+        <div class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/" class="nav-link" >
+                        Accueil
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/articles/" class="nav-link" >
+                        Articles
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/blog/a-propos/" class="nav-link" >
+                        À propos
+                    </a>
+                </li>
+            </ul>
+
+            <a href="/github-blog/dist/fr/search" class="search-link" title="Rechercher">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </a>
+
+            <div class="language-switcher">
+                <select id="lang-select" onchange="switchLanguage(this.value)">
+                    <option value="fr" selected>
+                        🇫🇷 Français
+                    </option>
+                    <option value="en" >
+                        🇬🇧 English
+                    </option>
+                    <option value="ar" >
+                        🇸🇦 العربية
+                    </option>
+                    <option value="hi" >
+                        🇮🇳 हिन्दी
+                    </option>
+                    <option value="zh" >
+                        🇨🇳 中文
+                    </option>
+                    <option value="ary" >
+                        🇲🇦 الدارجة
+                    </option>
+                    <option value="ber" >
+                        ⵣ ⵜⴰⵎⴰⵣⵉⵖⵜ
+                    </option>
+                </select>
+            </div>
+
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer de thème">
+                <span class="theme-icon-light">☀️</span>
+                <span class="theme-icon-dark">🌙</span>
+            </button>
+        </div>
+
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<script>
+function switchLanguage(lang) {
+    const currentPath = window.location.pathname;
+    const currentLang = 'fr';
+    const baseUrl = '/github-blog/dist';
+    const multilingualEnabled = true;
+
+    if (!multilingualEnabled) return;
+
+    if (lang !== currentLang) {
+        let newPath = currentPath.replace('/' + currentLang, '/' + lang);
+        if (newPath === currentPath) {
+            newPath = '/' + lang + currentPath;
+        }
+        if (baseUrl && newPath) {
+            if (!newPath.startsWith(baseUrl)) {
+                newPath = baseUrl + newPath;
+            }
+        }
+        window.location.href = newPath;
+    }
+}
+
+function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+
+function toggleMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    if (navMenu && menuToggle) {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    }
+}
+
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+        document.documentElement.classList.add('dark');
+    }
+})();
+
+document.addEventListener('click', function(e) {
+    const navMenu = document.querySelector('.nav-menu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    if (navMenu && navMenu.classList.contains('active') && 
+        !navMenu.contains(e.target) && 
+        menuToggle && !menuToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+</script>    
+    <main class="main-content">
+<article class="post-single" id="article-top">
+    <div class="container container-lg">
+        <header class="post-header">
+            <div class="post-meta">
+                <time datetime="2026-04-07T03:34:51.706913">
+                        07 April 2026
+                </time>
+                <span class="post-category">presentation</span>
+            </div>
+            <h1 id="post-title">License</h1>
+            <p class="post-description" data-bbcode-description="Page de description de la license de Github-Blog"></p>
+        </header>
+
+        <figure class="post-hero-image">
+            <img src="/static/uploads/39cba30f9da14d059c009e3f1818c402.png" alt="License" id="post-image" loading="lazy">
+        </figure>
+
+        <div class="elegant-separator">
+            <span class="separator-line"></span>
+            <span class="separator-icon">✦</span>
+            <span class="separator-line"></span>
+        </div>
+
+        <div class="post-body" id="post-content" data-bbcode-content="---
+canonical_url: License
+category: presentation
+date: &#39;2026-04-06&#39;
+description: Page de description de la license de Github-Blog
+draft: false
+hide_from_home: true
+image: /static/uploads/39cba30f9da14d059c009e3f1818c402.png
+language: fr
+og_description: Page de description de la license de Github-Blog
+og_image: /static/uploads/39cba30f9da14d059c009e3f1818c402.png
+og_title: License
+parent_slug: null
+seo_description: Page de description de la license de Github-Blog
+seo_title: License
+tags:
+- MIT
+- License
+title: License
+twitter_description: Page de description de la license de Github-Blog
+twitter_image: /static/uploads/39cba30f9da14d059c009e3f1818c402.png
+twitter_title: License
+---
+
+[h1] Licence MIT - GitHub Blog[/h1]
+
+[h4]Chers utilisateurs, développeurs, contributeurs et amis du libre,[/h4]
+
+Cette page définit les termes légaux sous lesquels GitHub Blog vous est offert. Elle garantit votre liberté d&#39;utiliser, modifier et partager ce projet tout en protégeant les créateurs originaux.
+
+Cette licence est votre passeport vers une utilisation sans contrainte de GitHub Blog, que vous soyez particulier, entreprise, ou institution.
+
+Les licences restrictives et propriétaires appartiennent à un autre monde. Avec GitHub Blog, vous bénéficiez de la plus grande liberté que le droit d&#39;auteur puisse offrir.
+
+ [h4]À gauche[/h4], vos droits d&#39;utilisation.
+ [h4]En haut[/h4], la protection des contributeurs.
+ [h4]À droite[/h4], vos obligations minimales.
+ [h4]Partout[/h4], la philosophie du logiciel libre.
+
+[h2] Qu&#39;est-ce que la Licence MIT ?[/h2]
+
+La [h4]Licence MIT[/h4] est l&#39;une des licences open source les plus permissives et les plus utilisées dans le monde du développement logiciel. Elle vous accorde une liberté quasi-totale sur le logiciel.
+
+[h3] Caractéristiques Principales[/h3]
+
+ [h4]Permissive[/h4] - Vous pouvez faire presque tout ce que vous voulez avec le code
+
+ [h4]Simple[/h4] - Rédigée en langage clair, compréhensible par tous
+
+ [h4]Courte[/h4] - Seulement quelques paragraphes pour couvrir l&#39;essentiel
+
+ [h4]Compatible[/h4] - Fonctionne avec d&#39;autres licences, y compris propriétaires
+
+Créée au Massachusetts Institute of Technology (MIT) dans les années 1980, cette licence est devenue le standard de l&#39;industrie pour sa clarté et sa flexibilité.
+
+[h2] Ce Que Vous Pouvez Faire[/h2]
+
+[h4]Vous êtes libres de :[/h4]
+
+[html]&lt;div style=&#34;display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;&#34;&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Utiliser&lt;/strong&gt;&lt;br&gt;
+Utiliser GitHub Blog pour n&#39;importe quel projet, personnel ou commercial
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Copier&lt;/strong&gt;&lt;br&gt;
+Faire des copies du logiciel sans restriction de nombre
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Modifier&lt;/strong&gt;&lt;br&gt;
+Adapter le code à vos besoins spécifiques
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Fusionner&lt;/strong&gt;&lt;br&gt;
+Intégrer GitHub Blog dans d&#39;autres projets
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Publier&lt;/strong&gt;&lt;br&gt;
+Distribuer le logiciel original ou modifié
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Vendre&lt;/strong&gt;&lt;br&gt;
+Commercialiser des produits basés sur GitHub Blog
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Sous-licencier&lt;/strong&gt;&lt;br&gt;
+Accorder des droits à d&#39;autres personnes
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Garder privé&lt;/strong&gt;&lt;br&gt;
+Ne pas publier vos modifications si vous ne le souhaitez pas
+&lt;/div&gt;
+&lt;/div&gt;[/html]
+
+[h3] Cas d&#39;Usage Concrets[/h3]
+
+ [h4]Blog personnel[/h4] - Créez votre blog sans aucune restriction
+
+ [h4]Site d&#39;entreprise[/h4] - Utilisez GitHub Blog pour votre entreprise, gratuitemen
+
+ [h4]Projet client[/h4] - Intégrez-le dans des solutions pour vos clients
+
+ [h4]Produit commercial[/h4] - Vendez un service basé sur GitHub Blog
+
+ [h4]Fork et modification[/h4] - Créez votre propre version sans demander la permission
+
+[h2] Conditions Minimales à Respecter[/h2]
+
+[h4]Pour bénéficier de ces droits, vous devez uniquement :[/h4]
+
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%); padding: 20px; border-radius: 10px; color: #92400e; margin: 20px 0;&#34;&gt;
+&lt;strong&gt; Obligation unique : Inclure la notice de copyright et la licence&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
+Dans tout fichier distribué ou documentation, vous devez inclure :
+&lt;ul style=&#34;margin-top: 10px;&#34;&gt;
+&lt;li&gt;La mention de copyright originale&lt;/li&gt;
+&lt;li&gt;Le texte de la licence MIT&lt;/li&gt;
+&lt;li&gt;L&#39;autorisation explicite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;[/html]
+
+[h3] Comment Respecter Cette Condition[/h3]
+
+ [h4]Dans votre footer[/h4] - Ajoutez : &#34;Propulsé par GitHub Blog - Licence MIT&#34;
+
+ [h4]Dans un fichier LICENSE[/h4] - Copiez le texte complet de la licence MIT
+
+ [h4]Dans votre code source[/h4] - Conservez les en-têtes de copyright originaux
+
+ [h4]Dans votre documentation[/h4] - Mentionnez GitHub Blog et sa licence
+
+[h2] Texte Complet de la Licence MIT[/h2]
+
+[html]&lt;div style=&#34;background: #1e293b; color: #e2e8f0; padding: 25px; border-radius: 10px; margin: 20px 0; font-family: monospace; font-size: 13px; line-height: 1.6; overflow-x: auto;&#34;&gt;
+MIT License&lt;br&gt;&lt;br&gt;
+Copyright (c) 2026 Thibaut Lombard&lt;br&gt;
+Copyright (c) 2026 Lombard Web Services&lt;br&gt;&lt;br&gt;
+Permission is hereby granted, free of charge, to any person obtaining a copy&lt;br&gt;
+of this software and associated documentation files (the &#34;Software&#34;), to deal&lt;br&gt;
+in the Software without restriction, including without limitation the rights&lt;br&gt;
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&lt;br&gt;
+copies of the Software, and to permit persons to whom the Software is&lt;br&gt;
+furnished to do so, subject to the following conditions:&lt;br&gt;&lt;br&gt;
+The above copyright notice and this permission notice shall be included in all&lt;br&gt;
+copies or substantial portions of the Software.&lt;br&gt;&lt;br&gt;
+THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&lt;br&gt;
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&lt;br&gt;
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&lt;br&gt;
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&lt;br&gt;
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&lt;br&gt;
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&lt;br&gt;
+SOFTWARE.
+&lt;/div&gt;[/html]
+
+[h2] Exclusion de Garantie[/h2]
+
+[h4]Clause importante à comprendre :[/h4]
+
+Le logiciel est fourni &#34;tel quel&#34;, sans aucune garantie.
+
+ [h4]Pas de garantie de fonctionnement[/h4] - Le logiciel peut contenir des bugs
+
+ [h4]Pas de garantie de compatibilité[/h4] - Pas d&#39;assurance pour tous les environnements
+
+ [h4]Pas de garantie de sécurité[/h4] - Vous êtes responsable de la sécurité de votre installation
+
+ [h4]Pas de support obligatoire[/h4] - Les auteurs ne sont pas tenus de vous aider
+
+[html]&lt;div style=&#34;background: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0;&#34;&gt;
+&lt;strong&gt; Responsabilité :&lt;/strong&gt; En utilisant GitHub Blog, vous acceptez que ni Thibaut Lombard ni Lombard Web Services ne puissent être tenus responsables de problèmes éventuels. Vous utilisez ce logiciel à vos propres risques.
+&lt;/div&gt;[/html]
+
+[h2] Différences avec d&#39;Autres Licences[/h2]
+
+[h3]MIT vs GPL[/h3]
+
+[html]&lt;table style=&#34;width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px;&#34;&gt;
+&lt;thead&gt;
+&lt;tr style=&#34;background-color: #f4f4f4;&#34;&gt;
+&lt;th style=&#34;padding: 12px; border: 1px solid #ddd; text-align: left;&#34;&gt;Aspect&lt;/th&gt;
+&lt;th style=&#34;padding: 12px; border: 1px solid #ddd; text-align: left;&#34;&gt;MIT (GitHub Blog)&lt;/th&gt;
+&lt;th style=&#34;padding: 12px; border: 1px solid #ddd; text-align: left;&#34;&gt;GPL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt;Utilisation commerciale&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Autorisée&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Autorisée&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&#34;background-color: #f9f9f9;&#34;&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt;Modification&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Sans restriction&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Doit rester GPL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt;Propriétaire&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Peut devenir propriétaire&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Doit rester open source&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&#34;background-color: #f9f9f9;&#34;&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt;Copyleft&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Non (très permissive)&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Oui (virale)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;[/html]
+
+[h4]En résumé :[/h4] La MIT vous donne plus de liberté que la GPL car elle n&#39;impose pas que vos modifications restent open source.
+
+[h2] Pourquoi Avoir Chosi la MIT ?[/h2]
+
+[h4]Notre philosophie derrière ce choix :[/h4]
+
+[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;
+&lt;li&gt; [h4]Maximiser l&#39;adoption[/h4] - Pas de barrières pour les entreprises&lt;/li&gt;
+&lt;li&gt; [h4]Encourager la contribution[/h4] - Même les modifications privées profitent à l&#39;écosystème&lt;/li&gt;
+&lt;li&gt; [h4]Simplicité juridique[/h4] - Pas besoin de conseil juridique pour comprendre&lt;/li&gt;
+&lt;li&gt; [h4]Confiance[/h4] - Nous croyons que la liberté génère plus de valeur&lt;/li&gt;
+&lt;/ul&gt;[/html]
+
+[h2] Questions Fréquentes (FAQ)[/h2]
+
+[h3]Puis-je vendre un blog créé avec GitHub Blog ?[/h3]
+
+[h4]Oui, absolument.[/h4] Vous pouvez vendre des sites créés avec GitHub Blog, proposer des services d&#39;installation, ou vendre des templates dérivés. Aucune redevance n&#39;est due.
+
+[h3]Dois-je publier mes modifications ?[/h3]
+
+[h4]Non.[/h4] Contrairement à la GPL, la MIT ne vous oblige pas à publier vos modifications. Vous pouvez garder votre version privée ou la rendre propriétaire.
+
+[h3]Puis-je retirer la mention de copyright ?[/h3]
+
+[h4]Non.[/h4] Vous devez conserver la notice de copyright originale dans le code source et la documentation. C&#39;est la seule obligation réelle.
+
+[h3]Que se passe-t-il si je ne respecte pas la licence ?[/h3]
+
+[h4]Juridiquement,[/h4] vous perdez le droit d&#39;utiliser le logiciel. Dans la pratique, il suffit généralement de corriger l&#39;oubli pour régulariser la situation.
+
+[h3]La licence MIT est-elle valide en France ?[/h3]
+
+[h4]Oui.[/h4] Elle est reconnue internationalement et compatible avec le droit français.
+
+[h2] Contact et Questions Légales[/h2]
+
+Si vous avez des questions spécifiques sur l&#39;utilisation de GitHub Blog dans un contexte particulier :
+
+ [h4]Questions générales[/h4] : contact@lombard-web-services.com
+
+ [h4]Twitter / X[/h4] : [url=https://x.com/lombardweb]@lombardweb[/url]
+
+ [h4]Issues GitHub[/h4] : [url=https://github.com/Lombard-Web-Services/github-blog/issues]github.com/Lombard-Web-Services/github-blog/issues[/url]
+
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0; text-align: center;&#34;&gt;
+&lt;strong&gt; Profitez de votre liberté !&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
+La licence MIT est un cadeau de la communauté open source.&lt;br&gt;
+Utilisez-la, partagez-la, et contribuez à faire un web meilleur.
+&lt;/div&gt;[/html]
+
+[h2] Ressources Complémentaires[/h2]
+
+ [h4]Site officiel de la licence MIT[/h4] : [url=https://opensource.org/licenses/MIT]opensource.org/licenses/MIT[/url]
+
+ [h4]Explications détaillées (FR)[/h4] : [url=https://www.gnu.org/licenses/license-list.fr.html#Expat]gnu.org/licenses/license-list.fr.html[/url]
+
+ [h4]Comparateur de licences[/h4] : [url=https://choosealicense.com/]choosealicense.com[/url]
+
+[h2] Remerciements[/h2]
+
+Merci à la Free Software Foundation et au MIT pour avoir créé et popularisé cette licence qui rend le monde du logiciel meilleur.
+
+[h4]Utilisez GitHub Blog en toute liberté et créez sans limites ![/h4]
+
+---
+
+[html]&lt;p align=&#34;center&#34; style=&#34;margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;&#34;&gt;
+&lt;strong&gt; Licence MIT - GitHub Blog&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Liberté, Simplicité, Confiance&lt;/em&gt;&lt;br&gt;
+Copyright © 2026 Thibaut Lombard - Lombard Web Services&lt;br&gt;
+&lt;a href=&#34;https://x.com/lombardweb&#34; style=&#34;color: #fff; text-decoration: underline;&#34;&gt;@lombardweb&lt;/a&gt;
+&lt;/p&gt;[/html]">
+        </div>
+
+
+        <div class="share-section">
+            <h3>Partager</h3>
+            <div class="share-buttons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/" 
+                   target="_blank" rel="noopener" class="share-btn facebook">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    Facebook
+                </a>
+
+                <a href="https://twitter.com/intent/tweet?url=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/&text=License" 
+                   target="_blank" rel="noopener" class="share-btn twitter">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    X (Twitter)
+                </a>
+
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/" 
+                   target="_blank" rel="noopener" class="share-btn linkedin">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+
+                <a href="https://bsky.app/intent/compose?text=License%20https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/" 
+                   target="_blank" rel="noopener" class="share-btn bluesky">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    Bluesky
+                </a>
+
+                <button onclick="copyLink()" class="share-btn copy">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    Copier le lien
+                </button>
+            </div>
+        </div>
+
+    </div>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function decodeHtmlEntities(encoded) {
+        const textarea = document.createElement('textarea');
+        textarea.innerHTML = encoded;
+        return textarea.value;
+    }
+
+    const descEl = document.querySelector('.post-description');
+    if (descEl && typeof parseBBCode === 'function') {
+        const bbcodeDesc = descEl.getAttribute('data-bbcode-description');
+        if (bbcodeDesc) {
+            const decodedDesc = decodeHtmlEntities(bbcodeDesc);
+            descEl.innerHTML = parseBBCode(decodedDesc);
+        }
+    }
+
+    const contentEl = document.getElementById('post-content');
+    if (contentEl && typeof parseBBCode === 'function') {
+        const bbcodeContent = contentEl.getAttribute('data-bbcode-content');
+        if (bbcodeContent) {
+            const decodedContent = decodeHtmlEntities(bbcodeContent);
+            const contentMatch = decodedContent.match(/---[\s\S]*?---\s*([\s\S]*)/);
+            const actualContent = contentMatch ? contentMatch[1] : decodedContent;
+            contentEl.innerHTML = parseBBCode(actualContent);
+        }
+    }
+});
+
+function copyLink() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+        alert('Lien copié !');
+    });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.pushState(null, null, this.getAttribute('href'));
+        }
+    });
+});
+</script>
+
+    </main>
+    
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/">Accueil</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/articles/">Tous les articles</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/blog/a-propos/">À propos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/feed.xml">Flux RSS</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/sitemap.xml">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/blog/license/">License</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Réseaux sociaux</h4>
+                    <ul>
+                        <li>
+                                <a href="https://github.com/Lombard-Web-Services" target="_blank" rel="noopener noreferrer">github</a>
+                        </li>
+                        <li>
+                                <a href="https://x.com/lombardweb" target="_blank" rel="noopener noreferrer">X</a>
+                        </li>
+                        <li>
+                                <a href="https://bsky.app/profile/lombardweb.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                    XVL1456 Copyright 2026
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.querySelectorAll('.footer-bottom p').forEach(el => {
+    el.innerHTML = el.innerHTML.replace('{year}', new Date().getFullYear());
+});
+</script>    
+    <script src="/github-blog/dist/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <base href="/github-blog/dist/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La rédaction d&#39;articles de blog">
+
+    <title>Premier article | Mon Blog Multilingue</title>
+
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <meta property="og:title" content="Mon premier article" />
+    <meta property="og:description" content="voila le article" />
+    <meta property="og:image" content="http://localhost/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mon premier article" />
+    <meta property="og:url" content="/github-blog/dist/fr/blog/mon-premier-article/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Mon Blog Multilingue" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mon premier article" />
+    <meta name="twitter:description" content="voila le article" />
+    <meta name="twitter:image" content="http://localhost/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png" />
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Mon Blog Multilingue">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#000000">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <link rel="canonical" href="&#39;&#39;" />
+
+    <link rel="icon" type="image/x-icon" href="/github-blog/dist/static/images/favicon.ico">
+
+    <link rel="stylesheet" href="/github-blog/dist/static/css/main.css">
+    <link rel="stylesheet" href="/github-blog/dist/static/css/code.css">
+    <link rel="stylesheet" href="/github-blog/dist/static/css/dark.css">
+
+        <link rel="alternate" type="application/rss+xml" title="Mon Blog Multilingue - Flux RSS" href="/github-blog/dist/fr/feed.xml" />
+</head></head>
+<body>
+<header class="site-header">
+    <nav class="main-nav">
+        <div class="nav-brand">
+                <a href="/github-blog/dist/fr/" class="site-title">Github-Blog</a>
+        </div>
+
+        <div class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/" class="nav-link" >
+                        Accueil
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/articles/" class="nav-link" >
+                        Articles
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/blog/a-propos/" class="nav-link" >
+                        À propos
+                    </a>
+                </li>
+            </ul>
+
+            <a href="/github-blog/dist/fr/search" class="search-link" title="Rechercher">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </a>
+
+            <div class="language-switcher">
+                <select id="lang-select" onchange="switchLanguage(this.value)">
+                    <option value="fr" selected>
+                        🇫🇷 Français
+                    </option>
+                    <option value="en" >
+                        🇬🇧 English
+                    </option>
+                    <option value="ar" >
+                        🇸🇦 العربية
+                    </option>
+                    <option value="hi" >
+                        🇮🇳 हिन्दी
+                    </option>
+                    <option value="zh" >
+                        🇨🇳 中文
+                    </option>
+                    <option value="ary" >
+                        🇲🇦 الدارجة
+                    </option>
+                    <option value="ber" >
+                        ⵣ ⵜⴰⵎⴰⵣⵉⵖⵜ
+                    </option>
+                </select>
+            </div>
+
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer de thème">
+                <span class="theme-icon-light">☀️</span>
+                <span class="theme-icon-dark">🌙</span>
+            </button>
+        </div>
+
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<script>
+function switchLanguage(lang) {
+    const currentPath = window.location.pathname;
+    const currentLang = 'fr';
+    const baseUrl = '/github-blog/dist';
+    const multilingualEnabled = true;
+
+    if (!multilingualEnabled) return;
+
+    if (lang !== currentLang) {
+        let newPath = currentPath.replace('/' + currentLang, '/' + lang);
+        if (newPath === currentPath) {
+            newPath = '/' + lang + currentPath;
+        }
+        if (baseUrl && newPath) {
+            if (!newPath.startsWith(baseUrl)) {
+                newPath = baseUrl + newPath;
+            }
+        }
+        window.location.href = newPath;
+    }
+}
+
+function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+
+function toggleMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    if (navMenu && menuToggle) {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    }
+}
+
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+        document.documentElement.classList.add('dark');
+    }
+})();
+
+document.addEventListener('click', function(e) {
+    const navMenu = document.querySelector('.nav-menu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    if (navMenu && navMenu.classList.contains('active') && 
+        !navMenu.contains(e.target) && 
+        menuToggle && !menuToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+</script>    
+    <main class="main-content">
+<article class="post-single" id="article-top">
+    <div class="container container-lg">
+        <header class="post-header">
+            <div class="post-meta">
+                <time datetime="2026-04-07T03:34:51.732507">
+                        07 April 2026
+                </time>
+                <span class="post-category">presentation</span>
+            </div>
+            <h1 id="post-title">Mon Premier Article</h1>
+            <p class="post-description" data-bbcode-description="La rédaction d&#39;articles de blog"></p>
+        </header>
+
+        <figure class="post-hero-image">
+            <img src="http://localhost/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png" alt="Mon Premier Article" id="post-image" loading="lazy">
+        </figure>
+
+        <div class="elegant-separator">
+            <span class="separator-line"></span>
+            <span class="separator-icon">✦</span>
+            <span class="separator-line"></span>
+        </div>
+
+        <div class="post-body" id="post-content" data-bbcode-content="---
+canonical_url: &#39;&#39;
+category: presentation
+date: &#39;2026-04-06&#39;
+description: La rédaction d&#39;articles de blog
+draft: false
+hide_from_home: false
+image: http://localhost/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png
+language: fr
+og_description: voila le article
+og_image: http://localhost/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png
+og_title: Mon premier article
+parent_slug: null
+seo_description: La rédaction d&#39;articles de blog
+seo_title: Premier article
+tags:
+- features
+title: Mon premier article
+twitter_description: voila le article
+twitter_image: http://localhost/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png
+twitter_title: Mon premier article
+---
+
+[h1] Bienvenue dans le GitHub Blog ![/h1]
+
+[h4]Cher développeur, créateur de contenu, passionné du web,[/h4]
+
+Nous sommes ravis de vous accueillir dans l&#39;écosystème GitHub Blog - Version Statique, la solution ultime pour créer et gérer votre blog professionnel avec une simplicité déconcertante.
+
+Cet article est votre guide de démarrage rapide pour découvrir toutes les merveilles que notre générateur de blog statique met à votre disposition. Préparez-vous à être ébloui !
+
+Les solutions compliquées et lourdes appartiennent désormais au passé. Avec GitHub Blog, tout devient fluide, élégant et performant.
+
+[h4]À gauche[/h4], vous trouverez la puissance de la génération statique.
+[h4]En haut[/h4], les performances optimisées pour GitHub Pages.
+[h4]À droite[/h4], une interface d&#39;administration intuitive.
+[h4]Partout[/h4], la flexibilité et la personnalisation.
+
+[h2] Un Blog Qui Parle Toutes Les Langues du Monde[/h2]
+
+Notre support multilingue est tout simplement [h4]exceptionnel[/h4]. Nous avons intégré 7 langues magnifiques pour que votre contenu touche les quatre coins de la planète :
+
+[h4]Français [/h4] - La langue de Molière, de la diplomatie et de l&#39;élégance. Parfaite pour un blog raffiné et littéraire.
+
+[h4]English [/h4] - La lingua franca du web, essentielle pour toucher une audience internationale et professionnelle.
+
+[h4]العربية (Arabe) [/h4] - Une langue d&#39;une beauté calligraphique inégalée, avec support complet [h4]RTL[/h4] (Right-to-Left) pour une expérience de lecture authentique et respectueuse des traditions.
+
+[h4]हिन्दी (Hindi) [/h4] - La langue du sous-continent indien, parlée par des centaines de millions de personnes, porteuse d&#39;une riche culture millénaire.
+
+[h4] (Chinois) [/h4] - L&#39;écriture la plus ancienne encore utilisée, idéale pour toucher le marché asiatique en pleine expansion.
+
+[h4]الدارجة (Darija) [/h4] - Le dialecte marocain, langue vivante et chaleureuse du Maghreb, avec son charme unique et son authenticité locale.
+
+[h4] (Tamazight/Berber) [/h4] - La langue amazighe, patrimoine culturel immatériel de l&#39;humanité, symbole de résilience et d&#39;identité berbère.
+
+Chaque langue est traitée avec le respect qu&#39;elle mérite, avec des drapeaux appropriés, des directions de lecture correctes (LTR ou RTL), et une détection automatique de la langue du navigateur de vos visiteurs !
+
+[h2] Maîtrisez la Visibilité de Vos Articles[/h2]
+
+Voici une fonctionnalité qui va [h4]révolutionner[/h4] votre gestion de contenu :
+
+Afficher ou masquer un article de la page d&#39;accueil !
+
+Dans notre éditeur d&#39;articles, vous disposez d&#39;une option magique : la case [h4]&#34;hide_from_home&#34;[/h4]. Cette fonctionnalité vous offre un contrôle total :
+
+[h4]Cochez cette option[/h4] → Votre article disparaît de la page d&#39;accueil et des listes d&#39;articles, mais reste accessible directement via son URL. Parfait pour les pages légales, CGV, mentions légales, ou articles confidentiels !
+
+[h4]Décochez cette option[/h4] → Votre article apparaît fièrement dans la grille des articles, visible de tous vos visiteurs.
+
+L&#39;astuce de pro : Utilisez cette fonction pour créer des landing pages spéciales, des pages de remerciement, ou du contenu premium accessible uniquement via un lien direct !
+
+[h2] La Puissance de PostgreSQL à Votre Service[/h2]
+Pour les utilisateurs avancés qui souhaitent aller plus loin, GitHub Blog propose une [h4]intégration PostgreSQL optionnelle[/h4] qui transforme votre blog en machine de guerre :
+
+[h4]Journalisation Complète[/h4] - Chaque action administrateur est loguée avec précision (création, modification, suppression d&#39;articles)
+
+[h4]Historique des Versions[/h4] - Chaque modification d&#39;article est versionnée. Vous pouvez revenir à n&#39;importe quelle version précédente !
+
+[h4]Statistiques Avancées[/h4] - Compteurs automatiques de catégories et tags, analyses de fréquence de publication
+
+[h4]Sauvegardes Automatiques[/h4] - Export SQL programmé pour sécuriser vos données
+
+[h4]Recherche Indexée[/h4] - Indexation avancée pour des recherches ultra-rapides dans votre contenu
+
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;
+&lt;strong&gt; Configuration simplifiée :&lt;/strong&gt; Activez PostgreSQL dans vos paramètres, créez vos tables en un clic depuis l&#39;interface d&#39;administration, et laissez la magie opérer !
+&lt;/div&gt;[/html]
+
+[h2] SEO Ultime : Dominez les Moteurs de Recherche[/h2]
+
+Notre éditeur d&#39;articles intègre un [h4]système SEO complet et professionnel[/h4]. Chaque article peut être optimisé avec les métadonnées suivantes :
+
+[h3] Métadonnées Globales[/h3]
+
+[h4]Title (Titre)[/h4] - Le titre principal de votre article, affiché dans l&#39;onglet du navigateur et les résultats de recherche
+
+[h4]Description[/h4] - Le résumé accrocheur qui apparaît sous votre lien dans Google (meta description)
+
+[h4]Robots[/h4] - Contrôlez l&#39;indexation avec des directives comme &#34;index, follow&#34; ou &#34;noindex, nofollow&#34;
+
+[h4]Canonical URL[/h4] - Évitez le contenu dupliqué en spécifiant l&#39;URL canonique de référence
+
+[h3] Open Graph (Facebook, LinkedIn...)[/h3]
+
+[h4]og:title[/h4] - Titre optimisé pour les partages sociaux
+
+[h4]og:description[/h4] - Description enrichie pour les réseaux sociaux
+
+[h4]og:image[/h4] - L&#39;image qui s&#39;affichera lors du partage (redimensionnée automatiquement en 1200x630 pixels !)
+
+[h4]og:type[/h4] - Type de contenu (article, website...)
+
+[h4]og:locale[/h4] - Langue et région (fr_FR, en_US...)
+
+[h4]og:site_name[/h4] - Nom de votre blog
+
+[h3] Twitter Cards[/h3]
+
+[h4]twitter:card[/h4] - Type de carte (summary, summary_large_image)
+
+[h4]twitter:title[/h4] - Titre spécifique pour Twitter
+
+[h4]twitter:description[/h4] - Description pour Twitter
+
+[h4]twitter:image[/h4] - Image optimisée pour Twitter
+
+[h4]twitter:site[/h4] - Votre handle Twitter (@votrecompte)
+
+[h4]twitter:creator[/h4] - Auteur du tweet
+
+[h3] Métadonnées Techniques[/h3]
+
+{} [h4]Theme Color[/h4] - Couleur de la barre d&#39;adresse sur mobile
+
+{} [h4]Author[/h4] - Nom de l&#39;auteur de l&#39;article
+
+{} [h4]Publisher[/h4] - Éditeur du contenu
+
+{} [h4]Keywords[/h4] - Mots-clés pertinents pour le référencement
+
+[h3] Images SEO Automatiques[/h3]
+
+Notre système gère automatiquement vos images SEO :
+
+[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;
+&lt;li&gt; Redimensionnement automatique en 1200x630px pour Open Graph&lt;/li&gt;
+&lt;li&gt; Format optimisé pour Twitter Cards&lt;/li&gt;
+&lt;li&gt; Génération de variants (thumb, medium, large)&lt;/li&gt;
+&lt;li&gt; Conversion WebP pour des performances maximales&lt;/li&gt;
+&lt;li&gt; Alt text personnalisable pour l&#39;accessibilité&lt;/li&gt;
+&lt;/ul&gt;[/html]
+
+[h2] Fonctionnalités Supplémentaires Exceptionnelles[/h2]
+
+[h4]Éditeur BBCode Riche[/h4]
+
+Notre éditeur supporte toutes les balises BBCode essentielles :
+- [h4]Gras[/h4], Italique, Souligné, Barré
+- Titres [h1]H1[/h1] jusqu&#39;à [h6]H6[/h6]
+- Listes ordonnées et non-ordonnées
+- Code avec coloration syntaxique
+- Citations, liens, images
+- Et bien plus encore !
+
+[h4]Gestionnaire de Médias Intelligent[/h4]
+
+- Upload drag &amp; drop
+- Génération automatique de variants (thumb, medium, large)
+- Conversion WebP transparente
+- Organisation par dossiers
+- Intégration directe dans l&#39;éditeur
+
+[h4]Personnalisation Complète[/h4]
+
+- Hero section configurable avec gradient personnalisé
+- Couleurs du thème ajustables
+- Mode sombre/clair automatique
+- Footer multi-colonnes
+- Menu de navigation flexible
+
+[h2] Prêt à Décoller ?[/h2]
+
+GitHub Blog - Version Statique est votre passeport vers un blog professionnel, multilingue, optimisé SEO, et déployable gratuitement sur GitHub Pages.
+
+[h4]Les avantages sont innombrables :[/h4]
+
+[html]&lt;div style=&#34;display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;&#34;&gt;
+&lt;div style=&#34;background: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #3b82f6;&#34;&gt;
+&lt;strong&gt; Performance&lt;/strong&gt;&lt;br&gt;
+Génération statique ultra-rapide
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Sécurité&lt;/strong&gt;&lt;br&gt;
+Pas de base de données = pas de failles SQL
+&lt;/div&gt;
+&lt;div style=&#34;background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 4px solid #f59e0b;&#34;&gt;
+&lt;strong&gt; Gratuit&lt;/strong&gt;&lt;br&gt;
+Hébergement gratuit sur GitHub Pages
+&lt;/div&gt;
+&lt;div style=&#34;background: #fdf2f8; padding: 15px; border-radius: 8px; border-left: 4px solid #ec4899;&#34;&gt;
+&lt;strong&gt; Flexible&lt;/strong&gt;&lt;br&gt;
+Personnalisation illimitée
+&lt;/div&gt;
+&lt;/div&gt;[/html]
+
+Rejoignez dès maintenant notre communauté de créateurs et faites briller votre contenu sur le web !
+
+[h3]Liens Utiles[/h3]
+
+[h4]Documentation complète[/h4] : Consultez notre README détaillé
+[h4]Téléchargement[/h4] : [github-blog-static.zip](https://github.com/Lombard-Web-Services/github-blog/raw/refs/heads/main/github-blog-static.zip )
+[h4]Support[/h4] : Ouvrez une issue sur GitHub
+[h4]Contact[/h4] : contact@lombard-web-services.com
+
+[h2] Star Ce Projet ![/h2]
+
+Si vous trouvez GitHub Blog utile, n&#39;hésitez pas à [h4]donner une étoile[/h4] à notre dépôt sur GitHub. Cela nous aide énormément et motive l&#39;équipe à continuer d&#39;améliorer le projet !
+
+Merci de faire partie de l&#39;aventure.
+
+[h4]Bonne création et à bientôt dans nos lignes de code ![/h4]
+
+---
+
+[html]&lt;p align=&#34;center&#34; style=&#34;margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;&#34;&gt;
+&lt;strong&gt; GitHub Blog - Version Statique&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Créé avec par Lombard Web Services&lt;/em&gt;&lt;br&gt;
+MIT License - 2024
+&lt;/p&gt;[/html]">
+        </div>
+
+
+        <div class="share-section">
+            <h3>Partager</h3>
+            <div class="share-buttons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/" 
+                   target="_blank" rel="noopener" class="share-btn facebook">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    Facebook
+                </a>
+
+                <a href="https://twitter.com/intent/tweet?url=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/&text=Mon%20Premier%20Article" 
+                   target="_blank" rel="noopener" class="share-btn twitter">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    X (Twitter)
+                </a>
+
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/" 
+                   target="_blank" rel="noopener" class="share-btn linkedin">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+
+                <a href="https://bsky.app/intent/compose?text=Mon%20Premier%20Article%20https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/" 
+                   target="_blank" rel="noopener" class="share-btn bluesky">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    Bluesky
+                </a>
+
+                <button onclick="copyLink()" class="share-btn copy">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    Copier le lien
+                </button>
+            </div>
+        </div>
+
+    </div>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function decodeHtmlEntities(encoded) {
+        const textarea = document.createElement('textarea');
+        textarea.innerHTML = encoded;
+        return textarea.value;
+    }
+
+    const descEl = document.querySelector('.post-description');
+    if (descEl && typeof parseBBCode === 'function') {
+        const bbcodeDesc = descEl.getAttribute('data-bbcode-description');
+        if (bbcodeDesc) {
+            const decodedDesc = decodeHtmlEntities(bbcodeDesc);
+            descEl.innerHTML = parseBBCode(decodedDesc);
+        }
+    }
+
+    const contentEl = document.getElementById('post-content');
+    if (contentEl && typeof parseBBCode === 'function') {
+        const bbcodeContent = contentEl.getAttribute('data-bbcode-content');
+        if (bbcodeContent) {
+            const decodedContent = decodeHtmlEntities(bbcodeContent);
+            const contentMatch = decodedContent.match(/---[\s\S]*?---\s*([\s\S]*)/);
+            const actualContent = contentMatch ? contentMatch[1] : decodedContent;
+            contentEl.innerHTML = parseBBCode(actualContent);
+        }
+    }
+});
+
+function copyLink() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+        alert('Lien copié !');
+    });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.pushState(null, null, this.getAttribute('href'));
+        }
+    });
+});
+</script>
+
+    </main>
+    
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/">Accueil</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/articles/">Tous les articles</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/blog/a-propos/">À propos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/feed.xml">Flux RSS</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/sitemap.xml">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/blog/license/">License</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Réseaux sociaux</h4>
+                    <ul>
+                        <li>
+                                <a href="https://github.com/Lombard-Web-Services" target="_blank" rel="noopener noreferrer">github</a>
+                        </li>
+                        <li>
+                                <a href="https://x.com/lombardweb" target="_blank" rel="noopener noreferrer">X</a>
+                        </li>
+                        <li>
+                                <a href="https://bsky.app/profile/lombardweb.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                    XVL1456 Copyright 2026
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.querySelectorAll('.footer-bottom p').forEach(el => {
+    el.innerHTML = el.innerHTML.replace('{year}', new Date().getFullYear());
+});
+</script>    
+    <script src="/github-blog/dist/static/js/main.js"></script>
+</body>
+</html>

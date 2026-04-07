@@ -1,0 +1,79 @@
+/* ============================================
+   DARK MODE - AJUSTEMENTS SPÉCIFIQUES
+   ============================================ */
+
+.dark {
+    /* Logo - meilleur contraste en mode sombre */
+    --logo-brightness: 1.1;
+    --logo-contrast: 1.1;
+}
+
+/* Ajustements pour le logo en mode sombre */
+.dark .site-logo {
+    filter: brightness(var(--logo-brightness)) contrast(var(--logo-contrast));
+}
+
+/* Header en mode sombre - glassmorphism plus prononcé */
+.dark .site-header {
+    background-color: rgba(10, 10, 10, 0.85);
+    border-bottom-color: rgba(42, 42, 42, 0.8);
+}
+
+/* Amélioration des cartes en mode sombre */
+.dark .post-card {
+    background: linear-gradient(145deg, #1a1a1a 0%, #0f0f0f 100%);
+    border-color: #2a2a2a;
+}
+
+.dark .post-card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.15);
+}
+
+/* Footer en mode sombre */
+.dark .site-footer {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+    border-top-color: #2a2a2a;
+}
+
+/* Code blocks en mode sombre */
+.dark .post-body pre {
+    background: #0d0d0d;
+    border: 1px solid #2a2a2a;
+}
+
+/* Sélecteur de langue en mode sombre */
+.dark #lang-select {
+    background-color: #1a1a1a;
+    border-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.dark #lang-select:hover {
+    border-color: #3b82f6;
+    background-color: #2a2a2a;
+}
+
+/* Menu mobile en mode sombre */
+.dark .nav-menu {
+    background-color: rgba(10, 10, 10, 0.98);
+    border-bottom-color: #2a2a2a;
+}
+
+/* Icônes du toggle */
+.dark .theme-icon-light {
+    display: none;
+}
+
+.dark .theme-icon-dark {
+    display: inline;
+}
+
+/* Amélioration des liens du footer en mode sombre */
+.dark .footer-column a:hover {
+    color: #60a5fa;
+}
+
+.dark .footer-column h4::after {
+    background: #3b82f6;
+}

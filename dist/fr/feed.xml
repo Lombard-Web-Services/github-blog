@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Mon Blog Multilingue</title>
+    <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr</link>
+    <description>Blog technique et créatif multilingue</description>
+    <language>fr</language>
+    <lastBuildDate>Tue, 07 Apr 2026 03:34:52 +0000</lastBuildDate>
+    <atom:link href="https://lombard-web-services.github.io/blog//github-blog/dist/fr/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+        <title>A Propos</title>
+        <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/</link>
+        <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/</guid>
+        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <description><![CDATA[&lt;ul&gt;
+&lt;li&gt;web&lt;br /&gt;
+title: À propos&lt;br /&gt;
+twitter_description: Page À propos github blog&lt;br /&gt;
+twitter_image: /static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png&lt;br /&gt;
+twitter_title: À propos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;[h1]👤 À Propos de GitHub Blog &amp;amp; Son Créateur[/h1]&lt;br /&gt;
+[h4]Bonjour, je suis Thibaut Lombard, ingénieur/développeur web spécialisé dans l&#39;IA , passionné et créateur de GitHub Blog.[/h4]&lt;br /&gt;
+Bienvenue sur cette page qui présente l&#39;homme derrière le projet, la vision qui l&#39;anime, et la communauté qui le fait vivre.&lt;br /&gt;
+Cette page est votre fenêtre ouverte sur l&#39;écosystème GitHub Blog - qui je suis, pourquoi j&#39;ai créé cet outil, et comment vous pouvez en faire partie.&lt;br /&gt;
+Les projets sans âme et sans créateur visible appartiennent au passé. Avec GitHub Blog, vous connaissez la personne derrière le code, ses motivations, et son engagement envers la communauté.&lt;br /&gt;
+[h4]À gauche[/h4], mon parcours de développeur.&lt;br /&gt;
+[h4]En haut[/h4], la vision qui guide ce projet.&lt;br /&gt;
+[h4]À droite[/h4], les opportunités de collaboration.&lt;br /&gt;
+[h4]Partout[/h4], une invitation à rejoindre l&#39;aventure.&lt;br /&gt;
+[h2]🚀 Qui est Thibaut Lombard ?[/h2]&lt;br /&gt;
+Je suis un [h4] ingénieur/développeur web spécialisé dans l&#39;IA  passionné[/h4] basé en France à Les Forges, passionné par les technologies open source et la création d&#39;outils qui simplifient la vie des créateurs de contenu.&lt;br /&gt;
+[h3]🌐 Ma Présence en Ligne[/h3]&lt;br /&gt;
+[h4]Twitter / X[/h4] : [url=https://x.com/lombardweb ]@lombardweb[/url] - Mon fil de veille tech, actualités du projet et échanges avec la communauté&lt;br /&gt;
+[h4]GitHub[/h4] : [url=https://github.com/Lombard-Web-Services ]Lombard-Web-Services[/url] - Tous mes projets open source et contributions&lt;br /&gt;
+[h4]Site Web[/h4] : [url=https://lombard-web-services.com ]lombard-web-services.com[/url] - Mon portfolio et services professionnels&lt;br /&gt;
+[h4]Email[/h4] : contact@lombard-web-services.com - Pour les collaborations et questions professionnelles&lt;br /&gt;
+[h3]💡 Ma Philosophie de Développement[/h3]&lt;br /&gt;
+[h4]La simplicité est la sophistication suprême[/h4] ❝&lt;br /&gt;
+Je crois profondément que les meilleurs outils sont ceux qui disparaissent pour laisser place à la créativité. C&#39;est cette conviction qui a guidé chaque ligne de code de GitHub Blog.&lt;br /&gt;
+[h4]Les valeurs qui animent mon travail :[/h4]&lt;br /&gt;
+[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;&lt;/p&gt;
+&lt;li&gt;✅ [h4]Open Source d&#39;abord[/h4] - La connaissance doit être libre et partagée&lt;/li&gt;
+&lt;li&gt;✅ [h4]Accessibilité avant tout[/h4] - Des outils puissants mais simples d&#39;utilisation&lt;/li&gt;
+&lt;li&gt;✅ [h4]Multilingue par défaut[/h4] - Le web doit parler toutes les langues&lt;/li&gt;
+&lt;li&gt;✅ [h4]Performance non négociable[/h4] - Rapide, léger, efficace&lt;/li&gt;
+&lt;p&gt;&lt;/ul&gt;[/html]&lt;br /&gt;
+[h2]🎯 Pourquoi J&#39;ai Créé GitHub Blog ?[/h2]&lt;br /&gt;
+L&#39;histoire de ce projet commence avec une frustration personnelle que beaucoup de développeurs partagent.&lt;br /&gt;
+[h3]🔍 Le Problème que Je Voulais Résoudre[/h3]&lt;br /&gt;
+[h4]Les CMS traditionnels[/h4] (WordPress, etc.) sont lourds, lents, et demandent une maintenance constante&lt;br /&gt;
+[h4]Les générateurs statiques existants[/h4] (Jekyll, Hugo) sont puissants mais pas assez personnalisables en rapport temps/travail.&lt;br /&gt;
+[h4]Le multilingue[/h4] est souvent une réflexion après-coup, mal intégrée&lt;br /&gt;
+[h4]GitHub Pages[/h4] est gratuit mais peu d&#39;outils en exploitent vraiment le potentiel&lt;br /&gt;
+[h4]L&#39;interface d&#39;administration[/h4] manque cruellement aux solutions statiques&lt;br /&gt;
+Je voulais créer le pont entre la puissance des sites statiques et le confort d&#39;un CMS moderne.&lt;br /&gt;
+[h3]🛠️ La Genèse du Projet[/h3]&lt;br /&gt;
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+&lt;strong&gt;📅 Chronologie du développement :&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;br /&gt;
+&lt;strong&gt;2024&lt;/strong&gt; - Première version, expérimentations avec Python et Jinja2&lt;br&gt;&lt;br /&gt;
+&lt;strong&gt;Début 2025&lt;/strong&gt; - Intégration de l&#39;interface d&#39;administration BBCode&lt;br&gt;&lt;br /&gt;
+&lt;strong&gt;Mi-2025&lt;/strong&gt; - Support multilingue avec 7 langues et gestion RTL&lt;br&gt;&lt;br /&gt;
+&lt;strong&gt;Fin 2025&lt;/strong&gt; - Optimisation SEO complète et génération automatique d&#39;images&lt;br&gt;&lt;br /&gt;
+&lt;strong&gt;2026&lt;/strong&gt; - Version statique stable, documentation complète, communauté active&lt;br /&gt;
+&lt;/div&gt;[/html]&lt;br /&gt;
+[h2]🌍 La Vision : Un Web Plus Accessible[/h2]&lt;br /&gt;
+[h4]GitHub Blog n&#39;est pas qu&#39;un projet technique, c&#39;est une mission.[/h4]&lt;br /&gt;
+[h3]🎯 Objectifs à Long Terme[/h3]&lt;br /&gt;
+[h4]Démocratiser les blogs statiques[/h4] - Permettre à chacun d&#39;avoir un site performant sans expertise technique avancée&lt;br /&gt;
+[h4]Favoriser le multilingue[/h4] - Réduire les barrières linguistiques sur le web, soutenir les langues minoritaires comme le Tamazight&lt;br /&gt;
+[h4]Promouvoir GitHub Pages[/h4] - Montrer que l&#39;hébergement gratuit peut être professionnel&lt;br /&gt;
+[h4]Créer une communauté d&#39;entraide[/h4] - Des créateurs qui s&#39;aident mutuellement à réussir en ligne&lt;br /&gt;
+[h3]🌟 Ce Qui Me Rend Fier[/h3]&lt;br /&gt;
+[h4]7 langues intégrées[/h4] dont 2 langues RTL (Arabe et Darija) et le Tamazight, patrimoine culturel berbère&lt;br /&gt;
+[h4]Des centaines de téléchargements[/h4] et une communauté grandissante&lt;br /&gt;
+[h4]Des retours positifs[/h4] de développeurs et créateurs de contenu du monde entier&lt;br /&gt;
+[h4]Un projet 100% open source[/h4] qui respecte la vie privée (pas de tracking, pas de données collectées)&lt;br /&gt;
+[h2]🤝 Rejoignez l&#39;Aventure[/h2]&lt;br /&gt;
+Un projet open source ne vit que par sa communauté. Voici comment vous pouvez participer :&lt;br /&gt;
+[h3]⭐ Soutenez le Projet[/h3]&lt;br /&gt;
+[html]&lt;div style=&#34;display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;&#34;&gt;&lt;/p&gt;
+&lt;div style=&#34;background: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #3b82f6;&#34;&gt;
+&lt;strong&gt;🌟 Mettez une étoile&lt;/strong&gt;&lt;br&gt;
+Sur le dépôt GitHub pour augmenter la visibilité
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt;🐛 Signalez des bugs&lt;/strong&gt;&lt;br&gt;
+Ouvrez des issues pour les problèmes rencontrés
+&lt;/div&gt;
+&lt;div style=&#34;background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 4px solid #f59e0b;&#34;&gt;
+&lt;strong&gt;💡 Proposez des idées&lt;/strong&gt;&lt;br&gt;
+Partagez vos suggestions d&#39;amélioration
+&lt;/div&gt;
+&lt;div style=&#34;background: #fdf2f8; padding: 15px; border-radius: 8px; border-left: 4px solid #ec4899;&#34;&gt;
+&lt;strong&gt;🔧 Contribuez au code&lt;/strong&gt;&lt;br&gt;
+Pull requests bienvenues !
+&lt;/div&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h3]🌐 Partagez Votre Expérience[/h3]&lt;br /&gt;
+[h4]Créez avec GitHub Blog[/h4] et partagez le lien sur Twitter avec #GitHubBlog&lt;br /&gt;
+[h4]Recommandez-le[/h4] à d&#39;autres développeurs et créateurs de contenu&lt;/p&gt;
+&lt;p&gt;[h2]🙏 Remerciements[/h2]&lt;br /&gt;
+Ce projet n&#39;existerait pas sans l&#39;aide précieuse de :&lt;br /&gt;
+Python, Jinja2, Markdown, Pillow, et tous les projets qui rendent GitHub Blog possible&lt;/p&gt;
+&lt;p&gt;[h4]Vous, utilisateurs[/h4]&lt;br /&gt;
+Chaque personne qui télécharge, installe, et utilise GitHub Blog donne du sens à ce projet&lt;br /&gt;
+[h2]💭 Une Dernière Pensée[/h2]&lt;br /&gt;
+« Le web devrait être un espace où chacun peut s&#39;exprimer librement, dans sa langue, avec des outils performants et respectueux de sa vie privée. GitHub Blog est ma contribution à cette vision. »&lt;br /&gt;
+— Thibaut Lombard&lt;br /&gt;
+[h4]Merci de faire partie de cette aventure.[/h4]&lt;br /&gt;
+À très bientôt dans le code, sur les réseaux, ou qui sait, autour d&#39;un café virtuel !&lt;br /&gt;
+[h4]Thibaut Lombard[/h4]&lt;br /&gt;
+[h4]Fondateur de Lombard Web Services[/h4]&lt;br /&gt;
+[h4]Créateur de GitHub Blog[/h4]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;[html]&lt;p align=&#34;center&#34; style=&#34;margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;&#34;&gt;&lt;br /&gt;
+&lt;strong&gt;👤 À Propos - GitHub Blog&lt;/strong&gt;&lt;br&gt;&lt;br /&gt;
+&lt;em&gt;Créé avec passion par Thibaut Lombard&lt;/em&gt;&lt;br&gt;&lt;br /&gt;
+&lt;a href=&#34;https://x.com/lombardweb &#34; style=&#34;color: #fff; text-decoration: underline;&#34;&gt;@lombardweb&lt;/a&gt; | &lt;br /&gt;
+&lt;a href=&#34;https://github.com/Lombard-Web-Services &#34; style=&#34;color: #fff; text-decoration: underline;&#34;&gt;GitHub&lt;/a&gt; | &lt;br /&gt;
+&lt;a href=&#34;mailto:contact@lombard-web-services.com&#34; style=&#34;color: #fff; text-decoration: underline;&#34;&gt;Email&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;br /&gt;
+MIT License - 2026&lt;br /&gt;
+&lt;/p&gt;[/html]&lt;/p&gt;]]></description>
+    </item>
+    <item>
+        <title>Mon Premier Article</title>
+        <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/</link>
+        <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/</guid>
+        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <description><![CDATA[&lt;ul&gt;
+&lt;li&gt;features&lt;br /&gt;
+title: Mon premier article&lt;br /&gt;
+twitter_description: voila le article&lt;br /&gt;
+twitter_image: http://localhost/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png&lt;br /&gt;
+twitter_title: Mon premier article&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;[h1] Bienvenue dans le GitHub Blog ![/h1]&lt;/p&gt;
+&lt;p&gt;[h4]Cher développeur, créateur de contenu, passionné du web,[/h4]&lt;/p&gt;
+&lt;p&gt;Nous sommes ravis de vous accueillir dans l&#39;écosystème GitHub Blog - Version Statique, la solution ultime pour créer et gérer votre blog professionnel avec une simplicité déconcertante.&lt;/p&gt;
+&lt;p&gt;Cet article est votre guide de démarrage rapide pour découvrir toutes les merveilles que notre générateur de blog statique met à votre disposition. Préparez-vous à être ébloui !&lt;/p&gt;
+&lt;p&gt;Les solutions compliquées et lourdes appartiennent désormais au passé. Avec GitHub Blog, tout devient fluide, élégant et performant.&lt;/p&gt;
+&lt;p&gt;[h4]À gauche[/h4], vous trouverez la puissance de la génération statique.&lt;br /&gt;
+[h4]En haut[/h4], les performances optimisées pour GitHub Pages.&lt;br /&gt;
+[h4]À droite[/h4], une interface d&#39;administration intuitive.&lt;br /&gt;
+[h4]Partout[/h4], la flexibilité et la personnalisation.&lt;/p&gt;
+&lt;p&gt;[h2] Un Blog Qui Parle Toutes Les Langues du Monde[/h2]&lt;/p&gt;
+&lt;p&gt;Notre support multilingue est tout simplement [h4]exceptionnel[/h4]. Nous avons intégré 7 langues magnifiques pour que votre contenu touche les quatre coins de la planète :&lt;/p&gt;
+&lt;p&gt;[h4]Français [/h4] - La langue de Molière, de la diplomatie et de l&#39;élégance. Parfaite pour un blog raffiné et littéraire.&lt;/p&gt;
+&lt;p&gt;[h4]English [/h4] - La lingua franca du web, essentielle pour toucher une audience internationale et professionnelle.&lt;/p&gt;
+&lt;p&gt;[h4]العربية (Arabe) [/h4] - Une langue d&#39;une beauté calligraphique inégalée, avec support complet [h4]RTL[/h4] (Right-to-Left) pour une expérience de lecture authentique et respectueuse des traditions.&lt;/p&gt;
+&lt;p&gt;[h4]हिन्दी (Hindi) [/h4] - La langue du sous-continent indien, parlée par des centaines de millions de personnes, porteuse d&#39;une riche culture millénaire.&lt;/p&gt;
+&lt;p&gt;[h4] (Chinois) [/h4] - L&#39;écriture la plus ancienne encore utilisée, idéale pour toucher le marché asiatique en pleine expansion.&lt;/p&gt;
+&lt;p&gt;[h4]الدارجة (Darija) [/h4] - Le dialecte marocain, langue vivante et chaleureuse du Maghreb, avec son charme unique et son authenticité locale.&lt;/p&gt;
+&lt;p&gt;[h4] (Tamazight/Berber) [/h4] - La langue amazighe, patrimoine culturel immatériel de l&#39;humanité, symbole de résilience et d&#39;identité berbère.&lt;/p&gt;
+&lt;p&gt;Chaque langue est traitée avec le respect qu&#39;elle mérite, avec des drapeaux appropriés, des directions de lecture correctes (LTR ou RTL), et une détection automatique de la langue du navigateur de vos visiteurs !&lt;/p&gt;
+&lt;p&gt;[h2] Maîtrisez la Visibilité de Vos Articles[/h2]&lt;/p&gt;
+&lt;p&gt;Voici une fonctionnalité qui va [h4]révolutionner[/h4] votre gestion de contenu :&lt;/p&gt;
+&lt;p&gt;Afficher ou masquer un article de la page d&#39;accueil !&lt;/p&gt;
+&lt;p&gt;Dans notre éditeur d&#39;articles, vous disposez d&#39;une option magique : la case [h4]&#34;hide_from_home&#34;[/h4]. Cette fonctionnalité vous offre un contrôle total :&lt;/p&gt;
+&lt;p&gt;[h4]Cochez cette option[/h4] → Votre article disparaît de la page d&#39;accueil et des listes d&#39;articles, mais reste accessible directement via son URL. Parfait pour les pages légales, CGV, mentions légales, ou articles confidentiels !&lt;/p&gt;
+&lt;p&gt;[h4]Décochez cette option[/h4] → Votre article apparaît fièrement dans la grille des articles, visible de tous vos visiteurs.&lt;/p&gt;
+&lt;p&gt;L&#39;astuce de pro : Utilisez cette fonction pour créer des landing pages spéciales, des pages de remerciement, ou du contenu premium accessible uniquement via un lien direct !&lt;/p&gt;
+&lt;p&gt;[h2] La Puissance de PostgreSQL à Votre Service[/h2]&lt;br /&gt;
+Pour les utilisateurs avancés qui souhaitent aller plus loin, GitHub Blog propose une [h4]intégration PostgreSQL optionnelle[/h4] qui transforme votre blog en machine de guerre :&lt;/p&gt;
+&lt;p&gt;[h4]Journalisation Complète[/h4] - Chaque action administrateur est loguée avec précision (création, modification, suppression d&#39;articles)&lt;/p&gt;
+&lt;p&gt;[h4]Historique des Versions[/h4] - Chaque modification d&#39;article est versionnée. Vous pouvez revenir à n&#39;importe quelle version précédente !&lt;/p&gt;
+&lt;p&gt;[h4]Statistiques Avancées[/h4] - Compteurs automatiques de catégories et tags, analyses de fréquence de publication&lt;/p&gt;
+&lt;p&gt;[h4]Sauvegardes Automatiques[/h4] - Export SQL programmé pour sécuriser vos données&lt;/p&gt;
+&lt;p&gt;[h4]Recherche Indexée[/h4] - Indexation avancée pour des recherches ultra-rapides dans votre contenu&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+&lt;strong&gt; Configuration simplifiée :&lt;/strong&gt; Activez PostgreSQL dans vos paramètres, créez vos tables en un clic depuis l&#39;interface d&#39;administration, et laissez la magie opérer !&lt;br /&gt;
+&lt;/div&gt;[/html]&lt;/p&gt;
+&lt;p&gt;[h2] SEO Ultime : Dominez les Moteurs de Recherche[/h2]&lt;/p&gt;
+&lt;p&gt;Notre éditeur d&#39;articles intègre un [h4]système SEO complet et professionnel[/h4]. Chaque article peut être optimisé avec les métadonnées suivantes :&lt;/p&gt;
+&lt;p&gt;[h3] Métadonnées Globales[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Title (Titre)[/h4] - Le titre principal de votre article, affiché dans l&#39;onglet du navigateur et les résultats de recherche&lt;/p&gt;
+&lt;p&gt;[h4]Description[/h4] - Le résumé accrocheur qui apparaît sous votre lien dans Google (meta description)&lt;/p&gt;
+&lt;p&gt;[h4]Robots[/h4] - Contrôlez l&#39;indexation avec des directives comme &#34;index, follow&#34; ou &#34;noindex, nofollow&#34;&lt;/p&gt;
+&lt;p&gt;[h4]Canonical URL[/h4] - Évitez le contenu dupliqué en spécifiant l&#39;URL canonique de référence&lt;/p&gt;
+&lt;p&gt;[h3] Open Graph (Facebook, LinkedIn...)[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]og:title[/h4] - Titre optimisé pour les partages sociaux&lt;/p&gt;
+&lt;p&gt;[h4]og:description[/h4] - Description enrichie pour les réseaux sociaux&lt;/p&gt;
+&lt;p&gt;[h4]og:image[/h4] - L&#39;image qui s&#39;affichera lors du partage (redimensionnée automatiquement en 1200x630 pixels !)&lt;/p&gt;
+&lt;p&gt;[h4]og:type[/h4] - Type de contenu (article, website...)&lt;/p&gt;
+&lt;p&gt;[h4]og:locale[/h4] - Langue et région (fr_FR, en_US...)&lt;/p&gt;
+&lt;p&gt;[h4]og:site_name[/h4] - Nom de votre blog&lt;/p&gt;
+&lt;p&gt;[h3] Twitter Cards[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]twitter:card[/h4] - Type de carte (summary, summary_large_image)&lt;/p&gt;
+&lt;p&gt;[h4]twitter:title[/h4] - Titre spécifique pour Twitter&lt;/p&gt;
+&lt;p&gt;[h4]twitter:description[/h4] - Description pour Twitter&lt;/p&gt;
+&lt;p&gt;[h4]twitter:image[/h4] - Image optimisée pour Twitter&lt;/p&gt;
+&lt;p&gt;[h4]twitter:site[/h4] - Votre handle Twitter (@votrecompte)&lt;/p&gt;
+&lt;p&gt;[h4]twitter:creator[/h4] - Auteur du tweet&lt;/p&gt;
+&lt;p&gt;[h3] Métadonnées Techniques[/h3]&lt;/p&gt;
+&lt;p&gt;{} [h4]Theme Color[/h4] - Couleur de la barre d&#39;adresse sur mobile&lt;/p&gt;
+&lt;p&gt;{} [h4]Author[/h4] - Nom de l&#39;auteur de l&#39;article&lt;/p&gt;
+&lt;p&gt;{} [h4]Publisher[/h4] - Éditeur du contenu&lt;/p&gt;
+&lt;p&gt;{} [h4]Keywords[/h4] - Mots-clés pertinents pour le référencement&lt;/p&gt;
+&lt;p&gt;[h3] Images SEO Automatiques[/h3]&lt;/p&gt;
+&lt;p&gt;Notre système gère automatiquement vos images SEO :&lt;/p&gt;
+&lt;p&gt;[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;&lt;/p&gt;
+&lt;li&gt; Redimensionnement automatique en 1200x630px pour Open Graph&lt;/li&gt;
+&lt;li&gt; Format optimisé pour Twitter Cards&lt;/li&gt;
+&lt;li&gt; Génération de variants (thumb, medium, large)&lt;/li&gt;
+&lt;li&gt; Conversion WebP pour des performances maximales&lt;/li&gt;
+&lt;li&gt; Alt text personnalisable pour l&#39;accessibilité&lt;/li&gt;
+&lt;p&gt;&lt;/ul&gt;[/html]&lt;/p&gt;
+&lt;p&gt;[h2] Fonctionnalités Supplémentaires Exceptionnelles[/h2]&lt;/p&gt;
+&lt;p&gt;[h4]Éditeur BBCode Riche[/h4]&lt;/p&gt;
+&lt;p&gt;Notre éditeur supporte toutes les balises BBCode essentielles :&lt;br /&gt;
+- [h4]Gras[/h4], Italique, Souligné, Barré&lt;br /&gt;
+- Titres [h1]H1[/h1] jusqu&#39;à [h6]H6[/h6]&lt;br /&gt;
+- Listes ordonnées et non-ordonnées&lt;br /&gt;
+- Code avec coloration syntaxique&lt;br /&gt;
+- Citations, liens, images&lt;br /&gt;
+- Et bien plus encore !&lt;/p&gt;
+&lt;p&gt;[h4]Gestionnaire de Médias Intelligent[/h4]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Upload drag &amp;amp; drop&lt;/li&gt;
+&lt;li&gt;Génération automatique de variants (thumb, medium, large)&lt;/li&gt;
+&lt;li&gt;Conversion WebP transparente&lt;/li&gt;
+&lt;li&gt;Organisation par dossiers&lt;/li&gt;
+&lt;li&gt;Intégration directe dans l&#39;éditeur&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[h4]Personnalisation Complète[/h4]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero section configurable avec gradient personnalisé&lt;/li&gt;
+&lt;li&gt;Couleurs du thème ajustables&lt;/li&gt;
+&lt;li&gt;Mode sombre/clair automatique&lt;/li&gt;
+&lt;li&gt;Footer multi-colonnes&lt;/li&gt;
+&lt;li&gt;Menu de navigation flexible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[h2] Prêt à Décoller ?[/h2]&lt;/p&gt;
+&lt;p&gt;GitHub Blog - Version Statique est votre passeport vers un blog professionnel, multilingue, optimisé SEO, et déployable gratuitement sur GitHub Pages.&lt;/p&gt;
+&lt;p&gt;[h4]Les avantages sont innombrables :[/h4]&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;&#34;&gt;&lt;/p&gt;
+&lt;div style=&#34;background: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #3b82f6;&#34;&gt;
+&lt;strong&gt; Performance&lt;/strong&gt;&lt;br&gt;
+Génération statique ultra-rapide
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Sécurité&lt;/strong&gt;&lt;br&gt;
+Pas de base de données = pas de failles SQL
+&lt;/div&gt;
+&lt;div style=&#34;background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 4px solid #f59e0b;&#34;&gt;
+&lt;strong&gt; Gratuit&lt;/strong&gt;&lt;br&gt;
+Hébergement gratuit sur GitHub Pages
+&lt;/div&gt;
+&lt;div style=&#34;background: #fdf2f8; padding: 15px; border-radius: 8px; border-left: 4px solid #ec4899;&#34;&gt;
+&lt;strong&gt; Flexible&lt;/strong&gt;&lt;br&gt;
+Personnalisation illimitée
+&lt;/div&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;/p&gt;
+&lt;p&gt;Rejoignez dès maintenant notre communauté de créateurs et faites briller votre contenu sur le web !&lt;/p&gt;
+&lt;p&gt;[h3]Liens Utiles[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Documentation complète[/h4] : Consultez notre README détaillé&lt;br /&gt;
+[h4]Téléchargement[/h4] : &lt;a href=&#34;https://github.com/Lombard-Web-Services/github-blog/raw/refs/heads/main/github-blog-static.zip&#34;&gt;github-blog-static.zip&lt;/a&gt;&lt;br /&gt;
+[h4]Support[/h4] : Ouvrez une issue sur GitHub&lt;br /&gt;
+[h4]Contact[/h4] : contact@lombard-web-services.com&lt;/p&gt;
+&lt;p&gt;[h2] Star Ce Projet ![/h2]&lt;/p&gt;
+&lt;p&gt;Si vous trouvez GitHub Blog utile, n&#39;hésitez pas à [h4]donner une étoile[/h4] à notre dépôt sur GitHub. Cela nous aide énormément et motive l&#39;équipe à continuer d&#39;améliorer le projet !&lt;/p&gt;
+&lt;p&gt;Merci de faire partie de l&#39;aventure.&lt;/p&gt;
+&lt;p&gt;[h4]Bonne création et à bientôt dans nos lignes de code ![/h4]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;[html]&lt;p align=&#34;center&#34; style=&#34;margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;&#34;&gt;&lt;br /&gt;
+&lt;strong&gt; GitHub Blog - Version Statique&lt;/strong&gt;&lt;br&gt;&lt;br /&gt;
+&lt;em&gt;Créé avec par Lombard Web Services&lt;/em&gt;&lt;br&gt;&lt;br /&gt;
+MIT License - 2024&lt;br /&gt;
+&lt;/p&gt;[/html]&lt;/p&gt;]]></description>
+    </item>
+    <item>
+        <title>La Personnalisation Des Themes</title>
+        <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/</link>
+        <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/</guid>
+        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <description><![CDATA[&lt;ul&gt;
+&lt;li&gt;ux&lt;/li&gt;
+&lt;li&gt;ui&lt;br /&gt;
+title: La personnalisation des thèmes&lt;br /&gt;
+twitter_description: Documentation sur la personnalisation de thèmes&lt;br /&gt;
+twitter_image: /static/uploads/29c45566a9194946b7c65ee7862e080a.png&lt;br /&gt;
+twitter_title: La personnalisation des thèmes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;[h1]Personnalisez Votre Navigation : Menu &amp;amp; Footer sur Mesure[/h1]&lt;/p&gt;
+&lt;p&gt;[h4]Chers créateurs de contenu, architectes du web, perfectionnistes du design,[/h4]&lt;/p&gt;
+&lt;p&gt;Bienvenue dans ce guide complet dédié à la personnalisation de la navigation de votre GitHub Blog. Découvrez comment sculpter l&#39;expérience utilisateur de votre blog en contrôlant chaque lien, chaque section, chaque détail de votre interface.&lt;/p&gt;
+&lt;p&gt;Ce tutoriel est votre clé pour une navigation fluide et professionnelle qui guidera vos visiteurs à travers votre contenu avec élégance et efficacité.&lt;/p&gt;
+&lt;p&gt;Les menus figés et les footers impersonnels appartiennent au passé. Avec GitHub Blog, vous avez le pouvoir total sur chaque élément de navigation.&lt;/p&gt;
+&lt;p&gt;[h4]À gauche[/h4], la flexibilité du menu principal.&lt;br /&gt;
+[h4]En haut[/h4], la barre de navigation entièrement configurable.&lt;br /&gt;
+[h4]À droite[/h4], le sélecteur de langue positionnable.&lt;br /&gt;
+[h4]Partout[/h4], un footer multi-colonnes adapté à vos besoins.&lt;/p&gt;
+&lt;p&gt;[h2]Le Menu de Navigation : Votre Carte au Trésor[/h2]&lt;/p&gt;
+&lt;p&gt;Le menu de navigation est le [h4]coeur battant[/h4] de l&#39;expérience utilisateur de votre blog. C&#39;est par lui que vos visiteurs découvriront votre univers. GitHub Blog vous offre un contrôle absolu sur cette composante essentielle.&lt;/p&gt;
+&lt;p&gt;[h3]Configuration via menu.yaml[/h3]&lt;/p&gt;
+&lt;p&gt;Toute la magie opère dans le fichier [code]content/config/menu.yaml[/code]. C&#39;est ici que vous définissez l&#39;architecture de votre navigation.&lt;/p&gt;
+&lt;p&gt;[h4]Structure de base du menu[/h4]&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #f8f9fa; border-left: 4px solid #3b82f6; padding: 15px; margin: 20px 0; font-family: monospace; font-size: 14px;&#34;&gt;&lt;br /&gt;
+menu:&lt;/p&gt;
+&lt;p&gt;logo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;enabled: true
+
+url: &#39;/static/images/logo.png&#39;
+
+text: &#39;Mon Blog&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;language_switcher:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;enabled: true
+
+position: right
+
+default: fr
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;items:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- title: Accueil
+
+  url: /
+
+  type: page
+
+- title: Articles
+
+  url: /articles/
+
+  type: page
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h4]Les options du logo[/h4]&lt;/p&gt;
+&lt;p&gt;[h4]enabled[/h4] - Active ou désactive l&#39;affichage du logo (true/false)&lt;/p&gt;
+&lt;p&gt;[h4]url[/h4] - Chemin vers votre image de logo (laissez vide pour du texte uniquement)&lt;/p&gt;
+&lt;p&gt;[h4]text[/h4] - Texte alternatif affiché si pas d&#39;image, ou titre du blog&lt;/p&gt;
+&lt;p&gt;[h4]Le sélecteur de langue[/h4]&lt;/p&gt;
+&lt;p&gt;[h4]enabled[/h4] - Active le dropdown de changement de langue&lt;/p&gt;
+&lt;p&gt;[h4]position[/h4] - Positionnement : [code]left[/code], [code]right[/code], ou [code]center[/code]&lt;/p&gt;
+&lt;p&gt;[h4]default[/h4] - Code langue par défaut (fr, en, ar, etc.)&lt;/p&gt;
+&lt;p&gt;[h2]Ajouter un Nouveau Lien au Menu[/h2]&lt;/p&gt;
+&lt;p&gt;Pour enrichir votre navigation, ajoutez simplement un nouvel élément dans la liste [code]items[/code] :&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+Exemple : Ajouter une page &#34;À propos&#34;&lt;/p&gt;
+&lt;p&gt;title: À propos&lt;/p&gt;
+&lt;p&gt;url: /a-propos/&lt;/p&gt;
+&lt;p&gt;type: page&lt;/p&gt;
+&lt;p&gt;icon: user&lt;/p&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h4]Propriétés disponibles pour chaque lien[/h4]&lt;/p&gt;
+&lt;p&gt;[h4]title[/h4] - Le texte affiché dans le menu (supporte les traductions)&lt;/p&gt;
+&lt;p&gt;[h4]url[/h4] - L&#39;URL de destination (relative ou absolue)&lt;/p&gt;
+&lt;p&gt;[h4]type[/h4] - Type de lien : [code]page[/code], [code]external[/code], [code]dropdown[/code]&lt;/p&gt;
+&lt;p&gt;[h4]icon[/h4] - Icône optionnelle (nom de classe CSS ou emoji)&lt;/p&gt;
+&lt;p&gt;[h4]new_tab[/h4] - Ouvrir dans un nouvel onglet (true pour les liens externes)&lt;/p&gt;
+&lt;p&gt;[h4]children[/h4] - Sous-menu (liste d&#39;items imbriqués)&lt;/p&gt;
+&lt;p&gt;[h3]Exemple de menu complexe avec sous-menus[/h3]&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; margin: 20px 0; font-family: monospace; font-size: 13px;&#34;&gt;&lt;br /&gt;
+items:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;title: Accueil&lt;/p&gt;
+&lt;p&gt;url: /&lt;/p&gt;
+&lt;p&gt;type: page&lt;/p&gt;
+&lt;p&gt;icon: 🏠&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;title: Ressources&lt;/p&gt;
+&lt;p&gt;type: dropdown&lt;/p&gt;
+&lt;p&gt;icon: 📚&lt;/p&gt;
+&lt;p&gt;children:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;title: Tutoriels&lt;/p&gt;
+&lt;p&gt;url: /tutoriels/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;title: Documentation&lt;/p&gt;
+&lt;p&gt;url: /docs/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;title: FAQ&lt;/p&gt;
+&lt;p&gt;url: /faq/&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;title: GitHub&lt;/p&gt;
+&lt;p&gt;url: https://github.com/username&lt;/p&gt;
+&lt;p&gt;type: external&lt;/p&gt;
+&lt;p&gt;new_tab: true&lt;/p&gt;
+&lt;p&gt;icon: 🐙&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h2]Supprimer un Lien du Menu[/h2]&lt;/p&gt;
+&lt;p&gt;La simplicité est la sophistication suprême. Pour alléger votre navigation :&lt;/p&gt;
+&lt;p&gt;[h4]Méthode 1 : Suppression complète[/h4]&lt;/p&gt;
+&lt;p&gt;Supprimez simplement les lignes correspondantes dans le fichier [code]menu.yaml[/code] :&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+Avant :&lt;/p&gt;
+&lt;p&gt;title: Ancienne page&lt;/p&gt;
+&lt;p&gt;url: /ancienne/&lt;/p&gt;
+&lt;p&gt;type: page&lt;/p&gt;
+&lt;p&gt;Après : [Supprimez ces lignes]&lt;/p&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h4]Méthode 2 : Désactivation temporaire[/h4]&lt;/p&gt;
+&lt;p&gt;Utilisez la propriété [code]enabled: false[/code] pour masquer sans supprimer :&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #f0fdf4; border-left: 4px solid #22c55e; padding: 15px; margin: 20px 0;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;title: Page en maintenance&lt;/p&gt;
+&lt;p&gt;url: /maintenance/&lt;/p&gt;
+&lt;p&gt;type: page&lt;/p&gt;
+&lt;p&gt;enabled: false&lt;/p&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h2]Le Footer : Votre Signature Digitale[/h2]&lt;/p&gt;
+&lt;p&gt;Le footer est bien plus qu&#39;une simple zone de bas de page. C&#39;est votre [h4]dernière impression[/h4], votre carte de visite, votre centre de ressources. GitHub Blog transforme votre footer en outil de navigation puissant.&lt;/p&gt;
+&lt;p&gt;[h3]Configuration via footer.yaml[/h3]&lt;/p&gt;
+&lt;p&gt;Le fichier [code]content/config/footer.yaml[/code] contrôle l&#39;ensemble du pied de page.&lt;/p&gt;
+&lt;p&gt;[h4]Structure complète du footer[/h4]&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #f8f9fa; border-left: 4px solid #8b5cf6; padding: 15px; margin: 20px 0; font-family: monospace; font-size: 14px;&#34;&gt;&lt;br /&gt;
+footer:&lt;/p&gt;
+&lt;p&gt;enabled: true&lt;/p&gt;
+&lt;p&gt;columns:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- title: Navigation
+
+  links:
+
+    - title: Accueil
+
+      url: /
+
+    - title: Articles
+
+      url: /articles/
+
+- title: Ressources
+
+  links:
+
+    - title: Documentation
+
+      url: /docs/
+
+    - title: API
+
+      url: /api/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;bottom_bar:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;enabled: true
+
+copyright: &#34;© 2026 Mon Blog. Tous droits réservés.&#34;
+
+links:
+
+  - title: Mentions légales
+
+    url: /mentions-legales/
+
+  - title: Politique de confidentialité
+
+    url: /confidentialite/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h2]Ajouter une Colonne au Footer[/h2]&lt;/p&gt;
+&lt;p&gt;Pour créer une nouvelle section dans votre footer, ajoutez un bloc dans la liste [code]columns[/code] :&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+Exemple : Ajouter une colonne &#34;Réseaux sociaux&#34;&lt;/p&gt;
+&lt;p&gt;title: Réseaux sociaux&lt;/p&gt;
+&lt;p&gt;links:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- title: Twitter
+
+  url: https://twitter.com/moncompte
+
+  external: true
+
+  icon: 🐦
+
+- title: LinkedIn
+
+  url: https://linkedin.com/in/monprofil
+
+  external: true
+
+  icon: 💼
+
+- title: GitHub
+
+  url: https://github.com/username
+
+  external: true
+
+  icon: 🐙
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h4]Propriétés des colonnes[/h4]&lt;/p&gt;
+&lt;p&gt;[h4]title[/h4] - Titre de la colonne affiché en gras&lt;/p&gt;
+&lt;p&gt;[h4]links[/h4] - Liste des liens contenus dans cette colonne&lt;/p&gt;
+&lt;p&gt;[h4]width[/h4] - Largeur optionnelle ([code]small[/code], [code]medium[/code], [code]large[/code])&lt;/p&gt;
+&lt;p&gt;[h4]Propriétés des liens de footer[/h4]&lt;/p&gt;
+&lt;p&gt;[h4]title[/h4] - Texte du lien&lt;/p&gt;
+&lt;p&gt;[h4]url[/h4] - URL de destination&lt;/p&gt;
+&lt;p&gt;[h4]external[/h4] - Lien externe (ajoute [code]target=&#34;_blank&#34;[/code] et une icône)&lt;/p&gt;
+&lt;p&gt;[h4]icon[/h4] - Emoji ou classe d&#39;icône à afficher avant le texte&lt;/p&gt;
+&lt;p&gt;[h2]Supprimer une Colonne ou un Lien du Footer[/h2]&lt;/p&gt;
+&lt;p&gt;[h4]Supprimer une colonne entière[/h4]&lt;/p&gt;
+&lt;p&gt;Identifiez et supprimez le bloc correspondant dans [code]columns[/code] :&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+Suppression de la colonne &#34;Ancienne section&#34; :&lt;/p&gt;
+&lt;p&gt;[Supprimez ces lignes :]&lt;/p&gt;
+&lt;p&gt;title: Ancienne section&lt;/p&gt;
+&lt;p&gt;links:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- title: Lien obsolète
+
+  url: /obsolete/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h4]Supprimer un lien spécifique[/h4]&lt;/p&gt;
+&lt;p&gt;Dans une colonne, retirez simplement l&#39;élément de la liste [code]links[/code] :&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #fffbeb; border-left: 4px solid #f59e0b; padding: 15px; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+Avant :&lt;/p&gt;
+&lt;p&gt;title: Navigation&lt;/p&gt;
+&lt;p&gt;links:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- title: Accueil
+
+  url: /
+
+- title: Page obsolète
+
+  url: /old/
+
+- title: Contact
+
+  url: /contact/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Après :&lt;/p&gt;
+&lt;p&gt;title: Navigation&lt;/p&gt;
+&lt;p&gt;links:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- title: Accueil
+
+  url: /
+
+- title: Contact
+
+  url: /contact/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h2]Personnalisation Avancée[/h2]&lt;/p&gt;
+&lt;p&gt;[h3]Barre de copyright inférieure[/h3]&lt;/p&gt;
+&lt;p&gt;La [code]bottom_bar[/code] permet d&#39;ajouter une ligne de copyright et des liens légaux :&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; margin: 20px 0; font-family: monospace; font-size: 13px;&#34;&gt;&lt;br /&gt;
+bottom_bar:&lt;/p&gt;
+&lt;p&gt;enabled: true&lt;/p&gt;
+&lt;p&gt;copyright: &#34;© 2026 Mon Blog - Fait avec ❤️ et GitHub Blog&#34;&lt;/p&gt;
+&lt;p&gt;show_year: true&lt;/p&gt;
+&lt;p&gt;links:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- title: CGV
+
+  url: /cgv/
+
+- title: Confidentialité
+
+  url: /confidentialite/
+
+- title: Cookies
+
+  url: /cookies/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h3]Style et apparence[/h3]&lt;/p&gt;
+&lt;p&gt;Le style visuel du menu et du footer est contrôlé via les variables CSS dans [code]personalization.yaml[/code] :&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 15px; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+colors:&lt;/p&gt;
+&lt;p&gt;menu_background: &#34;#ffffff&#34;&lt;/p&gt;
+&lt;p&gt;menu_text: &#34;#1f2937&#34;&lt;/p&gt;
+&lt;p&gt;menu_hover: &#34;#3b82f6&#34;&lt;/p&gt;
+&lt;p&gt;footer_background: &#34;#1f2937&#34;&lt;/p&gt;
+&lt;p&gt;footer_text: &#34;#f3f4f6&#34;&lt;/p&gt;
+&lt;p&gt;footer_link_hover: &#34;#60a5fa&#34;&lt;/p&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h2]Bonnes Pratiques et Conseils de Pro[/h2]&lt;/p&gt;
+&lt;p&gt;[h4]Pour un menu optimal[/h4]&lt;/p&gt;
+&lt;p&gt;[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;&lt;/p&gt;
+&lt;li&gt;✅ Limitez à 5-7 liens principaux pour ne pas submerger l&#39;utilisateur&lt;/li&gt;
+&lt;li&gt;✅ Utilisez des titres clairs et concis (1-2 mots maximum)&lt;/li&gt;
+&lt;li&gt;✅ Organisez par ordre d&#39;importance (les plus importants à gauche)&lt;/li&gt;
+&lt;li&gt;✅ Utilisez les sous-menus pour regrouper le contenu connexe&lt;/li&gt;
+&lt;li&gt;✅ Testez sur mobile : la navigation responsive est cruciale&lt;/li&gt;
+&lt;li&gt;✅ Gardez une cohérence entre les langues si vous êtes multilingue&lt;/li&gt;
+&lt;p&gt;&lt;/ul&gt;[/html]&lt;br /&gt;
+[h4]Pour un footer efficace[/h4]&lt;/p&gt;
+&lt;p&gt;[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;&lt;/p&gt;
+&lt;li&gt;✅ Limitez à 3-4 colonnes maximum&lt;/li&gt;
+&lt;li&gt;✅ Regroupez logiquement : Navigation, Ressources, Légal, Social&lt;/li&gt;
+&lt;li&gt;✅ Incluez toujours les liens légaux obligatoires (mentions légales, confidentialité)&lt;/li&gt;
+&lt;li&gt;✅ Ajoutez vos réseaux sociaux pour renforcer votre présence&lt;/li&gt;
+&lt;li&gt;✅ Personnalisez le copyright avec votre marque&lt;/li&gt;
+&lt;li&gt;✅ Vérifiez que tous les liens fonctionnent après chaque modification&lt;/li&gt;
+&lt;p&gt;&lt;/ul&gt;[/html]&lt;br /&gt;
+[h2]Exemple Complet : Configuration Optimale[/h2]&lt;/p&gt;
+&lt;p&gt;Voici une configuration recommandée pour un blog professionnel :&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+Menu.yaml recommandé :&lt;/p&gt;
+&lt;p&gt;menu:&lt;/p&gt;
+&lt;p&gt;logo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;enabled: true
+
+text: Mon Blog Pro
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;language_switcher:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;enabled: true
+
+position: right
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;items:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- title: Accueil
+
+  url: /
+
+- title: Blog
+
+  url: /articles/
+
+- title: À propos
+
+  url: /a-propos/
+
+- title: Contact
+
+  url: /contact/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+Footer.yaml recommandé :&lt;/p&gt;
+&lt;p&gt;footer:&lt;/p&gt;
+&lt;p&gt;enabled: true&lt;/p&gt;
+&lt;p&gt;columns:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- title: Navigation
+
+  links:
+
+    - title: Accueil
+
+      url: /
+
+    - title: Articles
+
+      url: /articles/
+
+- title: Légal
+
+  links:
+
+    - title: Mentions légales
+
+      url: /mentions-legales/
+
+    - title: Confidentialité
+
+      url: /confidentialite/
+
+- title: Suivez-nous
+
+  links:
+
+    - title: Twitter
+
+      url: https://twitter.com/
+
+      external: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;bottom_bar:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;enabled: true
+
+copyright: &#34;© 2026 Mon Blog Pro. Tous droits réservés.&#34;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;br /&gt;
+[h2]Appliquer les Modifications[/h2]&lt;/p&gt;
+&lt;p&gt;Après chaque changement dans [code]menu.yaml[/code] ou [code]footer.yaml[/code] :&lt;/p&gt;
+&lt;p&gt;[html]&lt;ol style=&#34;background: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;&lt;/p&gt;
+&lt;li&gt;1. Sauvegardez le fichier de configuration&lt;/li&gt;
+&lt;li&gt;2. Relancez le build : &lt;code&gt;python3 build.py --static --base-url &#34;/votre-repo/dist&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;3. Rafraîchissez votre page pour voir les changements&lt;/li&gt;
+&lt;li&gt;4. Testez tous les liens pour vérifier qu&#39;ils fonctionnent&lt;/li&gt;
+&lt;p&gt;&lt;/ol&gt;[/html]&lt;br /&gt;
+[h2]Récapitulatif des Fichiers[/h2]&lt;/p&gt;
+&lt;p&gt;[h4]content/config/menu.yaml[/h4] - Contrôle la barre de navigation principale&lt;/p&gt;
+&lt;p&gt;[h4]content/config/footer.yaml[/h4] - Contrôle le pied de page et ses colonnes&lt;/p&gt;
+&lt;p&gt;[h4]content/config/personalization.yaml[/h4] - Contrôle les couleurs et l&#39;apparence visuelle&lt;/p&gt;
+&lt;p&gt;[h2]Astuce Finale[/h2]&lt;/p&gt;
+&lt;p&gt;La navigation est comme un guide touristique : elle doit montrer le chemin sans imposer l&#39;itinéraire. Gardez votre menu léger, votre footer informatif, et vos visiteurs vous remercieront par leur fidélité.&lt;/p&gt;
+&lt;p&gt;[h4]Vous avez maintenant toutes les clés pour créer une navigation sur mesure qui reflète parfaitement l&#39;identité de votre blog ![/h4]&lt;/p&gt;
+&lt;p&gt;N&#39;oubliez pas de tester sur différents appareils et de demander des retours à vos visiteurs pour affiner continuellement l&#39;expérience.&lt;/p&gt;
+&lt;p&gt;[h3]Liens Utiles[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Documentation complète[/h4] : Consultez le README principal&lt;br /&gt;
+[h4]Exemples de configurations[/h4] : Dépôt GitHub /examples&lt;br /&gt;
+[h4]Support[/h4] : Ouvrez une issue sur GitHub&lt;br /&gt;
+[h4]Communauté[/h4] : Discussions GitHub&lt;/p&gt;
+&lt;p&gt;[h2]Partagez Votre Création ![/h2]&lt;/p&gt;
+&lt;p&gt;Une fois votre navigation personnalisée, [h4]partagez une capture d&#39;écran[/h4] sur les réseaux sociaux avec le hashtag [code]#GitHubBlog[/code] !&lt;/p&gt;
+&lt;p&gt;Merci de faire partie de cette aventure.&lt;/p&gt;
+&lt;p&gt;[h4]Bonne personnalisation et à bientôt dans nos lignes de code ![/h4]&lt;/p&gt;
+&lt;p&gt;[html]&lt;p align=&#34;center&#34; style=&#34;margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;&#34;&gt;&lt;br /&gt;
+GitHub Blog - Navigation Personnalisable&lt;/p&gt;
+&lt;p&gt;Votre blog, votre navigation, votre style&lt;/p&gt;
+&lt;p&gt;MIT License - 2026&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;[/html]&lt;/p&gt;]]></description>
+    </item>
+    <item>
+        <title>License</title>
+        <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/</link>
+        <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/</guid>
+        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <description><![CDATA[&lt;ul&gt;
+&lt;li&gt;MIT&lt;/li&gt;
+&lt;li&gt;License&lt;br /&gt;
+title: License&lt;br /&gt;
+twitter_description: Page de description de la license de Github-Blog&lt;br /&gt;
+twitter_image: /static/uploads/39cba30f9da14d059c009e3f1818c402.png&lt;br /&gt;
+twitter_title: License&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;[h1] Licence MIT - GitHub Blog[/h1]&lt;/p&gt;
+&lt;p&gt;[h4]Chers utilisateurs, développeurs, contributeurs et amis du libre,[/h4]&lt;/p&gt;
+&lt;p&gt;Cette page définit les termes légaux sous lesquels GitHub Blog vous est offert. Elle garantit votre liberté d&#39;utiliser, modifier et partager ce projet tout en protégeant les créateurs originaux.&lt;/p&gt;
+&lt;p&gt;Cette licence est votre passeport vers une utilisation sans contrainte de GitHub Blog, que vous soyez particulier, entreprise, ou institution.&lt;/p&gt;
+&lt;p&gt;Les licences restrictives et propriétaires appartiennent à un autre monde. Avec GitHub Blog, vous bénéficiez de la plus grande liberté que le droit d&#39;auteur puisse offrir.&lt;/p&gt;
+&lt;p&gt;[h4]À gauche[/h4], vos droits d&#39;utilisation.&lt;br /&gt;
+ [h4]En haut[/h4], la protection des contributeurs.&lt;br /&gt;
+ [h4]À droite[/h4], vos obligations minimales.&lt;br /&gt;
+ [h4]Partout[/h4], la philosophie du logiciel libre.&lt;/p&gt;
+&lt;p&gt;[h2] Qu&#39;est-ce que la Licence MIT ?[/h2]&lt;/p&gt;
+&lt;p&gt;La [h4]Licence MIT[/h4] est l&#39;une des licences open source les plus permissives et les plus utilisées dans le monde du développement logiciel. Elle vous accorde une liberté quasi-totale sur le logiciel.&lt;/p&gt;
+&lt;p&gt;[h3] Caractéristiques Principales[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Permissive[/h4] - Vous pouvez faire presque tout ce que vous voulez avec le code&lt;/p&gt;
+&lt;p&gt;[h4]Simple[/h4] - Rédigée en langage clair, compréhensible par tous&lt;/p&gt;
+&lt;p&gt;[h4]Courte[/h4] - Seulement quelques paragraphes pour couvrir l&#39;essentiel&lt;/p&gt;
+&lt;p&gt;[h4]Compatible[/h4] - Fonctionne avec d&#39;autres licences, y compris propriétaires&lt;/p&gt;
+&lt;p&gt;Créée au Massachusetts Institute of Technology (MIT) dans les années 1980, cette licence est devenue le standard de l&#39;industrie pour sa clarté et sa flexibilité.&lt;/p&gt;
+&lt;p&gt;[h2] Ce Que Vous Pouvez Faire[/h2]&lt;/p&gt;
+&lt;p&gt;[h4]Vous êtes libres de :[/h4]&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;&#34;&gt;&lt;/p&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Utiliser&lt;/strong&gt;&lt;br&gt;
+Utiliser GitHub Blog pour n&#39;importe quel projet, personnel ou commercial
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Copier&lt;/strong&gt;&lt;br&gt;
+Faire des copies du logiciel sans restriction de nombre
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Modifier&lt;/strong&gt;&lt;br&gt;
+Adapter le code à vos besoins spécifiques
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Fusionner&lt;/strong&gt;&lt;br&gt;
+Intégrer GitHub Blog dans d&#39;autres projets
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Publier&lt;/strong&gt;&lt;br&gt;
+Distribuer le logiciel original ou modifié
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Vendre&lt;/strong&gt;&lt;br&gt;
+Commercialiser des produits basés sur GitHub Blog
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Sous-licencier&lt;/strong&gt;&lt;br&gt;
+Accorder des droits à d&#39;autres personnes
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt; Garder privé&lt;/strong&gt;&lt;br&gt;
+Ne pas publier vos modifications si vous ne le souhaitez pas
+&lt;/div&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;/p&gt;
+&lt;p&gt;[h3] Cas d&#39;Usage Concrets[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Blog personnel[/h4] - Créez votre blog sans aucune restriction&lt;/p&gt;
+&lt;p&gt;[h4]Site d&#39;entreprise[/h4] - Utilisez GitHub Blog pour votre entreprise, gratuitemen&lt;/p&gt;
+&lt;p&gt;[h4]Projet client[/h4] - Intégrez-le dans des solutions pour vos clients&lt;/p&gt;
+&lt;p&gt;[h4]Produit commercial[/h4] - Vendez un service basé sur GitHub Blog&lt;/p&gt;
+&lt;p&gt;[h4]Fork et modification[/h4] - Créez votre propre version sans demander la permission&lt;/p&gt;
+&lt;p&gt;[h2] Conditions Minimales à Respecter[/h2]&lt;/p&gt;
+&lt;p&gt;[h4]Pour bénéficier de ces droits, vous devez uniquement :[/h4]&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%); padding: 20px; border-radius: 10px; color: #92400e; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+&lt;strong&gt; Obligation unique : Inclure la notice de copyright et la licence&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;br /&gt;
+Dans tout fichier distribué ou documentation, vous devez inclure :&lt;/p&gt;
+&lt;ul style=&#34;margin-top: 10px;&#34;&gt;
+&lt;li&gt;La mention de copyright originale&lt;/li&gt;
+&lt;li&gt;Le texte de la licence MIT&lt;/li&gt;
+&lt;li&gt;L&#39;autorisation explicite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/div&gt;[/html]&lt;/p&gt;
+&lt;p&gt;[h3] Comment Respecter Cette Condition[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Dans votre footer[/h4] - Ajoutez : &#34;Propulsé par GitHub Blog - Licence MIT&#34;&lt;/p&gt;
+&lt;p&gt;[h4]Dans un fichier LICENSE[/h4] - Copiez le texte complet de la licence MIT&lt;/p&gt;
+&lt;p&gt;[h4]Dans votre code source[/h4] - Conservez les en-têtes de copyright originaux&lt;/p&gt;
+&lt;p&gt;[h4]Dans votre documentation[/h4] - Mentionnez GitHub Blog et sa licence&lt;/p&gt;
+&lt;p&gt;[h2] Texte Complet de la Licence MIT[/h2]&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #1e293b; color: #e2e8f0; padding: 25px; border-radius: 10px; margin: 20px 0; font-family: monospace; font-size: 13px; line-height: 1.6; overflow-x: auto;&#34;&gt;&lt;br /&gt;
+MIT License&lt;br&gt;&lt;br&gt;&lt;br /&gt;
+Copyright (c) 2026 Thibaut Lombard&lt;br&gt;&lt;br /&gt;
+Copyright (c) 2026 Lombard Web Services&lt;br&gt;&lt;br&gt;&lt;br /&gt;
+Permission is hereby granted, free of charge, to any person obtaining a copy&lt;br&gt;&lt;br /&gt;
+of this software and associated documentation files (the &#34;Software&#34;), to deal&lt;br&gt;&lt;br /&gt;
+in the Software without restriction, including without limitation the rights&lt;br&gt;&lt;br /&gt;
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&lt;br&gt;&lt;br /&gt;
+copies of the Software, and to permit persons to whom the Software is&lt;br&gt;&lt;br /&gt;
+furnished to do so, subject to the following conditions:&lt;br&gt;&lt;br&gt;&lt;br /&gt;
+The above copyright notice and this permission notice shall be included in all&lt;br&gt;&lt;br /&gt;
+copies or substantial portions of the Software.&lt;br&gt;&lt;br&gt;&lt;br /&gt;
+THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&lt;br&gt;&lt;br /&gt;
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&lt;br&gt;&lt;br /&gt;
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&lt;br&gt;&lt;br /&gt;
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&lt;br&gt;&lt;br /&gt;
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&lt;br&gt;&lt;br /&gt;
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&lt;br&gt;&lt;br /&gt;
+SOFTWARE.&lt;br /&gt;
+&lt;/div&gt;[/html]&lt;/p&gt;
+&lt;p&gt;[h2] Exclusion de Garantie[/h2]&lt;/p&gt;
+&lt;p&gt;[h4]Clause importante à comprendre :[/h4]&lt;/p&gt;
+&lt;p&gt;Le logiciel est fourni &#34;tel quel&#34;, sans aucune garantie.&lt;/p&gt;
+&lt;p&gt;[h4]Pas de garantie de fonctionnement[/h4] - Le logiciel peut contenir des bugs&lt;/p&gt;
+&lt;p&gt;[h4]Pas de garantie de compatibilité[/h4] - Pas d&#39;assurance pour tous les environnements&lt;/p&gt;
+&lt;p&gt;[h4]Pas de garantie de sécurité[/h4] - Vous êtes responsable de la sécurité de votre installation&lt;/p&gt;
+&lt;p&gt;[h4]Pas de support obligatoire[/h4] - Les auteurs ne sont pas tenus de vous aider&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0;&#34;&gt;&lt;br /&gt;
+&lt;strong&gt; Responsabilité :&lt;/strong&gt; En utilisant GitHub Blog, vous acceptez que ni Thibaut Lombard ni Lombard Web Services ne puissent être tenus responsables de problèmes éventuels. Vous utilisez ce logiciel à vos propres risques.&lt;br /&gt;
+&lt;/div&gt;[/html]&lt;/p&gt;
+&lt;p&gt;[h2] Différences avec d&#39;Autres Licences[/h2]&lt;/p&gt;
+&lt;p&gt;[h3]MIT vs GPL[/h3]&lt;/p&gt;
+&lt;p&gt;[html]&lt;table style=&#34;width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px;&#34;&gt;&lt;/p&gt;
+&lt;thead&gt;
+&lt;tr style=&#34;background-color: #f4f4f4;&#34;&gt;
+&lt;th style=&#34;padding: 12px; border: 1px solid #ddd; text-align: left;&#34;&gt;Aspect&lt;/th&gt;
+&lt;th style=&#34;padding: 12px; border: 1px solid #ddd; text-align: left;&#34;&gt;MIT (GitHub Blog)&lt;/th&gt;
+&lt;th style=&#34;padding: 12px; border: 1px solid #ddd; text-align: left;&#34;&gt;GPL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt;Utilisation commerciale&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Autorisée&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Autorisée&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&#34;background-color: #f9f9f9;&#34;&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt;Modification&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Sans restriction&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Doit rester GPL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt;Propriétaire&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Peut devenir propriétaire&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Doit rester open source&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style=&#34;background-color: #f9f9f9;&#34;&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt;Copyleft&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Non (très permissive)&lt;/td&gt;
+&lt;td style=&#34;padding: 12px; border: 1px solid #ddd;&#34;&gt; Oui (virale)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;p&gt;&lt;/table&gt;[/html]&lt;/p&gt;
+&lt;p&gt;[h4]En résumé :[/h4] La MIT vous donne plus de liberté que la GPL car elle n&#39;impose pas que vos modifications restent open source.&lt;/p&gt;
+&lt;p&gt;[h2] Pourquoi Avoir Chosi la MIT ?[/h2]&lt;/p&gt;
+&lt;p&gt;[h4]Notre philosophie derrière ce choix :[/h4]&lt;/p&gt;
+&lt;p&gt;[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;&lt;/p&gt;
+&lt;li&gt; [h4]Maximiser l&#39;adoption[/h4] - Pas de barrières pour les entreprises&lt;/li&gt;
+&lt;li&gt; [h4]Encourager la contribution[/h4] - Même les modifications privées profitent à l&#39;écosystème&lt;/li&gt;
+&lt;li&gt; [h4]Simplicité juridique[/h4] - Pas besoin de conseil juridique pour comprendre&lt;/li&gt;
+&lt;li&gt; [h4]Confiance[/h4] - Nous croyons que la liberté génère plus de valeur&lt;/li&gt;
+&lt;p&gt;&lt;/ul&gt;[/html]&lt;/p&gt;
+&lt;p&gt;[h2] Questions Fréquentes (FAQ)[/h2]&lt;/p&gt;
+&lt;p&gt;[h3]Puis-je vendre un blog créé avec GitHub Blog ?[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Oui, absolument.[/h4] Vous pouvez vendre des sites créés avec GitHub Blog, proposer des services d&#39;installation, ou vendre des templates dérivés. Aucune redevance n&#39;est due.&lt;/p&gt;
+&lt;p&gt;[h3]Dois-je publier mes modifications ?[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Non.[/h4] Contrairement à la GPL, la MIT ne vous oblige pas à publier vos modifications. Vous pouvez garder votre version privée ou la rendre propriétaire.&lt;/p&gt;
+&lt;p&gt;[h3]Puis-je retirer la mention de copyright ?[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Non.[/h4] Vous devez conserver la notice de copyright originale dans le code source et la documentation. C&#39;est la seule obligation réelle.&lt;/p&gt;
+&lt;p&gt;[h3]Que se passe-t-il si je ne respecte pas la licence ?[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Juridiquement,[/h4] vous perdez le droit d&#39;utiliser le logiciel. Dans la pratique, il suffit généralement de corriger l&#39;oubli pour régulariser la situation.&lt;/p&gt;
+&lt;p&gt;[h3]La licence MIT est-elle valide en France ?[/h3]&lt;/p&gt;
+&lt;p&gt;[h4]Oui.[/h4] Elle est reconnue internationalement et compatible avec le droit français.&lt;/p&gt;
+&lt;p&gt;[h2] Contact et Questions Légales[/h2]&lt;/p&gt;
+&lt;p&gt;Si vous avez des questions spécifiques sur l&#39;utilisation de GitHub Blog dans un contexte particulier :&lt;/p&gt;
+&lt;p&gt;[h4]Questions générales[/h4] : contact@lombard-web-services.com&lt;/p&gt;
+&lt;p&gt;[h4]Twitter / X[/h4] : [url=https://x.com/lombardweb]@lombardweb[/url]&lt;/p&gt;
+&lt;p&gt;[h4]Issues GitHub[/h4] : [url=https://github.com/Lombard-Web-Services/github-blog/issues]github.com/Lombard-Web-Services/github-blog/issues[/url]&lt;/p&gt;
+&lt;p&gt;[html]&lt;div style=&#34;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0; text-align: center;&#34;&gt;&lt;br /&gt;
+&lt;strong&gt; Profitez de votre liberté !&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;br /&gt;
+La licence MIT est un cadeau de la communauté open source.&lt;br&gt;&lt;br /&gt;
+Utilisez-la, partagez-la, et contribuez à faire un web meilleur.&lt;br /&gt;
+&lt;/div&gt;[/html]&lt;/p&gt;
+&lt;p&gt;[h2] Ressources Complémentaires[/h2]&lt;/p&gt;
+&lt;p&gt;[h4]Site officiel de la licence MIT[/h4] : [url=https://opensource.org/licenses/MIT]opensource.org/licenses/MIT[/url]&lt;/p&gt;
+&lt;p&gt;[h4]Explications détaillées (FR)[/h4] : [url=https://www.gnu.org/licenses/license-list.fr.html#Expat]gnu.org/licenses/license-list.fr.html[/url]&lt;/p&gt;
+&lt;p&gt;[h4]Comparateur de licences[/h4] : [url=https://choosealicense.com/]choosealicense.com[/url]&lt;/p&gt;
+&lt;p&gt;[h2] Remerciements[/h2]&lt;/p&gt;
+&lt;p&gt;Merci à la Free Software Foundation et au MIT pour avoir créé et popularisé cette licence qui rend le monde du logiciel meilleur.&lt;/p&gt;
+&lt;p&gt;[h4]Utilisez GitHub Blog en toute liberté et créez sans limites ![/h4]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;[html]&lt;p align=&#34;center&#34; style=&#34;margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;&#34;&gt;&lt;br /&gt;
+&lt;strong&gt; Licence MIT - GitHub Blog&lt;/strong&gt;&lt;br&gt;&lt;br /&gt;
+&lt;em&gt;Liberté, Simplicité, Confiance&lt;/em&gt;&lt;br&gt;&lt;br /&gt;
+Copyright © 2026 Thibaut Lombard - Lombard Web Services&lt;br&gt;&lt;br /&gt;
+&lt;a href=&#34;https://x.com/lombardweb&#34; style=&#34;color: #fff; text-decoration: underline;&#34;&gt;@lombardweb&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;[/html]&lt;/p&gt;]]></description>
+    </item>
+    <item>
+        <title>Les Fonctionnalites</title>
+        <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/les-fonctionnalites/</link>
+        <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/les-fonctionnalites/</guid>
+        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <description><![CDATA[&lt;ul&gt;
+&lt;li&gt;features&lt;br /&gt;
+title: Les fonctionnalités&lt;br /&gt;
+twitter_description: La présentations des fonctionnalités présente dans le blog&lt;br /&gt;
+twitter_image: /static/uploads/239fc0cfff6d44babb835f903d221fe6.png&lt;br /&gt;
+twitter_title: Les fonctionnalités&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;[h1]Bienvenue dans la communauté GitHub Blog ![/h1]&lt;/p&gt;
+&lt;p&gt;[h4]La version statique multilingue est enfin arrivée et elle est prête à révolutionner votre façon de bloguer ![/h4]&lt;/p&gt;
+&lt;p&gt;Chers amis, développeurs passionnés, blogueurs créatifs, professionnels du web, étudiants, entrepreneurs et simples curieux du numérique,&lt;/p&gt;
+&lt;p&gt;C’est avec une immense joie et une grande fierté que je vous ouvre aujourd’hui les portes de la grande famille &lt;strong&gt;[h4]GitHub Blog[/h4]&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;Que vous soyez un développeur expérimenté qui veut un blog ultra-performant sans aucune infrastructure serveur, un créateur de contenu désireux de toucher un public international varié, un freelance qui souhaite présenter son portfolio de manière professionnelle, ou simplement quelqu’un qui apprécie les solutions élégantes, légères, sécurisées et gratuites… vous êtes exactement à la bonne place.&lt;/p&gt;
+&lt;p&gt;Ce projet est né de l’envie de combiner la simplicité de GitHub Pages avec la puissance d’un vrai système de blog moderne et multilingue. Aujourd’hui, avec cette version statique complète, nous franchissons une nouvelle étape.&lt;/p&gt;
+&lt;p&gt;[h2]Qu’est-ce que GitHub Blog - Version Statique ?[/h2]&lt;/p&gt;
+&lt;p&gt;GitHub Blog est un générateur de blog statique complet, moderne, hautement personnalisable et optimisé pour être hébergé directement sur &lt;strong&gt;[h4]GitHub Pages[/h4]&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Contrairement aux blogs traditionnels qui dépendent d’une base de données et d’un serveur dynamique (comme WordPress), cette version génère l’intégralité de votre site sous forme de fichiers HTML, CSS et JavaScript statiques. Résultat : un site ultra-rapide, extrêmement sécurisé, facile à maintenir et parfaitement compatible avec un hébergement gratuit.&lt;/p&gt;
+&lt;p&gt;Cette version a été spécialement conçue pour fonctionner dans un sous-dossier (exemple : &lt;code&gt;/dist/&lt;/code&gt; ou &lt;code&gt;/github-blog/dist/&lt;/code&gt;). Tous les liens sont gérés de manière relative ou absolue selon votre configuration, ce qui évite les problèmes classiques sur GitHub Pages.&lt;/p&gt;
+&lt;p&gt;Plus de soucis de base de données qui tombe en panne, plus de mises à jour de sécurité urgentes, plus de coûts d’hébergement : vous écrivez, vous générez, vous déployez. C’est aussi simple que ça.&lt;/p&gt;
+&lt;p&gt;[h3]Pourquoi les sites statiques sont-ils devenus le standard en 2026 ?[/h3]&lt;/p&gt;
+&lt;p&gt;En 2026, les générateurs de sites statiques (SSG) sont plébiscités pour plusieurs raisons majeures :&lt;/p&gt;
+&lt;p&gt;[html]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Performance exceptionnelle :&lt;/b&gt; Les pages sont pré-générées, donc elles se chargent en quelques millisecondes, même sur des connexions mobiles lentes.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Sécurité renforcée :&lt;/b&gt; Pas de base de données, pas de code serveur exécuté à chaque requête → surface d’attaque quasi nulle.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Scalabilité infinie :&lt;/b&gt; GitHub Pages (ou n’importe quel CDN) peut servir des millions de visiteurs sans broncher.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Coût quasi zéro :&lt;/b&gt; Hébergement gratuit, pas de serveur à maintenir.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Versioning facile :&lt;/b&gt; Tout est dans Git, vous pouvez revenir en arrière à tout moment.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;SEO amélioré :&lt;/b&gt; Les moteurs de recherche adorent les sites statiques rapides et bien structurés.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[/html]&lt;/p&gt;
+&lt;p&gt;GitHub Blog combine tous ces avantages tout en vous offrant une interface d’administration riche, même en mode statique.&lt;/p&gt;
+&lt;p&gt;[h2]Les avantages concrets de la version statique de GitHub Blog[/h2]&lt;/p&gt;
+&lt;p&gt;Voici pourquoi des milliers de personnes choisissent déjà des solutions comme la nôtre :&lt;/p&gt;
+&lt;p&gt;[html]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Chargement ultra-rapide grâce à l’absence totale de requêtes serveur dynamiques&lt;/li&gt;
+  &lt;li&gt;Hébergement gratuit et illimité sur GitHub Pages&lt;/li&gt;
+  &lt;li&gt;Sécurité maximale : impossible d’injecter du code malveillant via une faille de base de données&lt;/li&gt;
+  &lt;li&gt;Facilité de déploiement : un simple push Git suffit souvent&lt;/li&gt;
+  &lt;li&gt;Support multilingue avancé avec 7 langues déjà intégrées&lt;/li&gt;
+  &lt;li&gt;Optimisation automatique des images (conversion WebP, génération de miniatures, versions medium et large)&lt;/li&gt;
+  &lt;li&gt;Génération automatique de sitemap XML multilingue et de flux RSS par langue&lt;/li&gt;
+  &lt;li&gt;Compatibilité parfaite avec les sous-dossiers GitHub Pages grâce à la configuration flexible de base_url&lt;/li&gt;
+  &lt;li&gt;Cache des assets et optimisation des ressources pour un score Lighthouse excellent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[/html]&lt;/p&gt;
+&lt;p&gt;De nombreux utilisateurs rapportent que leur blog passe de plusieurs secondes de chargement à moins de 500 ms après migration vers une solution statique.&lt;/p&gt;
+&lt;p&gt;[h2]Une interface d’administration intuitive et complète[/h2]&lt;/p&gt;
+&lt;p&gt;Même si le site final est 100 % statique, vous ne perdez rien en confort d’édition.&lt;/p&gt;
+&lt;p&gt;L’interface d’administration inclut :&lt;/p&gt;
+&lt;p&gt;[html]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Un éditeur BBCode puissant avec barre d’outils complète et aperçu en temps réel&lt;/li&gt;
+  &lt;li&gt;Un gestionnaire de médias avancé : upload, prévisualisation, génération automatique de variantes optimisées&lt;/li&gt;
+  &lt;li&gt;Un tableau de bord clair avec statistiques de publication, catégories les plus populaires, etc.&lt;/li&gt;
+  &lt;li&gt;Création, modification, suppression d’articles avec support des brouillons, articles planifiés et masqués&lt;/li&gt;
+  &lt;li&gt;Gestion fine des catégories et tags avec comptage automatique&lt;/li&gt;
+  &lt;li&gt;Personnalisation avancée : hero section, couleurs du thème, menu de navigation, footer, mode sombre/clair&lt;/li&gt;
+  &lt;li&gt;Gestion des langues disponibles et du sélecteur de langue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[/html]&lt;/p&gt;
+&lt;p&gt;Lancez simplement &lt;code&gt;[code]python3 serve.py[/code]&lt;/code&gt; en local et accédez à &lt;code&gt;/admin&lt;/code&gt; pour tout gérer confortablement.&lt;/p&gt;
+&lt;p&gt;[h2]Un support multilingue exceptionnel et professionnel[/h2]&lt;/p&gt;
+&lt;p&gt;L’une des fonctionnalités les plus appréciées est le support multilingue avancé.&lt;/p&gt;
+&lt;p&gt;Nous proposons nativement &lt;strong&gt;7 langues&lt;/strong&gt; prêtes à l’emploi :&lt;/p&gt;
+&lt;p&gt;[html]&lt;/p&gt;
+&lt;table border=&#34;1&#34; cellpadding=&#34;10&#34; cellspacing=&#34;0&#34; style=&#34;border-collapse: collapse; width: 100%; margin: 15px 0;&#34;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&#34;background-color: #f4f4f4;&#34;&gt;
+      &lt;th style=&#34;text-align: left;&#34;&gt;Code&lt;/th&gt;
+      &lt;th style=&#34;text-align: left;&#34;&gt;Langue&lt;/th&gt;
+      &lt;th style=&#34;text-align: left;&#34;&gt;Drapeau&lt;/th&gt;
+      &lt;th style=&#34;text-align: left;&#34;&gt;Direction&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;fr&lt;/td&gt;&lt;td&gt;Français&lt;/td&gt;&lt;td&gt;🇫🇷&lt;/td&gt;&lt;td&gt;LTR&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;en&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;🇬🇧&lt;/td&gt;&lt;td&gt;LTR&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;ar&lt;/td&gt;&lt;td&gt;العربية&lt;/td&gt;&lt;td&gt;🇸🇦&lt;/td&gt;&lt;td&gt;RTL&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;hi&lt;/td&gt;&lt;td&gt;हिन्दी&lt;/td&gt;&lt;td&gt;🇮🇳&lt;/td&gt;&lt;td&gt;LTR&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;zh&lt;/td&gt;&lt;td&gt;中文&lt;/td&gt;&lt;td&gt;🇨🇳&lt;/td&gt;&lt;td&gt;LTR&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;ary&lt;/td&gt;&lt;td&gt;الدارجة&lt;/td&gt;&lt;td&gt;🇲🇦&lt;/td&gt;&lt;td&gt;RTL&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;ber&lt;/td&gt;&lt;td&gt;ⵜⴰⵎⴰⵣⵉⵖⵜ&lt;/td&gt;&lt;td&gt;ⵣ&lt;/td&gt;&lt;td&gt;LTR&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;[/html]&lt;/p&gt;
+&lt;p&gt;Le système détecte automatiquement la langue du navigateur, propose un sélecteur élégant, génère des URLs propres par langue (&lt;code&gt;/fr/&lt;/code&gt;, &lt;code&gt;/en/&lt;/code&gt;, &lt;code&gt;/ar/&lt;/code&gt;…), et gère parfaitement les langues RTL (Arabe, Darija).&lt;/p&gt;
+&lt;p&gt;Vous pouvez ajouter facilement de nouvelles langues en copiant un fichier de traduction et en l’adaptant. Les bonnes pratiques SEO multilingue (hreflang, URLs distinctes, métadonnées par langue) sont intégrées nativement.&lt;/p&gt;
+&lt;p&gt;[h3]Pourquoi le multilingue est crucial en 2026 ?[/h3]&lt;/p&gt;
+&lt;p&gt;Avec l’internationalisation croissante du web, proposer son contenu dans plusieurs langues permet d’atteindre un public beaucoup plus large, d’améliorer son référencement dans différents pays, et de montrer un vrai respect pour la diversité culturelle de ses lecteurs.&lt;/p&gt;
+&lt;p&gt;GitHub Blog vous facilite cette tâche sans complication technique.&lt;/p&gt;
+&lt;p&gt;[h2]Fonctionnalités techniques avancées[/h2]&lt;/p&gt;
+&lt;p&gt;[quote]&lt;br /&gt;
+« Un blog statique ne signifie pas un blog limité. Au contraire, c’est la liberté totale combinée à une performance inégalée. »&lt;br /&gt;
+[/quote]&lt;/p&gt;
+&lt;p&gt;Parmi les points forts techniques :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Optimisation automatique des images avec génération de variantes WebP&lt;/li&gt;
+&lt;li&gt;Métadonnées SEO complètes : Open Graph, Twitter Cards, balises canoniques, meta robots&lt;/li&gt;
+&lt;li&gt;Support des articles masqués (accessibles uniquement par URL directe)&lt;/li&gt;
+&lt;li&gt;URLs personnalisables (slugs intelligents)&lt;/li&gt;
+&lt;li&gt;Pagination intelligente et archives par catégorie/tag&lt;/li&gt;
+&lt;li&gt;Moteur de recherche côté client performant&lt;/li&gt;
+&lt;li&gt;Intégration optionnelle PostgreSQL pour la journalisation et l’historique (en mode développement)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[h2]Comment démarrer en quelques minutes seulement ?[/h2]&lt;/p&gt;
+&lt;p&gt;Le processus est volontairement simplifié :&lt;/p&gt;
+&lt;p&gt;[html]&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Téléchargez l’archive &lt;b&gt;github-blog-static.zip&lt;/b&gt; depuis le dépôt GitHub&lt;/li&gt;
+  &lt;li&gt;Installez les dépendances Python : &lt;code&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Configurez les fichiers essentiels (&lt;b&gt;site.yaml&lt;/b&gt;, &lt;b&gt;static_config.yaml&lt;/b&gt;, &lt;b&gt;personalization.yaml&lt;/b&gt;)&lt;/li&gt;
+  &lt;li&gt;Créez votre premier article avec la commande : &lt;code&gt;python3 new_post.py &#34;Titre de mon article&#34;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Générez la version statique : &lt;code&gt;python3 build.py --static --base-url &#34;/votre-repo/dist&#34;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Déployez le dossier &lt;b&gt;dist/&lt;/b&gt; sur GitHub Pages (dans les paramètres du dépôt, choisissez le dossier /dist)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;[/html]&lt;/p&gt;
+&lt;p&gt;En moins de 10 minutes, votre blog professionnel multilingue peut être en ligne !&lt;/p&gt;
+&lt;p&gt;[h2]Cas d’usage concrets[/h2]&lt;/p&gt;
+&lt;p&gt;Cette solution convient parfaitement pour :&lt;br /&gt;
+- Blogs personnels ou professionnels&lt;br /&gt;
+- Portfolios de développeurs, designers ou freelances&lt;br /&gt;
+- Sites de documentation technique&lt;br /&gt;
+- Blogs d’entreprise ou de projets open source&lt;br /&gt;
+- Journaux de voyage, sites culturels multilingues&lt;br /&gt;
+- Sites éducatifs ou académiques&lt;/p&gt;
+&lt;p&gt;De nombreux utilisateurs l’utilisent déjà pour présenter leur travail, partager leurs connaissances ou construire une présence en ligne durable.&lt;/p&gt;
+&lt;p&gt;[h2]Rejoignez la communauté active[/h2]&lt;/p&gt;
+&lt;p&gt;GitHub Blog est un projet open source vivant. Nous encourageons fortement la participation :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mettez une étoile sur le dépôt pour montrer votre soutien&lt;/li&gt;
+&lt;li&gt;Signalez les bugs ou proposez de nouvelles fonctionnalités via les Issues&lt;/li&gt;
+&lt;li&gt;Contribuez en ajoutant une nouvelle langue, un template, ou une amélioration&lt;/li&gt;
+&lt;li&gt;Partagez vos blogs créés avec GitHub Blog sur les réseaux sociaux ou dans les commentaires&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ensemble, nous pouvons continuer à faire évoluer cet outil pour qu’il reste l’un des plus agréables et puissants dans l’écosystème des blogs statiques.&lt;/p&gt;
+&lt;p&gt;[h3]Un grand merci à tous[/h3]&lt;/p&gt;
+&lt;p&gt;Merci à la communauté open source qui inspire ce projet tous les jours. Merci à ceux qui ont testé les versions précédentes et donné un feedback précieux. Et surtout, merci à &lt;strong&gt;vous&lt;/strong&gt; qui lisez ces lignes en ce moment même.&lt;/p&gt;
+&lt;p&gt;Le voyage ne fait que commencer. Nous avons encore beaucoup d’idées pour les prochaines versions : plus de templates, une meilleure intégration IA pour la rédaction, des extensions, etc.&lt;/p&gt;
+&lt;p&gt;[h4]Bienvenue à bord[/h4]&lt;/p&gt;
+&lt;p&gt;Vous n’êtes plus seul : toute la communauté GitHub Blog est là pour vous aider.&lt;/p&gt;
+&lt;p&gt;[h4]L’équipe Lombard Web Services[/h4]&lt;/p&gt;
+&lt;p&gt;[center][h4]Prêt à créer votre blog statique multilingue parfait et à rejoindre le mouvement ?[/h4][/center]&lt;/p&gt;
+&lt;p&gt;[url=https://github.com/Lombard-Web-Services/github-blog/raw/refs/heads/main/github-blog-static.zip]⬇️ Télécharger dès maintenant GitHub Blog - Version Statique[/url]&lt;/p&gt;
+&lt;p&gt;On a vraiment hâte de découvrir vos créations, vos idées et vos retours !&lt;/p&gt;]]></description>
+    </item>
+</channel>
+</rss>

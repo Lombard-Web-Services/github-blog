@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Mon Blog Multilingue</title>
+    <link>https://lombard-web-services.github.io/blog//github-blog/dist/ar</link>
+    <description>Blog technique et créatif multilingue</description>
+    <language>ar</language>
+    <lastBuildDate>Tue, 07 Apr 2026 03:34:52 +0000</lastBuildDate>
+    <atom:link href="https://lombard-web-services.github.io/blog//github-blog/dist/ar/feed.xml" rel="self" type="application/rss+xml"/>
+    
+</channel>
+</rss>

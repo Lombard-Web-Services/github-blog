@@ -1,0 +1,334 @@
+/* ============================================
+   STYLES POUR MENU ET PERSONNALISATION
+   ============================================ */
+
+/* Form row pour aligner les champs */
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* Logo upload area */
+.logo-upload-area {
+    border: 2px dashed var(--admin-border);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    background: var(--admin-bg);
+    transition: all 0.3s ease;
+}
+
+.logo-upload-area:hover {
+    border-color: var(--admin-primary);
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.logo-preview {
+    margin-bottom: 1rem;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-preview img {
+    max-height: 60px;
+    max-width: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.logo-preview p {
+    color: var(--admin-text-muted);
+    font-size: 0.875rem;
+}
+
+/* Menu items list */
+.menu-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-item-card {
+    background: var(--admin-surface);
+    border: 1px solid var(--admin-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu-item-card:hover {
+    border-color: var(--admin-primary);
+    box-shadow: var(--shadow);
+}
+
+.menu-item-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--admin-bg);
+    border-bottom: 1px solid var(--admin-border);
+}
+
+.drag-handle {
+    color: var(--admin-text-muted);
+    cursor: grab;
+    font-size: 1.25rem;
+    user-select: none;
+    padding: 0.25rem;
+}
+
+.drag-handle:active {
+    cursor: grabbing;
+}
+
+.menu-item-header .item-title {
+    flex: 1;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 0.5rem;
+    color: var(--admin-text);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.menu-item-header .item-title:focus {
+    border-color: var(--admin-primary);
+    background: var(--admin-surface);
+    outline: none;
+}
+
+.menu-item-body {
+    padding: 1rem;
+}
+
+.dropdown-children {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--admin-bg);
+    border-radius: 8px;
+    border-left: 3px solid var(--admin-primary);
+}
+
+.dropdown-children textarea {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.875rem;
+}
+
+/* Language cards */
+.languages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.language-card {
+    background: var(--admin-surface);
+    border: 1px solid var(--admin-border);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.language-card .form-row {
+    flex: 1;
+    margin-bottom: 0;
+    min-width: 300px;
+}
+
+.language-card input {
+    text-align: center;
+}
+
+.lang-flag {
+    font-size: 1.5rem;
+    width: 60px;
+}
+
+/* Footer columns */
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.footer-column-card {
+    background: var(--admin-surface);
+    border: 1px solid var(--admin-border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.column-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--admin-bg);
+    border-bottom: 1px solid var(--admin-border);
+}
+
+.column-header input {
+    flex: 1;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 0.5rem;
+    color: var(--admin-text);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.column-header input:focus {
+    border-color: var(--admin-primary);
+    background: var(--admin-surface);
+    outline: none;
+}
+
+.column-links {
+    padding: 1rem;
+}
+
+.column-links textarea {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* Section description */
+.section-desc {
+    color: var(--admin-text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 0.9375rem;
+}
+
+/* Checkbox styling élégant */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    color: var(--admin-text);
+    user-select: none;
+}
+
+.elegant-checkbox {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--admin-border);
+    border-radius: 6px;
+    background: var(--admin-bg);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.elegant-checkbox:hover {
+    border-color: var(--admin-primary);
+}
+
+.elegant-checkbox:checked {
+    background: var(--admin-primary);
+    border-color: var(--admin-primary);
+}
+
+.elegant-checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.elegant-checkbox:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Langues disponibles chips */
+.available-languages {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--admin-bg);
+    border-radius: 8px;
+}
+
+.lang-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.lang-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    background: var(--admin-surface-hover);
+    border: 1px solid var(--admin-border);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    color: var(--admin-text-secondary);
+}
+
+/* Alert styles */
+.alert-success {
+    background: rgba(34, 197, 94, 0.1);
+    color: var(--admin-success);
+    border: 1px solid var(--admin-success);
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+    }
+
+    .language-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .language-card .form-row {
+        min-width: auto;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item-header {
+        flex-wrap: wrap;
+    }
+
+    .menu-item-header .item-title {
+        width: 100%;
+        order: -1;
+        margin-bottom: 0.5rem;
+    }
+}

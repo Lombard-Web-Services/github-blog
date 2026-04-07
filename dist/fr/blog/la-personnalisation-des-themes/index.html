@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <base href="/github-blog/dist/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation sur la personnalisation de thèmes">
+
+    <title>Personnalisation de thèmes | Mon Blog Multilingue</title>
+
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <meta property="og:title" content="Personnalisation de thèmes" />
+    <meta property="og:description" content="Documentation sur la personnalisation de thèmes" />
+    <meta property="og:image" content="/github-blog/dist/static/uploads/29c45566a9194946b7c65ee7862e080a.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Personnalisation de thèmes" />
+    <meta property="og:url" content="/github-blog/dist/fr/blog/la-personnalisation-des-themes/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Mon Blog Multilingue" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Personnalisation de thèmes" />
+    <meta name="twitter:description" content="Documentation sur la personnalisation de thèmes" />
+    <meta name="twitter:image" content="/github-blog/dist/static/uploads/29c45566a9194946b7c65ee7862e080a.png" />
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Mon Blog Multilingue">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#000000">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <link rel="canonical" href="&#39;&#39;" />
+
+    <link rel="icon" type="image/x-icon" href="/github-blog/dist/static/images/favicon.ico">
+
+    <link rel="stylesheet" href="/github-blog/dist/static/css/main.css">
+    <link rel="stylesheet" href="/github-blog/dist/static/css/code.css">
+    <link rel="stylesheet" href="/github-blog/dist/static/css/dark.css">
+
+        <link rel="alternate" type="application/rss+xml" title="Mon Blog Multilingue - Flux RSS" href="/github-blog/dist/fr/feed.xml" />
+</head></head>
+<body>
+<header class="site-header">
+    <nav class="main-nav">
+        <div class="nav-brand">
+                <a href="/github-blog/dist/fr/" class="site-title">Github-Blog</a>
+        </div>
+
+        <div class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/" class="nav-link" >
+                        Accueil
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/articles/" class="nav-link" >
+                        Articles
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/blog/a-propos/" class="nav-link" >
+                        À propos
+                    </a>
+                </li>
+            </ul>
+
+            <a href="/github-blog/dist/fr/search" class="search-link" title="Rechercher">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </a>
+
+            <div class="language-switcher">
+                <select id="lang-select" onchange="switchLanguage(this.value)">
+                    <option value="fr" selected>
+                        🇫🇷 Français
+                    </option>
+                    <option value="en" >
+                        🇬🇧 English
+                    </option>
+                    <option value="ar" >
+                        🇸🇦 العربية
+                    </option>
+                    <option value="hi" >
+                        🇮🇳 हिन्दी
+                    </option>
+                    <option value="zh" >
+                        🇨🇳 中文
+                    </option>
+                    <option value="ary" >
+                        🇲🇦 الدارجة
+                    </option>
+                    <option value="ber" >
+                        ⵣ ⵜⴰⵎⴰⵣⵉⵖⵜ
+                    </option>
+                </select>
+            </div>
+
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer de thème">
+                <span class="theme-icon-light">☀️</span>
+                <span class="theme-icon-dark">🌙</span>
+            </button>
+        </div>
+
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<script>
+function switchLanguage(lang) {
+    const currentPath = window.location.pathname;
+    const currentLang = 'fr';
+    const baseUrl = '/github-blog/dist';
+    const multilingualEnabled = true;
+
+    if (!multilingualEnabled) return;
+
+    if (lang !== currentLang) {
+        let newPath = currentPath.replace('/' + currentLang, '/' + lang);
+        if (newPath === currentPath) {
+            newPath = '/' + lang + currentPath;
+        }
+        if (baseUrl && newPath) {
+            if (!newPath.startsWith(baseUrl)) {
+                newPath = baseUrl + newPath;
+            }
+        }
+        window.location.href = newPath;
+    }
+}
+
+function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+
+function toggleMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    if (navMenu && menuToggle) {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    }
+}
+
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+        document.documentElement.classList.add('dark');
+    }
+})();
+
+document.addEventListener('click', function(e) {
+    const navMenu = document.querySelector('.nav-menu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    if (navMenu && navMenu.classList.contains('active') && 
+        !navMenu.contains(e.target) && 
+        menuToggle && !menuToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+</script>    
+    <main class="main-content">
+<article class="post-single" id="article-top">
+    <div class="container container-lg">
+        <header class="post-header">
+            <div class="post-meta">
+                <time datetime="2026-04-07T03:34:51.722890">
+                        07 April 2026
+                </time>
+                <span class="post-category">presentation</span>
+            </div>
+            <h1 id="post-title">La Personnalisation Des Themes</h1>
+            <p class="post-description" data-bbcode-description="Documentation sur la personnalisation de thèmes"></p>
+        </header>
+
+        <figure class="post-hero-image">
+            <img src="/static/uploads/29c45566a9194946b7c65ee7862e080a.png" alt="La Personnalisation Des Themes" id="post-image" loading="lazy">
+        </figure>
+
+        <div class="elegant-separator">
+            <span class="separator-line"></span>
+            <span class="separator-icon">✦</span>
+            <span class="separator-line"></span>
+        </div>
+
+        <div class="post-body" id="post-content" data-bbcode-content="---
+canonical_url: &#39;&#39;
+category: presentation
+date: &#39;2026-04-06&#39;
+description: Documentation sur la personnalisation de thèmes
+draft: false
+hide_from_home: false
+image: /static/uploads/29c45566a9194946b7c65ee7862e080a.png
+language: fr
+og_description: Documentation sur la personnalisation de thèmes
+og_image: /static/uploads/29c45566a9194946b7c65ee7862e080a.png
+og_title: Personnalisation de thèmes
+parent_slug: null
+seo_description: Documentation sur la personnalisation de thèmes
+seo_title: Personnalisation de thèmes
+tags:
+- ux
+- ui
+title: La personnalisation des thèmes
+twitter_description: Documentation sur la personnalisation de thèmes
+twitter_image: /static/uploads/29c45566a9194946b7c65ee7862e080a.png
+twitter_title: La personnalisation des thèmes
+---
+
+[h1]Personnalisez Votre Navigation : Menu &amp; Footer sur Mesure[/h1]
+
+[h4]Chers créateurs de contenu, architectes du web, perfectionnistes du design,[/h4]
+
+Bienvenue dans ce guide complet dédié à la personnalisation de la navigation de votre GitHub Blog. Découvrez comment sculpter l&#39;expérience utilisateur de votre blog en contrôlant chaque lien, chaque section, chaque détail de votre interface.
+
+Ce tutoriel est votre clé pour une navigation fluide et professionnelle qui guidera vos visiteurs à travers votre contenu avec élégance et efficacité.
+
+Les menus figés et les footers impersonnels appartiennent au passé. Avec GitHub Blog, vous avez le pouvoir total sur chaque élément de navigation.
+
+[h4]À gauche[/h4], la flexibilité du menu principal.
+[h4]En haut[/h4], la barre de navigation entièrement configurable.
+[h4]À droite[/h4], le sélecteur de langue positionnable.
+[h4]Partout[/h4], un footer multi-colonnes adapté à vos besoins.
+
+[h2]Le Menu de Navigation : Votre Carte au Trésor[/h2]
+
+Le menu de navigation est le [h4]coeur battant[/h4] de l&#39;expérience utilisateur de votre blog. C&#39;est par lui que vos visiteurs découvriront votre univers. GitHub Blog vous offre un contrôle absolu sur cette composante essentielle.
+
+[h3]Configuration via menu.yaml[/h3]
+
+Toute la magie opère dans le fichier [code]content/config/menu.yaml[/code]. C&#39;est ici que vous définissez l&#39;architecture de votre navigation.
+
+[h4]Structure de base du menu[/h4]
+
+[html]&lt;div style=&#34;background: #f8f9fa; border-left: 4px solid #3b82f6; padding: 15px; margin: 20px 0; font-family: monospace; font-size: 14px;&#34;&gt;
+menu:
+
+  logo:
+
+    enabled: true
+
+    url: &#39;/static/images/logo.png&#39;
+
+    text: &#39;Mon Blog&#39;
+
+  language_switcher:
+
+    enabled: true
+
+    position: right
+
+    default: fr
+
+  items:
+
+    - title: Accueil
+
+      url: /
+
+      type: page
+
+    - title: Articles
+
+      url: /articles/
+
+      type: page
+
+&lt;/div&gt;[/html]
+[h4]Les options du logo[/h4]
+
+[h4]enabled[/h4] - Active ou désactive l&#39;affichage du logo (true/false)
+
+[h4]url[/h4] - Chemin vers votre image de logo (laissez vide pour du texte uniquement)
+
+[h4]text[/h4] - Texte alternatif affiché si pas d&#39;image, ou titre du blog
+
+[h4]Le sélecteur de langue[/h4]
+
+[h4]enabled[/h4] - Active le dropdown de changement de langue
+
+[h4]position[/h4] - Positionnement : [code]left[/code], [code]right[/code], ou [code]center[/code]
+
+[h4]default[/h4] - Code langue par défaut (fr, en, ar, etc.)
+
+[h2]Ajouter un Nouveau Lien au Menu[/h2]
+
+Pour enrichir votre navigation, ajoutez simplement un nouvel élément dans la liste [code]items[/code] :
+
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;
+Exemple : Ajouter une page &#34;À propos&#34;
+
+
+title: À propos
+
+  url: /a-propos/
+
+  type: page
+
+  icon: user
+
+&lt;/div&gt;[/html]
+[h4]Propriétés disponibles pour chaque lien[/h4]
+
+[h4]title[/h4] - Le texte affiché dans le menu (supporte les traductions)
+
+[h4]url[/h4] - L&#39;URL de destination (relative ou absolue)
+
+[h4]type[/h4] - Type de lien : [code]page[/code], [code]external[/code], [code]dropdown[/code]
+
+[h4]icon[/h4] - Icône optionnelle (nom de classe CSS ou emoji)
+
+[h4]new_tab[/h4] - Ouvrir dans un nouvel onglet (true pour les liens externes)
+
+[h4]children[/h4] - Sous-menu (liste d&#39;items imbriqués)
+
+[h3]Exemple de menu complexe avec sous-menus[/h3]
+
+[html]&lt;div style=&#34;background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; margin: 20px 0; font-family: monospace; font-size: 13px;&#34;&gt;
+items:
+
+  - title: Accueil
+
+    url: /
+
+    type: page
+
+    icon: 🏠
+
+  - title: Ressources
+
+    type: dropdown
+
+    icon: 📚
+
+    children:
+
+      - title: Tutoriels
+
+        url: /tutoriels/
+
+      - title: Documentation
+
+        url: /docs/
+
+      - title: FAQ
+
+        url: /faq/
+
+  - title: GitHub
+
+    url: https://github.com/username
+
+    type: external
+
+    new_tab: true
+
+    icon: 🐙
+
+&lt;/div&gt;[/html]
+[h2]Supprimer un Lien du Menu[/h2]
+
+La simplicité est la sophistication suprême. Pour alléger votre navigation :
+
+[h4]Méthode 1 : Suppression complète[/h4]
+
+Supprimez simplement les lignes correspondantes dans le fichier [code]menu.yaml[/code] :
+
+[html]&lt;div style=&#34;background: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0;&#34;&gt;
+Avant :
+
+title: Ancienne page
+
+  url: /ancienne/
+
+  type: page
+
+
+Après : [Supprimez ces lignes]
+
+&lt;/div&gt;[/html]
+[h4]Méthode 2 : Désactivation temporaire[/h4]
+
+Utilisez la propriété [code]enabled: false[/code] pour masquer sans supprimer :
+
+[html]&lt;div style=&#34;background: #f0fdf4; border-left: 4px solid #22c55e; padding: 15px; margin: 20px 0;&#34;&gt;
+
+title: Page en maintenance
+
+  url: /maintenance/
+
+  type: page
+
+  enabled: false
+
+&lt;/div&gt;[/html]
+[h2]Le Footer : Votre Signature Digitale[/h2]
+
+Le footer est bien plus qu&#39;une simple zone de bas de page. C&#39;est votre [h4]dernière impression[/h4], votre carte de visite, votre centre de ressources. GitHub Blog transforme votre footer en outil de navigation puissant.
+
+[h3]Configuration via footer.yaml[/h3]
+
+Le fichier [code]content/config/footer.yaml[/code] contrôle l&#39;ensemble du pied de page.
+
+[h4]Structure complète du footer[/h4]
+
+[html]&lt;div style=&#34;background: #f8f9fa; border-left: 4px solid #8b5cf6; padding: 15px; margin: 20px 0; font-family: monospace; font-size: 14px;&#34;&gt;
+footer:
+
+  enabled: true
+
+  columns:
+
+    - title: Navigation
+
+      links:
+
+        - title: Accueil
+
+          url: /
+
+        - title: Articles
+
+          url: /articles/
+
+    - title: Ressources
+
+      links:
+
+        - title: Documentation
+
+          url: /docs/
+
+        - title: API
+
+          url: /api/
+
+  bottom_bar:
+
+    enabled: true
+
+    copyright: &#34;© 2026 Mon Blog. Tous droits réservés.&#34;
+
+    links:
+
+      - title: Mentions légales
+
+        url: /mentions-legales/
+
+      - title: Politique de confidentialité
+
+        url: /confidentialite/
+
+&lt;/div&gt;[/html]
+[h2]Ajouter une Colonne au Footer[/h2]
+
+Pour créer une nouvelle section dans votre footer, ajoutez un bloc dans la liste [code]columns[/code] :
+
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;
+Exemple : Ajouter une colonne &#34;Réseaux sociaux&#34;
+
+
+title: Réseaux sociaux
+
+  links:
+
+    - title: Twitter
+
+      url: https://twitter.com/moncompte
+
+      external: true
+
+      icon: 🐦
+
+    - title: LinkedIn
+
+      url: https://linkedin.com/in/monprofil
+
+      external: true
+
+      icon: 💼
+
+    - title: GitHub
+
+      url: https://github.com/username
+
+      external: true
+
+      icon: 🐙
+
+&lt;/div&gt;[/html]
+[h4]Propriétés des colonnes[/h4]
+
+[h4]title[/h4] - Titre de la colonne affiché en gras
+
+[h4]links[/h4] - Liste des liens contenus dans cette colonne
+
+[h4]width[/h4] - Largeur optionnelle ([code]small[/code], [code]medium[/code], [code]large[/code])
+
+[h4]Propriétés des liens de footer[/h4]
+
+[h4]title[/h4] - Texte du lien
+
+[h4]url[/h4] - URL de destination
+
+[h4]external[/h4] - Lien externe (ajoute [code]target=&#34;_blank&#34;[/code] et une icône)
+
+[h4]icon[/h4] - Emoji ou classe d&#39;icône à afficher avant le texte
+
+[h2]Supprimer une Colonne ou un Lien du Footer[/h2]
+
+[h4]Supprimer une colonne entière[/h4]
+
+Identifiez et supprimez le bloc correspondant dans [code]columns[/code] :
+
+[html]&lt;div style=&#34;background: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0;&#34;&gt;
+Suppression de la colonne &#34;Ancienne section&#34; :
+
+
+[Supprimez ces lignes :]
+
+title: Ancienne section
+
+  links:
+
+    - title: Lien obsolète
+
+      url: /obsolete/
+
+&lt;/div&gt;[/html]
+[h4]Supprimer un lien spécifique[/h4]
+
+Dans une colonne, retirez simplement l&#39;élément de la liste [code]links[/code] :
+
+[html]&lt;div style=&#34;background: #fffbeb; border-left: 4px solid #f59e0b; padding: 15px; margin: 20px 0;&#34;&gt;
+Avant :
+
+title: Navigation
+
+  links:
+
+    - title: Accueil
+
+      url: /
+
+    - title: Page obsolète
+
+      url: /old/
+
+    - title: Contact
+
+      url: /contact/
+
+
+Après :
+
+title: Navigation
+
+  links:
+
+    - title: Accueil
+
+      url: /
+
+    - title: Contact
+
+      url: /contact/
+
+&lt;/div&gt;[/html]
+[h2]Personnalisation Avancée[/h2]
+
+[h3]Barre de copyright inférieure[/h3]
+
+La [code]bottom_bar[/code] permet d&#39;ajouter une ligne de copyright et des liens légaux :
+
+[html]&lt;div style=&#34;background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; margin: 20px 0; font-family: monospace; font-size: 13px;&#34;&gt;
+bottom_bar:
+
+  enabled: true
+
+  copyright: &#34;© 2026 Mon Blog - Fait avec ❤️ et GitHub Blog&#34;
+
+  show_year: true
+
+  links:
+
+    - title: CGV
+
+      url: /cgv/
+
+    - title: Confidentialité
+
+      url: /confidentialite/
+
+    - title: Cookies
+
+      url: /cookies/
+
+&lt;/div&gt;[/html]
+[h3]Style et apparence[/h3]
+
+Le style visuel du menu et du footer est contrôlé via les variables CSS dans [code]personalization.yaml[/code] :
+
+[html]&lt;div style=&#34;background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 15px; margin: 20px 0;&#34;&gt;
+colors:
+
+  menu_background: &#34;#ffffff&#34;
+
+  menu_text: &#34;#1f2937&#34;
+
+  menu_hover: &#34;#3b82f6&#34;
+
+  footer_background: &#34;#1f2937&#34;
+
+  footer_text: &#34;#f3f4f6&#34;
+
+  footer_link_hover: &#34;#60a5fa&#34;
+
+&lt;/div&gt;[/html]
+[h2]Bonnes Pratiques et Conseils de Pro[/h2]
+
+[h4]Pour un menu optimal[/h4]
+
+[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;
+
+&lt;li&gt;✅ Limitez à 5-7 liens principaux pour ne pas submerger l&#39;utilisateur&lt;/li&gt; &lt;li&gt;✅ Utilisez des titres clairs et concis (1-2 mots maximum)&lt;/li&gt; &lt;li&gt;✅ Organisez par ordre d&#39;importance (les plus importants à gauche)&lt;/li&gt; &lt;li&gt;✅ Utilisez les sous-menus pour regrouper le contenu connexe&lt;/li&gt; &lt;li&gt;✅ Testez sur mobile : la navigation responsive est cruciale&lt;/li&gt; &lt;li&gt;✅ Gardez une cohérence entre les langues si vous êtes multilingue&lt;/li&gt; &lt;/ul&gt;[/html]
+[h4]Pour un footer efficace[/h4]
+
+[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;
+
+&lt;li&gt;✅ Limitez à 3-4 colonnes maximum&lt;/li&gt; &lt;li&gt;✅ Regroupez logiquement : Navigation, Ressources, Légal, Social&lt;/li&gt; &lt;li&gt;✅ Incluez toujours les liens légaux obligatoires (mentions légales, confidentialité)&lt;/li&gt; &lt;li&gt;✅ Ajoutez vos réseaux sociaux pour renforcer votre présence&lt;/li&gt; &lt;li&gt;✅ Personnalisez le copyright avec votre marque&lt;/li&gt; &lt;li&gt;✅ Vérifiez que tous les liens fonctionnent après chaque modification&lt;/li&gt; &lt;/ul&gt;[/html]
+[h2]Exemple Complet : Configuration Optimale[/h2]
+
+Voici une configuration recommandée pour un blog professionnel :
+
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;
+Menu.yaml recommandé :
+
+
+menu:
+
+  logo:
+
+    enabled: true
+
+    text: Mon Blog Pro
+
+  language_switcher:
+
+    enabled: true
+
+    position: right
+
+  items:
+
+    - title: Accueil
+
+      url: /
+
+    - title: Blog
+
+      url: /articles/
+
+    - title: À propos
+
+      url: /a-propos/
+
+    - title: Contact
+
+      url: /contact/
+
+&lt;/div&gt;[/html]
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;
+Footer.yaml recommandé :
+
+
+footer:
+
+  enabled: true
+
+  columns:
+
+    - title: Navigation
+
+      links:
+
+        - title: Accueil
+
+          url: /
+
+        - title: Articles
+
+          url: /articles/
+
+    - title: Légal
+
+      links:
+
+        - title: Mentions légales
+
+          url: /mentions-legales/
+
+        - title: Confidentialité
+
+          url: /confidentialite/
+
+    - title: Suivez-nous
+
+      links:
+
+        - title: Twitter
+
+          url: https://twitter.com/
+
+          external: true
+
+  bottom_bar:
+
+    enabled: true
+
+    copyright: &#34;© 2026 Mon Blog Pro. Tous droits réservés.&#34;
+
+&lt;/div&gt;[/html]
+[h2]Appliquer les Modifications[/h2]
+
+Après chaque changement dans [code]menu.yaml[/code] ou [code]footer.yaml[/code] :
+
+[html]&lt;ol style=&#34;background: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+
+&lt;li&gt;1. Sauvegardez le fichier de configuration&lt;/li&gt; &lt;li&gt;2. Relancez le build : &lt;code&gt;python3 build.py --static --base-url &#34;/votre-repo/dist&#34;&lt;/code&gt;&lt;/li&gt; &lt;li&gt;3. Rafraîchissez votre page pour voir les changements&lt;/li&gt; &lt;li&gt;4. Testez tous les liens pour vérifier qu&#39;ils fonctionnent&lt;/li&gt; &lt;/ol&gt;[/html]
+[h2]Récapitulatif des Fichiers[/h2]
+
+[h4]content/config/menu.yaml[/h4] - Contrôle la barre de navigation principale
+
+[h4]content/config/footer.yaml[/h4] - Contrôle le pied de page et ses colonnes
+
+[h4]content/config/personalization.yaml[/h4] - Contrôle les couleurs et l&#39;apparence visuelle
+
+[h2]Astuce Finale[/h2]
+
+La navigation est comme un guide touristique : elle doit montrer le chemin sans imposer l&#39;itinéraire. Gardez votre menu léger, votre footer informatif, et vos visiteurs vous remercieront par leur fidélité.
+
+[h4]Vous avez maintenant toutes les clés pour créer une navigation sur mesure qui reflète parfaitement l&#39;identité de votre blog ![/h4]
+
+N&#39;oubliez pas de tester sur différents appareils et de demander des retours à vos visiteurs pour affiner continuellement l&#39;expérience.
+
+[h3]Liens Utiles[/h3]
+
+[h4]Documentation complète[/h4] : Consultez le README principal
+[h4]Exemples de configurations[/h4] : Dépôt GitHub /examples
+[h4]Support[/h4] : Ouvrez une issue sur GitHub
+[h4]Communauté[/h4] : Discussions GitHub
+
+[h2]Partagez Votre Création ![/h2]
+
+Une fois votre navigation personnalisée, [h4]partagez une capture d&#39;écran[/h4] sur les réseaux sociaux avec le hashtag [code]#GitHubBlog[/code] !
+
+Merci de faire partie de cette aventure.
+
+[h4]Bonne personnalisation et à bientôt dans nos lignes de code ![/h4]
+
+[html]&lt;p align=&#34;center&#34; style=&#34;margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;&#34;&gt;
+GitHub Blog - Navigation Personnalisable
+
+Votre blog, votre navigation, votre style
+
+MIT License - 2026
+
+&lt;/p&gt;[/html]">
+        </div>
+
+
+        <div class="share-section">
+            <h3>Partager</h3>
+            <div class="share-buttons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/" 
+                   target="_blank" rel="noopener" class="share-btn facebook">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    Facebook
+                </a>
+
+                <a href="https://twitter.com/intent/tweet?url=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/&text=La%20Personnalisation%20Des%20Themes" 
+                   target="_blank" rel="noopener" class="share-btn twitter">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    X (Twitter)
+                </a>
+
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/" 
+                   target="_blank" rel="noopener" class="share-btn linkedin">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+
+                <a href="https://bsky.app/intent/compose?text=La%20Personnalisation%20Des%20Themes%20https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/" 
+                   target="_blank" rel="noopener" class="share-btn bluesky">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    Bluesky
+                </a>
+
+                <button onclick="copyLink()" class="share-btn copy">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    Copier le lien
+                </button>
+            </div>
+        </div>
+
+    </div>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function decodeHtmlEntities(encoded) {
+        const textarea = document.createElement('textarea');
+        textarea.innerHTML = encoded;
+        return textarea.value;
+    }
+
+    const descEl = document.querySelector('.post-description');
+    if (descEl && typeof parseBBCode === 'function') {
+        const bbcodeDesc = descEl.getAttribute('data-bbcode-description');
+        if (bbcodeDesc) {
+            const decodedDesc = decodeHtmlEntities(bbcodeDesc);
+            descEl.innerHTML = parseBBCode(decodedDesc);
+        }
+    }
+
+    const contentEl = document.getElementById('post-content');
+    if (contentEl && typeof parseBBCode === 'function') {
+        const bbcodeContent = contentEl.getAttribute('data-bbcode-content');
+        if (bbcodeContent) {
+            const decodedContent = decodeHtmlEntities(bbcodeContent);
+            const contentMatch = decodedContent.match(/---[\s\S]*?---\s*([\s\S]*)/);
+            const actualContent = contentMatch ? contentMatch[1] : decodedContent;
+            contentEl.innerHTML = parseBBCode(actualContent);
+        }
+    }
+});
+
+function copyLink() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+        alert('Lien copié !');
+    });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.pushState(null, null, this.getAttribute('href'));
+        }
+    });
+});
+</script>
+
+    </main>
+    
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/">Accueil</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/articles/">Tous les articles</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/blog/a-propos/">À propos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/feed.xml">Flux RSS</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/sitemap.xml">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/blog/license/">License</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Réseaux sociaux</h4>
+                    <ul>
+                        <li>
+                                <a href="https://github.com/Lombard-Web-Services" target="_blank" rel="noopener noreferrer">github</a>
+                        </li>
+                        <li>
+                                <a href="https://x.com/lombardweb" target="_blank" rel="noopener noreferrer">X</a>
+                        </li>
+                        <li>
+                                <a href="https://bsky.app/profile/lombardweb.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                    XVL1456 Copyright 2026
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.querySelectorAll('.footer-bottom p').forEach(el => {
+    el.innerHTML = el.innerHTML.replace('{year}', new Date().getFullYear());
+});
+</script>    
+    <script src="/github-blog/dist/static/js/main.js"></script>
+</body>
+</html>

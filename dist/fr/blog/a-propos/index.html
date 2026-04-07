@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <base href="/github-blog/dist/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="&#39;&#39;">
+
+    <title>&#39;&#39; | Mon Blog Multilingue</title>
+
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <meta property="og:title" content="À propos" />
+    <meta property="og:description" content="Page À propos github blog" />
+    <meta property="og:image" content="/github-blog/dist/static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="À propos" />
+    <meta property="og:url" content="/github-blog/dist/fr/blog/a-propos/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Mon Blog Multilingue" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="À propos" />
+    <meta name="twitter:description" content="Page À propos github blog" />
+    <meta name="twitter:image" content="/github-blog/dist/static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png" />
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Mon Blog Multilingue">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#000000">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <link rel="canonical" href="apropos" />
+
+    <link rel="icon" type="image/x-icon" href="/github-blog/dist/static/images/favicon.ico">
+
+    <link rel="stylesheet" href="/github-blog/dist/static/css/main.css">
+    <link rel="stylesheet" href="/github-blog/dist/static/css/code.css">
+    <link rel="stylesheet" href="/github-blog/dist/static/css/dark.css">
+
+        <link rel="alternate" type="application/rss+xml" title="Mon Blog Multilingue - Flux RSS" href="/github-blog/dist/fr/feed.xml" />
+</head></head>
+<body>
+<header class="site-header">
+    <nav class="main-nav">
+        <div class="nav-brand">
+                <a href="/github-blog/dist/fr/" class="site-title">Github-Blog</a>
+        </div>
+
+        <div class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/" class="nav-link" >
+                        Accueil
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/articles/" class="nav-link" >
+                        Articles
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="/github-blog/dist/fr/blog/a-propos/" class="nav-link" >
+                        À propos
+                    </a>
+                </li>
+            </ul>
+
+            <a href="/github-blog/dist/fr/search" class="search-link" title="Rechercher">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </a>
+
+            <div class="language-switcher">
+                <select id="lang-select" onchange="switchLanguage(this.value)">
+                    <option value="fr" selected>
+                        🇫🇷 Français
+                    </option>
+                    <option value="en" >
+                        🇬🇧 English
+                    </option>
+                    <option value="ar" >
+                        🇸🇦 العربية
+                    </option>
+                    <option value="hi" >
+                        🇮🇳 हिन्दी
+                    </option>
+                    <option value="zh" >
+                        🇨🇳 中文
+                    </option>
+                    <option value="ary" >
+                        🇲🇦 الدارجة
+                    </option>
+                    <option value="ber" >
+                        ⵣ ⵜⴰⵎⴰⵣⵉⵖⵜ
+                    </option>
+                </select>
+            </div>
+
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer de thème">
+                <span class="theme-icon-light">☀️</span>
+                <span class="theme-icon-dark">🌙</span>
+            </button>
+        </div>
+
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<script>
+function switchLanguage(lang) {
+    const currentPath = window.location.pathname;
+    const currentLang = 'fr';
+    const baseUrl = '/github-blog/dist';
+    const multilingualEnabled = true;
+
+    if (!multilingualEnabled) return;
+
+    if (lang !== currentLang) {
+        let newPath = currentPath.replace('/' + currentLang, '/' + lang);
+        if (newPath === currentPath) {
+            newPath = '/' + lang + currentPath;
+        }
+        if (baseUrl && newPath) {
+            if (!newPath.startsWith(baseUrl)) {
+                newPath = baseUrl + newPath;
+            }
+        }
+        window.location.href = newPath;
+    }
+}
+
+function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+
+function toggleMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    if (navMenu && menuToggle) {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    }
+}
+
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+        document.documentElement.classList.add('dark');
+    }
+})();
+
+document.addEventListener('click', function(e) {
+    const navMenu = document.querySelector('.nav-menu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    if (navMenu && navMenu.classList.contains('active') && 
+        !navMenu.contains(e.target) && 
+        menuToggle && !menuToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+</script>    
+    <main class="main-content">
+<article class="post-single" id="article-top">
+    <div class="container container-lg">
+        <header class="post-header">
+            <div class="post-meta">
+                <time datetime="2026-04-07T03:34:51.738916">
+                        07 April 2026
+                </time>
+                <span class="post-category">presentation</span>
+            </div>
+            <h1 id="post-title">A Propos</h1>
+            <p class="post-description" data-bbcode-description="Page À propos github blog"></p>
+        </header>
+
+        <figure class="post-hero-image">
+            <img src="/static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png" alt="A Propos" id="post-image" loading="lazy">
+        </figure>
+
+        <div class="elegant-separator">
+            <span class="separator-line"></span>
+            <span class="separator-icon">✦</span>
+            <span class="separator-line"></span>
+        </div>
+
+        <div class="post-body" id="post-content" data-bbcode-content="---
+canonical_url: apropos
+category: presentation
+date: &#39;2026-04-06&#39;
+description: Page À propos github blog
+draft: false
+hide_from_home: true
+image: /static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png
+language: fr
+og_description: Page À propos github blog
+og_image: /static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png
+og_title: À propos
+parent_slug: null
+seo_description: &#39;&#39;
+seo_title: &#39;&#39;
+tags:
+- web
+title: À propos
+twitter_description: Page À propos github blog
+twitter_image: /static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png
+twitter_title: À propos
+---
+
+[h1]👤 À Propos de GitHub Blog &amp; Son Créateur[/h1]
+[h4]Bonjour, je suis Thibaut Lombard, ingénieur/développeur web spécialisé dans l&#39;IA , passionné et créateur de GitHub Blog.[/h4]
+Bienvenue sur cette page qui présente l&#39;homme derrière le projet, la vision qui l&#39;anime, et la communauté qui le fait vivre.
+Cette page est votre fenêtre ouverte sur l&#39;écosystème GitHub Blog - qui je suis, pourquoi j&#39;ai créé cet outil, et comment vous pouvez en faire partie.
+Les projets sans âme et sans créateur visible appartiennent au passé. Avec GitHub Blog, vous connaissez la personne derrière le code, ses motivations, et son engagement envers la communauté.
+[h4]À gauche[/h4], mon parcours de développeur.
+[h4]En haut[/h4], la vision qui guide ce projet.
+[h4]À droite[/h4], les opportunités de collaboration.
+[h4]Partout[/h4], une invitation à rejoindre l&#39;aventure.
+[h2]🚀 Qui est Thibaut Lombard ?[/h2]
+Je suis un [h4] ingénieur/développeur web spécialisé dans l&#39;IA  passionné[/h4] basé en France à Les Forges, passionné par les technologies open source et la création d&#39;outils qui simplifient la vie des créateurs de contenu.
+[h3]🌐 Ma Présence en Ligne[/h3]
+[h4]Twitter / X[/h4] : [url=https://x.com/lombardweb ]@lombardweb[/url] - Mon fil de veille tech, actualités du projet et échanges avec la communauté
+[h4]GitHub[/h4] : [url=https://github.com/Lombard-Web-Services ]Lombard-Web-Services[/url] - Tous mes projets open source et contributions
+[h4]Site Web[/h4] : [url=https://lombard-web-services.com ]lombard-web-services.com[/url] - Mon portfolio et services professionnels
+[h4]Email[/h4] : contact@lombard-web-services.com - Pour les collaborations et questions professionnelles
+[h3]💡 Ma Philosophie de Développement[/h3]
+[h4]La simplicité est la sophistication suprême[/h4] ❝
+Je crois profondément que les meilleurs outils sont ceux qui disparaissent pour laisser place à la créativité. C&#39;est cette conviction qui a guidé chaque ligne de code de GitHub Blog.
+[h4]Les valeurs qui animent mon travail :[/h4]
+[html]&lt;ul style=&#34;list-style-type: none; padding-left: 0;&#34;&gt;
+&lt;li&gt;✅ [h4]Open Source d&#39;abord[/h4] - La connaissance doit être libre et partagée&lt;/li&gt;
+&lt;li&gt;✅ [h4]Accessibilité avant tout[/h4] - Des outils puissants mais simples d&#39;utilisation&lt;/li&gt;
+&lt;li&gt;✅ [h4]Multilingue par défaut[/h4] - Le web doit parler toutes les langues&lt;/li&gt;
+&lt;li&gt;✅ [h4]Performance non négociable[/h4] - Rapide, léger, efficace&lt;/li&gt;
+&lt;/ul&gt;[/html]
+[h2]🎯 Pourquoi J&#39;ai Créé GitHub Blog ?[/h2]
+L&#39;histoire de ce projet commence avec une frustration personnelle que beaucoup de développeurs partagent.
+[h3]🔍 Le Problème que Je Voulais Résoudre[/h3]
+[h4]Les CMS traditionnels[/h4] (WordPress, etc.) sont lourds, lents, et demandent une maintenance constante
+[h4]Les générateurs statiques existants[/h4] (Jekyll, Hugo) sont puissants mais pas assez personnalisables en rapport temps/travail.
+[h4]Le multilingue[/h4] est souvent une réflexion après-coup, mal intégrée
+[h4]GitHub Pages[/h4] est gratuit mais peu d&#39;outils en exploitent vraiment le potentiel
+[h4]L&#39;interface d&#39;administration[/h4] manque cruellement aux solutions statiques
+Je voulais créer le pont entre la puissance des sites statiques et le confort d&#39;un CMS moderne.
+[h3]🛠️ La Genèse du Projet[/h3]
+[html]&lt;div style=&#34;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;
+&lt;strong&gt;📅 Chronologie du développement :&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
+&lt;strong&gt;2024&lt;/strong&gt; - Première version, expérimentations avec Python et Jinja2&lt;br&gt;
+&lt;strong&gt;Début 2025&lt;/strong&gt; - Intégration de l&#39;interface d&#39;administration BBCode&lt;br&gt;
+&lt;strong&gt;Mi-2025&lt;/strong&gt; - Support multilingue avec 7 langues et gestion RTL&lt;br&gt;
+&lt;strong&gt;Fin 2025&lt;/strong&gt; - Optimisation SEO complète et génération automatique d&#39;images&lt;br&gt;
+&lt;strong&gt;2026&lt;/strong&gt; - Version statique stable, documentation complète, communauté active
+&lt;/div&gt;[/html]
+[h2]🌍 La Vision : Un Web Plus Accessible[/h2]
+[h4]GitHub Blog n&#39;est pas qu&#39;un projet technique, c&#39;est une mission.[/h4]
+[h3]🎯 Objectifs à Long Terme[/h3]
+[h4]Démocratiser les blogs statiques[/h4] - Permettre à chacun d&#39;avoir un site performant sans expertise technique avancée
+[h4]Favoriser le multilingue[/h4] - Réduire les barrières linguistiques sur le web, soutenir les langues minoritaires comme le Tamazight
+[h4]Promouvoir GitHub Pages[/h4] - Montrer que l&#39;hébergement gratuit peut être professionnel
+[h4]Créer une communauté d&#39;entraide[/h4] - Des créateurs qui s&#39;aident mutuellement à réussir en ligne
+[h3]🌟 Ce Qui Me Rend Fier[/h3]
+[h4]7 langues intégrées[/h4] dont 2 langues RTL (Arabe et Darija) et le Tamazight, patrimoine culturel berbère
+[h4]Des centaines de téléchargements[/h4] et une communauté grandissante
+[h4]Des retours positifs[/h4] de développeurs et créateurs de contenu du monde entier
+[h4]Un projet 100% open source[/h4] qui respecte la vie privée (pas de tracking, pas de données collectées)
+[h2]🤝 Rejoignez l&#39;Aventure[/h2]
+Un projet open source ne vit que par sa communauté. Voici comment vous pouvez participer :
+[h3]⭐ Soutenez le Projet[/h3]
+[html]&lt;div style=&#34;display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;&#34;&gt;
+&lt;div style=&#34;background: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #3b82f6;&#34;&gt;
+&lt;strong&gt;🌟 Mettez une étoile&lt;/strong&gt;&lt;br&gt;
+Sur le dépôt GitHub pour augmenter la visibilité
+&lt;/div&gt;
+&lt;div style=&#34;background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #22c55e;&#34;&gt;
+&lt;strong&gt;🐛 Signalez des bugs&lt;/strong&gt;&lt;br&gt;
+Ouvrez des issues pour les problèmes rencontrés
+&lt;/div&gt;
+&lt;div style=&#34;background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 4px solid #f59e0b;&#34;&gt;
+&lt;strong&gt;💡 Proposez des idées&lt;/strong&gt;&lt;br&gt;
+Partagez vos suggestions d&#39;amélioration
+&lt;/div&gt;
+&lt;div style=&#34;background: #fdf2f8; padding: 15px; border-radius: 8px; border-left: 4px solid #ec4899;&#34;&gt;
+&lt;strong&gt;🔧 Contribuez au code&lt;/strong&gt;&lt;br&gt;
+Pull requests bienvenues !
+&lt;/div&gt;
+&lt;/div&gt;[/html]
+[h3]🌐 Partagez Votre Expérience[/h3]
+[h4]Créez avec GitHub Blog[/h4] et partagez le lien sur Twitter avec #GitHubBlog
+[h4]Recommandez-le[/h4] à d&#39;autres développeurs et créateurs de contenu
+
+[h2]🙏 Remerciements[/h2]
+Ce projet n&#39;existerait pas sans l&#39;aide précieuse de :
+Python, Jinja2, Markdown, Pillow, et tous les projets qui rendent GitHub Blog possible
+
+[h4]Vous, utilisateurs[/h4]
+Chaque personne qui télécharge, installe, et utilise GitHub Blog donne du sens à ce projet
+[h2]💭 Une Dernière Pensée[/h2]
+« Le web devrait être un espace où chacun peut s&#39;exprimer librement, dans sa langue, avec des outils performants et respectueux de sa vie privée. GitHub Blog est ma contribution à cette vision. »
+— Thibaut Lombard
+[h4]Merci de faire partie de cette aventure.[/h4]
+À très bientôt dans le code, sur les réseaux, ou qui sait, autour d&#39;un café virtuel !
+[h4]Thibaut Lombard[/h4]
+[h4]Fondateur de Lombard Web Services[/h4]
+[h4]Créateur de GitHub Blog[/h4]
+---
+[html]&lt;p align=&#34;center&#34; style=&#34;margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;&#34;&gt;
+&lt;strong&gt;👤 À Propos - GitHub Blog&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Créé avec passion par Thibaut Lombard&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://x.com/lombardweb &#34; style=&#34;color: #fff; text-decoration: underline;&#34;&gt;@lombardweb&lt;/a&gt; | 
+&lt;a href=&#34;https://github.com/Lombard-Web-Services &#34; style=&#34;color: #fff; text-decoration: underline;&#34;&gt;GitHub&lt;/a&gt; | 
+&lt;a href=&#34;mailto:contact@lombard-web-services.com&#34; style=&#34;color: #fff; text-decoration: underline;&#34;&gt;Email&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+MIT License - 2026
+&lt;/p&gt;[/html]">
+        </div>
+
+
+        <div class="share-section">
+            <h3>Partager</h3>
+            <div class="share-buttons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/" 
+                   target="_blank" rel="noopener" class="share-btn facebook">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    Facebook
+                </a>
+
+                <a href="https://twitter.com/intent/tweet?url=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/&text=A%20Propos" 
+                   target="_blank" rel="noopener" class="share-btn twitter">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    X (Twitter)
+                </a>
+
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/" 
+                   target="_blank" rel="noopener" class="share-btn linkedin">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+
+                <a href="https://bsky.app/intent/compose?text=A%20Propos%20https%3A//lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/" 
+                   target="_blank" rel="noopener" class="share-btn bluesky">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    Bluesky
+                </a>
+
+                <button onclick="copyLink()" class="share-btn copy">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                    Copier le lien
+                </button>
+            </div>
+        </div>
+
+    </div>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function decodeHtmlEntities(encoded) {
+        const textarea = document.createElement('textarea');
+        textarea.innerHTML = encoded;
+        return textarea.value;
+    }
+
+    const descEl = document.querySelector('.post-description');
+    if (descEl && typeof parseBBCode === 'function') {
+        const bbcodeDesc = descEl.getAttribute('data-bbcode-description');
+        if (bbcodeDesc) {
+            const decodedDesc = decodeHtmlEntities(bbcodeDesc);
+            descEl.innerHTML = parseBBCode(decodedDesc);
+        }
+    }
+
+    const contentEl = document.getElementById('post-content');
+    if (contentEl && typeof parseBBCode === 'function') {
+        const bbcodeContent = contentEl.getAttribute('data-bbcode-content');
+        if (bbcodeContent) {
+            const decodedContent = decodeHtmlEntities(bbcodeContent);
+            const contentMatch = decodedContent.match(/---[\s\S]*?---\s*([\s\S]*)/);
+            const actualContent = contentMatch ? contentMatch[1] : decodedContent;
+            contentEl.innerHTML = parseBBCode(actualContent);
+        }
+    }
+});
+
+function copyLink() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+        alert('Lien copié !');
+    });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.pushState(null, null, this.getAttribute('href'));
+        }
+    });
+});
+</script>
+
+    </main>
+    
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/">Accueil</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/articles/">Tous les articles</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/blog/a-propos/">À propos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/feed.xml">Flux RSS</a>
+                        </li>
+                        <li>
+                                <a href="/github-blog/dist/fr/sitemap.xml">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li>
+                                <a href="/github-blog/dist/fr/blog/license/">License</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Réseaux sociaux</h4>
+                    <ul>
+                        <li>
+                                <a href="https://github.com/Lombard-Web-Services" target="_blank" rel="noopener noreferrer">github</a>
+                        </li>
+                        <li>
+                                <a href="https://x.com/lombardweb" target="_blank" rel="noopener noreferrer">X</a>
+                        </li>
+                        <li>
+                                <a href="https://bsky.app/profile/lombardweb.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                    XVL1456 Copyright 2026
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.querySelectorAll('.footer-bottom p').forEach(el => {
+    el.innerHTML = el.innerHTML.replace('{year}', new Date().getFullYear());
+});
+</script>    
+    <script src="/github-blog/dist/static/js/main.js"></script>
+</body>
+</html>
