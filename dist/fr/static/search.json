@@ -7,7 +7,7 @@
     "tags": [],
     "date": "2026-04-07",
     "language": "fr",
-    "content": "\nweb\ntitle: À propos\ntwitter_description: Page À propos github blog\ntwitter_image: /static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png\ntwitter_title: À propos\n\n\n[h1]👤 À Propos de GitHub Blog &amp; Son Créateur[/h1]\n[h4]Bonjour, je suis Thibaut Lombard, ingénieur/développeur web spécialisé dans l'IA , passionné et créateur de GitHub Blog.[/h4]\nBienvenue sur cette page qui présente l'homme derrière le projet, la vision qui l'anime, et la communauté qui le fait vivre.\nCette page est votre fenêtre "
+    "content": "\nweb\ntitle: À propos\ntwitter_description: Page À propos github blog\ntwitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png\ntwitter_title: À propos\n\n\n[h1]👤 À Propos de GitHub Blog &amp; Son Créateur[/h1]\n[h4]Bonjour, je suis Thibaut Lombard, ingénieur/développeur web spécialisé dans l'IA , passionné et créateur de GitHub Blog.[/h4]\nBienvenue sur cette page qui présente l'homme derrière le projet, la vision qui l'anime, et la comm"
   },
   {
     "title": "Mon Premier Article",
@@ -27,7 +27,7 @@
     "tags": [],
     "date": "2026-04-07",
     "language": "fr",
-    "content": "\nux\nui\ntitle: La personnalisation des thèmes\ntwitter_description: Documentation sur la personnalisation de thèmes\ntwitter_image: /static/uploads/29c45566a9194946b7c65ee7862e080a.png\ntwitter_title: La personnalisation des thèmes\n\n\n[h1]Personnalisez Votre Navigation : Menu &amp; Footer sur Mesure[/h1]\n[h4]Chers créateurs de contenu, architectes du web, perfectionnistes du design,[/h4]\nBienvenue dans ce guide complet dédié à la personnalisation de la navigation de votre GitHub Blog. Découvrez comme"
+    "content": "\nux\nui\ntitle: La personnalisation des thèmes\ntwitter_description: Documentation sur la personnalisation de thèmes\ntwitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/29c45566a9194946b7c65ee7862e080a.png\ntwitter_title: La personnalisation des thèmes\n\n\n[h1]Personnalisez Votre Navigation : Menu &amp; Footer sur Mesure[/h1]\n[h4]Chers créateurs de contenu, architectes du web, perfectionnistes du design,[/h4]\nBienvenue dans ce guide complet dédié à la personnalisation"
   },
   {
     "title": "License",
@@ -37,7 +37,7 @@
     "tags": [],
     "date": "2026-04-07",
     "language": "fr",
-    "content": "\nMIT\nLicense\ntitle: License\ntwitter_description: Page de description de la license de Github-Blog\ntwitter_image: /static/uploads/39cba30f9da14d059c009e3f1818c402.png\ntwitter_title: License\n\n\n[h1] Licence MIT - GitHub Blog[/h1]\n[h4]Chers utilisateurs, développeurs, contributeurs et amis du libre,[/h4]\nCette page définit les termes légaux sous lesquels GitHub Blog vous est offert. Elle garantit votre liberté d'utiliser, modifier et partager ce projet tout en protégeant les créateurs originaux.\nCet"
+    "content": "\nMIT\nLicense\ntitle: License\ntwitter_description: Page de description de la license de Github-Blog\ntwitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/39cba30f9da14d059c009e3f1818c402.png\ntwitter_title: License\n\n\n[h1] Licence MIT - GitHub Blog[/h1]\n[h4]Chers utilisateurs, développeurs, contributeurs et amis du libre,[/h4]\nCette page définit les termes légaux sous lesquels GitHub Blog vous est offert. Elle garantit votre liberté d'utiliser, modifier et partager ce"
   },
   {
     "title": "Les Fonctionnalites",
@@ -47,6 +47,6 @@
     "tags": [],
     "date": "2026-04-07",
     "language": "fr",
-    "content": "\nfeatures\ntitle: Les fonctionnalités\ntwitter_description: La présentations des fonctionnalités présente dans le blog\ntwitter_image: /static/uploads/239fc0cfff6d44babb835f903d221fe6.png\ntwitter_title: Les fonctionnalités\n\n\n[h1]Bienvenue dans la communauté GitHub Blog ![/h1]\n[h4]La version statique multilingue est enfin arrivée et elle est prête à révolutionner votre façon de bloguer ![/h4]\nChers amis, développeurs passionnés, blogueurs créatifs, professionnels du web, étudiants, entrepreneurs et "
+    "content": "\nfeatures\ntitle: Les fonctionnalités\ntwitter_description: La présentations des fonctionnalités présente dans le blog\ntwitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/239fc0cfff6d44babb835f903d221fe6.png\ntwitter_title: Les fonctionnalités\n\n\n[h1]Bienvenue dans la communauté GitHub Blog ![/h1]\n[h4]La version statique multilingue est enfin arrivée et elle est prête à révolutionner votre façon de bloguer ![/h4]\nChers amis, développeurs passionnés, blogueurs créati"
   }
 ]

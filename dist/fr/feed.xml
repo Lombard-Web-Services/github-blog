@@ -5,19 +5,19 @@
     <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr</link>
     <description>Blog technique et créatif multilingue</description>
     <language>fr</language>
-    <lastBuildDate>Tue, 07 Apr 2026 03:34:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 03:58:07 +0000</lastBuildDate>
     <atom:link href="https://lombard-web-services.github.io/blog//github-blog/dist/fr/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
         <title>A Propos</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;web&lt;br /&gt;
 title: À propos&lt;br /&gt;
 twitter_description: Page À propos github blog&lt;br /&gt;
-twitter_image: /static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png&lt;br /&gt;
+twitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/29e2b4c3eadf4c6bb04202ec78e6f173.png&lt;br /&gt;
 twitter_title: À propos&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
@@ -59,10 +59,10 @@ Je voulais créer le pont entre la puissance des sites statiques et le confort d
 [h3]🛠️ La Genèse du Projet[/h3]&lt;br /&gt;
 [html]&lt;div style=&#34;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;&#34;&gt;&lt;br /&gt;
 &lt;strong&gt;📅 Chronologie du développement :&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;br /&gt;
-&lt;strong&gt;2024&lt;/strong&gt; - Première version, expérimentations avec Python et Jinja2&lt;br&gt;&lt;br /&gt;
-&lt;strong&gt;Début 2025&lt;/strong&gt; - Intégration de l&#39;interface d&#39;administration BBCode&lt;br&gt;&lt;br /&gt;
-&lt;strong&gt;Mi-2025&lt;/strong&gt; - Support multilingue avec 7 langues et gestion RTL&lt;br&gt;&lt;br /&gt;
-&lt;strong&gt;Fin 2025&lt;/strong&gt; - Optimisation SEO complète et génération automatique d&#39;images&lt;br&gt;&lt;br /&gt;
+&lt;strong&gt;2026&lt;/strong&gt; - Première version, expérimentations avec Python et Jinja2&lt;br&gt;&lt;br /&gt;
+&lt;strong&gt;2026&lt;/strong&gt; - Intégration de l&#39;interface d&#39;administration BBCode&lt;br&gt;&lt;br /&gt;
+&lt;strong&gt;2026&lt;/strong&gt; - Support multilingue avec 7 langues et gestion RTL&lt;br&gt;&lt;br /&gt;
+&lt;strong&gt;2026&lt;/strong&gt; - Optimisation SEO complète et génération automatique d&#39;images&lt;br&gt;&lt;br /&gt;
 &lt;strong&gt;2026&lt;/strong&gt; - Version statique stable, documentation complète, communauté active&lt;br /&gt;
 &lt;/div&gt;[/html]&lt;br /&gt;
 [h2]🌍 La Vision : Un Web Plus Accessible[/h2]&lt;br /&gt;
@@ -128,7 +128,7 @@ MIT License - 2026&lt;br /&gt;
         <title>Mon Premier Article</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;features&lt;br /&gt;
 title: Mon premier article&lt;br /&gt;
@@ -275,13 +275,13 @@ MIT License - 2024&lt;br /&gt;
         <title>La Personnalisation Des Themes</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;ux&lt;/li&gt;
 &lt;li&gt;ui&lt;br /&gt;
 title: La personnalisation des thèmes&lt;br /&gt;
 twitter_description: Documentation sur la personnalisation de thèmes&lt;br /&gt;
-twitter_image: /static/uploads/29c45566a9194946b7c65ee7862e080a.png&lt;br /&gt;
+twitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/29c45566a9194946b7c65ee7862e080a.png&lt;br /&gt;
 twitter_title: La personnalisation des thèmes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
@@ -708,13 +708,13 @@ GitHub Blog - Navigation Personnalisable&lt;/p&gt;
         <title>License</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;MIT&lt;/li&gt;
 &lt;li&gt;License&lt;br /&gt;
 title: License&lt;br /&gt;
 twitter_description: Page de description de la license de Github-Blog&lt;br /&gt;
-twitter_image: /static/uploads/39cba30f9da14d059c009e3f1818c402.png&lt;br /&gt;
+twitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/39cba30f9da14d059c009e3f1818c402.png&lt;br /&gt;
 twitter_title: License&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
@@ -906,12 +906,12 @@ Copyright © 2026 Thibaut Lombard - Lombard Web Services&lt;br&gt;&lt;br /&gt;
         <title>Les Fonctionnalites</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/les-fonctionnalites/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/les-fonctionnalites/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:34:51 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;features&lt;br /&gt;
 title: Les fonctionnalités&lt;br /&gt;
 twitter_description: La présentations des fonctionnalités présente dans le blog&lt;br /&gt;
-twitter_image: /static/uploads/239fc0cfff6d44babb835f903d221fe6.png&lt;br /&gt;
+twitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/239fc0cfff6d44babb835f903d221fe6.png&lt;br /&gt;
 twitter_title: Les fonctionnalités&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
