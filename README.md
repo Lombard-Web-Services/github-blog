@@ -1,6 +1,8 @@
 # GitHub Blog - Version Statique
+![Demo](https://github.com/Lombard-Web-Services/github-blog/blob/main/screen/demo.png?raw=true)
 
 Un générateur de blog statique complet, multilingue et hautement personnalisable, optimisé pour GitHub Pages.
+**Démonstration :** [Voir la démo](https://lombard-web-services.github.io/github-blog/dist/)
 
 ---
 
