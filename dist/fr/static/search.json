@@ -17,7 +17,7 @@
     "tags": [],
     "date": "2026-04-07",
     "language": "fr",
-    "content": "\nfeatures\ntitle: Mon premier article\ntwitter_description: voila le article\ntwitter_image: http://localhost/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png\ntwitter_title: Mon premier article\n\n\n[h1] Bienvenue dans le GitHub Blog ![/h1]\n[h4]Cher développeur, créateur de contenu, passionné du web,[/h4]\nNous sommes ravis de vous accueillir dans l'écosystème GitHub Blog - Version Statique, la solution ultime pour créer et gérer votre blog professionnel avec une simplicité déconcer"
+    "content": "\nfeatures\ntitle: Mon premier article\ntwitter_description: voila le article\ntwitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png\ntwitter_title: Mon premier article\n\n\n[h1] Bienvenue dans le GitHub Blog ![/h1]\n[h4]Cher développeur, créateur de contenu, passionné du web,[/h4]\nNous sommes ravis de vous accueillir dans l'écosystème GitHub Blog - Version Statique, la solution ultime pour créer et gérer votre blog professionnel avec u"
   },
   {
     "title": "La Personnalisation Des Themes",

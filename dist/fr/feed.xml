@@ -5,14 +5,14 @@
     <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr</link>
     <description>Blog technique et créatif multilingue</description>
     <language>fr</language>
-    <lastBuildDate>Tue, 07 Apr 2026 03:58:07 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 19:18:28 +0000</lastBuildDate>
     <atom:link href="https://lombard-web-services.github.io/blog//github-blog/dist/fr/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
         <title>A Propos</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/a-propos/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 19:18:27 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;web&lt;br /&gt;
 title: À propos&lt;br /&gt;
@@ -128,12 +128,12 @@ MIT License - 2026&lt;br /&gt;
         <title>Mon Premier Article</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/mon-premier-article/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 19:18:27 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;features&lt;br /&gt;
 title: Mon premier article&lt;br /&gt;
 twitter_description: voila le article&lt;br /&gt;
-twitter_image: http://localhost/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png&lt;br /&gt;
+twitter_image: https://lombard-web-services.github.io/github-blog/dist/static/uploads/95a39a0882474bb69596c17d208eb86b.png&lt;br /&gt;
 twitter_title: Mon premier article&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
@@ -142,10 +142,6 @@ twitter_title: Mon premier article&lt;/li&gt;
 &lt;p&gt;Nous sommes ravis de vous accueillir dans l&#39;écosystème GitHub Blog - Version Statique, la solution ultime pour créer et gérer votre blog professionnel avec une simplicité déconcertante.&lt;/p&gt;
 &lt;p&gt;Cet article est votre guide de démarrage rapide pour découvrir toutes les merveilles que notre générateur de blog statique met à votre disposition. Préparez-vous à être ébloui !&lt;/p&gt;
 &lt;p&gt;Les solutions compliquées et lourdes appartiennent désormais au passé. Avec GitHub Blog, tout devient fluide, élégant et performant.&lt;/p&gt;
-&lt;p&gt;[h4]À gauche[/h4], vous trouverez la puissance de la génération statique.&lt;br /&gt;
-[h4]En haut[/h4], les performances optimisées pour GitHub Pages.&lt;br /&gt;
-[h4]À droite[/h4], une interface d&#39;administration intuitive.&lt;br /&gt;
-[h4]Partout[/h4], la flexibilité et la personnalisation.&lt;/p&gt;
 &lt;p&gt;[h2] Un Blog Qui Parle Toutes Les Langues du Monde[/h2]&lt;/p&gt;
 &lt;p&gt;Notre support multilingue est tout simplement [h4]exceptionnel[/h4]. Nous avons intégré 7 langues magnifiques pour que votre contenu touche les quatre coins de la planète :&lt;/p&gt;
 &lt;p&gt;[h4]Français [/h4] - La langue de Molière, de la diplomatie et de l&#39;élégance. Parfaite pour un blog raffiné et littéraire.&lt;/p&gt;
@@ -275,7 +271,7 @@ MIT License - 2024&lt;br /&gt;
         <title>La Personnalisation Des Themes</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/la-personnalisation-des-themes/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 19:18:27 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;ux&lt;/li&gt;
 &lt;li&gt;ui&lt;br /&gt;
@@ -708,7 +704,7 @@ GitHub Blog - Navigation Personnalisable&lt;/p&gt;
         <title>License</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/license/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 19:18:27 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;MIT&lt;/li&gt;
 &lt;li&gt;License&lt;br /&gt;
@@ -906,7 +902,7 @@ Copyright © 2026 Thibaut Lombard - Lombard Web Services&lt;br&gt;&lt;br /&gt;
         <title>Les Fonctionnalites</title>
         <link>https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/les-fonctionnalites/</link>
         <guid isPermaLink="true">https://lombard-web-services.github.io/blog//github-blog/dist/fr/blog/les-fonctionnalites/</guid>
-        <pubDate>Tue, 07 Apr 2026 03:58:06 +0000</pubDate>
+        <pubDate>Tue, 07 Apr 2026 19:18:27 +0000</pubDate>
         <description><![CDATA[&lt;ul&gt;
 &lt;li&gt;features&lt;br /&gt;
 title: Les fonctionnalités&lt;br /&gt;
